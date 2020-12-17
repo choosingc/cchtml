@@ -1,0 +1,618 @@
+/**************************
+***************************
+**                       **
+**   TABLE OF CONTENTS   **
+**                       **
+***************************
+**************************/
+
+/* - Webfonts */
+
+/* - Base elements (html & body) */
+
+/* - Core design */
+/* -- Widths for core design */
+/* -- Sections */
+/* --- Header */
+/* --- Main section */
+/* --- Footer */
+ 
+/**************************/
+
+/**************************
+***************************
+**                       **
+**   THE STYLES BEGIN    **
+**                       **
+***************************
+**************************/
+
+/* Disable toolbar thru CSS for now */
+
+#toolbar-administration {
+	display: none;
+}
+
+body {
+	padding-top: 0px !important;
+	/* ↑ TO DO: at some point grep for where 
+		 <body style="padding-top" is hardcoded */
+		 
+	padding-bottom: 800px;
+		
+}
+
+/* - Webfonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* - Base elements (html & body) */
+
+html {
+	font-size: 16px;
+	/* ↑ This is the default size for most browsers 
+	anyway - I think I need to set it to use my 
+	rem-global/em-local approach though */
+}
+
+body {
+/* 	background-color: #FAFAE8; */
+	font-size: 1rem; 
+	/* ↑ Creating a base parent module whose size 
+	I can increase to eg 1.2rem to increase the size
+	of child elements sized in em, a la my 
+	rem-global/em-local approach  */
+	
+	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
+}
+
+/* - Core design */
+
+/* -- Variables for colours etc. */
+
+/* --- Colour variables */
+
+:root {
+	--cc-grey: #61798E;
+	--cc-light-grey: #AEBBC7;
+	--cc-blue: #0094D9;
+	--cc-light-blue: #66BFE8;
+	--cc-dark-blue: #0A3B56;
+	--cc-beige: #FAFAE8;
+	--cc-basker: 'Libre Baskerville', 'Baskerville', serif;
+	--cc-lato:  'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
+}
+
+/* -- Common HTML elements (links, etc.) */
+
+/* --- Links */
+
+/* ---- Default link colours, from components spec */
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
+a,
+a:link {
+	color: #0094D9;
+	color: var(--cc-blue);
+}
+
+a:hover,
+a:active,
+a:visited {
+	color: #66BFE8;
+	color: var(--cc-light-blue);
+}
+
+/* --- Headers */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Libre Baskerville', 'Baskerville', serif;
+	font-family: var(--cc-basker);
+	
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 58px;
+	
+	line-height: 1.27em; 
+	/* ↑ Rose has 1.25, but this looks better given the 
+		fatter font rendering, and is also the default 
+		Chrome browser line-height, at least for this line */
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 1.25em;
+}
+
+@media screen and ( max-width: 685px ) {
+	h2 {
+		font-size: 32px;
+		line-height: 42px;
+	}
+}
+
+/* -- Widths for core design */
+
+.content_width_plus_padding {	
+	max-width: 1250px;
+	padding-left: 40px;
+	padding-right: 40px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and ( max-width: 991px ) {
+	.content_width_plus_padding {
+		padding-left: 1.5em; /* 1.5em = 24px */
+		padding-right: 1.5em; /* 1.5em = 24px */
+	}
+}
+
+.content_width {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* -- Sections */
+
+/* --- Header */
+
+/* ---- Desktop */
+
+header {
+	padding-top: 50px;
+	/* ↑ Area above menu, safest to set on header itself */
+}
+
+header.beige {
+	background-color: #FAFAE8;
+}
+	
+header.grey {
+	color: white;
+	
+	background-color: #0A3B56;
+	background-color: var(--cc-dark-blue);
+	background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-desktop-grey-gradient@2x.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header.grey.home {
+	background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-desktop-grey-home-gradient.jpg');
+}
+
+.menu_top.desktop {
+	padding-top: 0px;
+	/* ↑ Area above menu was safest to set on header itself */
+	padding-bottom: 20px;
+	border-bottom: 1px solid #0A3B56;
+	
+	color: #0A3B56;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header.grey .menu_top.desktop {
+	border-bottom: 1px solid white;
+}
+
+@media screen and ( min-width: 991px ) {
+	.menu_top.mobile {
+		display: none;
+	}
+}
+
+header.beige .menu_top a,
+header.beige .menu_top a:link,
+header.beige .menu_top a:hover,
+header.beige .menu_top a:active,
+header.beige .menu_top a:visited {
+	color: #0A3B56;
+	color: var(--cc-dark-blue);
+}
+
+header.grey .menu_top a,
+header.grey .menu_top a:link,
+header.grey .menu_top a:hover,
+header.grey .menu_top a:active,
+header.grey .menu_top a:visited {
+	color: white;
+}
+
+.menu_top .site_name,
+.menu_top.desktop .site_name,
+.menu_top.mobile .site_name {
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu_top .regular_link {
+	text-align: center;
+	line-height: 1.3em;
+}
+
+.social_pages a {
+	margin-right: 17px;
+}
+
+.social_pages a.s_last {
+	margin-right: 0;
+}
+
+.page_title_and_image {
+	position: relative;
+	height: 293px;
+}
+
+.page_title_and_image .s_image {
+	position: absolute;
+	bottom: -4px;
+	right: 20px;
+	z-index: 1; /* This seems best */
+}
+
+@media screen and ( max-width: 991px ) {
+	.page_title_and_image .s_image {
+		display: none;
+	}
+}
+
+.page_title_and_image h1 {
+	font-size: 58px;
+	font-weight: normal;
+	text-align: center;
+	
+	margin: 0em;
+	padding-top: 80px;
+	/* ↑ padding-bottom has no effect because of the larger
+		height set for the parent element */
+	
+	z-index: 2;
+	/* ↑ To be above background image, which is itself 
+		z-index 1 to be above horizontal rule */
+	position: relative;
+	/* ↑ Some 'position' other than the default position:static is 
+		needed for z-index to work. position:relative is the best 
+		choice because it keeps the element where it is (if we 
+		don't set left/right/top/bottom). */
+}
+
+/* ---- Mobile */
+
+@media screen and ( max-width: 991px ) {
+	header {
+		padding-top: 30px;
+	}
+	
+	header.grey {
+		background-color: #0A3B56;
+		background-color: var(--cc-dark-blue);
+		background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-mob-grey-gradient@2x.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.menu_top.desktop {
+		display: none;
+	}
+}
+
+.menu_top.mobile .site_name {
+	display: inline-block;
+	float: left;
+	line-height: 1em;
+	margin-top: -4px;
+	/* ↑ = -0.1428em =  = 1/7th of an em = -4px for this 28px text, which removes the space above the top of letters given the 1em line-height */
+}
+
+#hamburger {
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+
+#hamburger_image {
+	width: 30px;
+	height: 21px;
+}
+
+.menu_top.mobile .s_rule {
+	height: 1px;
+	background: white;
+	clear: both;
+	margin-top: 31px;
+}
+
+@media screen and ( max-width: 991px ) {
+	.page_title_and_image {
+		height: 344px;
+	}
+}
+
+/* ↓ Keep a diff font-size breakpoint, though can change from 685/var(--preview-temp) which I'm doing for my narrow window right sidebar inspect element */
+@media screen and ( max-width: 685px ) {
+	.page_title_and_image h1 {
+		font-size: 48px;
+		padding-top: 50px;
+		/* ↑ padding-bottom has no effect because of the larger
+			height set for the parent element */
+	}
+}
+
+/* ↓ Keep this, as good limit for Rose's 40px mobile size ... looks best up to 375 */
+@media screen and ( max-width: 479px ) {
+	.page_title_and_image h1 {
+		font-size: 40px;
+		/* ↑ Rose's size, perfect for 320px, so good to KEEP for max375 */
+		padding-top: 50px;
+		/* ↑ padding-bottom has no effect because of the larger
+			height set for the parent element */
+	}
+	
+}
+
+
+
+/* --- Main section */
+
+.node__content {
+	line-height: 1.5em;
+	/* ↑ Most common line-height  */
+	
+	font-size: 1rem; 
+	/* ↑  Sizing module */
+	
+	margin-top: 110px;
+}
+
+@media screen and ( max-width: 685px ) {
+	.node__content {
+		margin-top: 57px;
+	}
+}
+
+.node__content h2 {
+	text-align: center;
+}
+
+nav.breadcrumb {
+	font-size: 0.875em;
+	padding-top: 25px;
+}
+
+.breadcrumb li:before {
+	    content: " \00a0>\00a0 ";
+}
+
+
+
+/* --- Footer */
+
+footer {
+	background-color: #0A3B56;
+	padding-top: 104px;
+}
+
+footer a,
+footer a:link,
+footer a:hover,
+footer a:active,
+footer a:visited {
+	color: var(--cc-light-grey);
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
+	font-family: var(--cc-lato);
+	
+	font-weight: bold;
+	
+	margin-top: 0;
+}
+
+footer h4 {
+	font-size: 1.75em; /* 28 */
+}
+
+footer h5,
+footer h6 {
+	font-size: 1em;
+}
+
+.flex_item {
+	margin-top: 0;
+}
+
+/*
+💻
+*/
+@media screen and ( min-width: 992px ) {
+	.foot {
+		display: flex;
+	}
+	
+	.flex_item {
+	}
+	
+	.flex_item.s_1 {
+		width: 34.5%;
+	}
+	
+	.flex_item.s_2 {
+		width: 26%;
+	}
+	
+	.flex_item.s_3 {
+		width: 39.5%;
+	}
+}
+
+footer .site_name {
+	line-height: 1em; 
+/* 	↑ To be almost flush, matching 3/4px in spec */
+}
+
+.main_menu li {
+	text-transform: uppercase;
+	line-height: 1.5em;
+	
+	margin-bottom: 14px;
+}
+
+.main_menu li.s_col_top {
+	/* ↓ Styles already there from .flush_with_top_of_letters 
+	margin-top: -0.1428em; 
+	line-height: 1em; */
+	
+	margin-bottom: 0.75em; /* = 1.5/2 [*not* (1.5-1)/2] = literally half 1.5em line-height */
+}
+
+footer .s_email {
+	margin-bottom: 38px;
+}
+
+footer .s_email h5 {
+	/* ↓ Styles already there from .flush_with_top_of_letters 
+	margin-top: -0.1428em; 
+	line-height: 1em; */
+	
+/* 	↓ Best applied here, as this has line-height 1em
+	(actually also works on .s_first below */
+	margin-bottom: 1em;
+}
+
+footer .s_email .s_first {
+/* 	margin: 1em 0; default, not needed */
+}
+
+.social_container {
+	display: flex;
+	align-items: center;
+}
+
+.social_container h6 {
+	display: inline-block;
+	margin: 0 21px 0 0;
+}
+
+footer .s_rule {
+	margin-top: 10px;
+	border-bottom: 1px solid var(--cc-grey);
+	margin-bottom: 28px;
+}
+
+.small_print {
+	padding-bottom: 28px;
+}
+
+.small_print .s_text,
+.small_print .s_text a {
+	font-size: 12px;
+	color: var(--cc-grey);
+}
+
+
+/* Footer */
+/* ---- Mobile  */
+
+/* Tablets, not phones */
+/* Disabled, but *if* enabled change ( max-width: 991px ) [alone] styles below to  be max 767 */
+/* Could be min-width 481 instead as virtually no phones bigger */
+@media screen and ( max-width: 991px ) and (min-width: 768px) {
+/* 	I don't have time for this, but I'd hide the menu as otiose, and make the flex-direction right to left	 */
+}
+
+@media screen and ( max-width: 991px ) {
+	footer {
+		padding-top: 70px;
+	}
+	
+	footer h4.site_name {
+		margin-bottom: 48px;
+	}
+	
+	.main_menu {
+		font-size: 14px;
+	}
+	
+	.main_menu li,
+	.main_menu li.s_col_top {
+		border-top: 1px solid #61798E;
+		padding: 17px 0; 
+		margin: 0;
+	}
+	
+	.main_menu li.s_last {
+		border-bottom: 1px solid #61798E;
+	}
+	
+	.main_menu br.s_breakpoint {
+		display: none;
+	}
+}
+
+
+/* Under 375 */
+@media screen and ( max-width: 374px ) {
+	.social_container h6 {
+		max-width: 122px; /* Forces right line break */
+	}
+	
+	.social_container  {
+		justify-content: space-between;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

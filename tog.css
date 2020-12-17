@@ -1,0 +1,559 @@
+/**************************
+***************************
+**                       **
+**   TABLE OF CONTENTS   **
+**        (v1.04)        **
+**                       **
+***************************
+**************************/
+ 
+/* - Base resets */
+
+/* - Sizes */
+/* -- Mobile device sizes */
+
+/* - Misc basic styles */
+
+/* - Class names for themes to define */
+
+/*************************************/
+/* - CSS features
+	 (z-index, etc.) */
+/*************************************/
+/* -- z-index */
+/*************************************/
+
+
+/*************************************/
+/* - Standard HTML elements 
+	 (images, videos, iframes, etc.) */
+/*************************************/
+/* -- Images */
+/* --- Images that shrink down for mobile display */
+/*************************************/
+/* -- iFrames */
+/*************************************/
+/* -- Lists */
+/* --- No bullet points */
+/*************************************/
+/* -- Horizontal rules */
+/* --- .s_rule */
+/*************************************/
+/* -- Text */
+/*************************************/
+
+/* - Overlays */
+/* -- Horizontally centered overlays */
+
+/*************************************/
+/* - Layouts */
+/*************************************/
+/* -- Even spacing between elements */
+/* --- Flexbox approach */
+/* --- Fully justified approach */
+/*************************************/
+/* -- Vertical centering */
+/*************************************/
+
+
+/* - Other (no need to sort) */
+
+/* - To sort */
+ 
+/**************************/
+
+/**************************
+***************************
+**                       **
+**   THE STYLES BEGIN    **
+**                       **
+***************************
+**************************/
+
+  
+/* - Base resets */
+	
+	* {
+		box-sizing: border-box;
+	}
+	
+/* -- Optional base resets */
+
+	body.no_horizontal_overflow_images img {
+		max-width: 100%;
+	}
+	
+	body.images_bottom_aligned img {
+		vertical-align: bottom;
+	}
+	  
+/* - Sizes */
+
+/* -- Mobile device sizes */
+
+	/*
+	Use max--width, but include:
+		<meta name="viewport" 
+		content="width=device-width, 
+		initial-scale=1.0" />
+	
+	My own size understanding:
+	
+	📱
+	<375 - most phones
+	<479 - medium phones 
+	=480 - v biggest phones 
+		(↑ also do <767 ... but none in 2018 list are >480)
+	<991 - tablets
+		(↑ can also limit to >767 ... base choice on the specific design)
+	💻
+	>992 - computers, except *unusually* narrowed windows
+		(↑ 1170 is a 99% [IIRC] safe full screen width ... but no need to
+		   media query 1170, as it should go in content_width_plus_padding
+		   instead, via the maths shown there
+	
+	Bootstrap size names:
+	
+	Phones: max 479
+	Medium tablets : max 767
+	↑ Tog: misnomer, 2018 stats I use say 
+		this is the switchover between 
+		large phones and all common tablets
+	Large tablets: max 991
+	Small desktops: min 1199
+	Large desktops: min 1200
+	
+	*/
+	
+	.mobile_size_visible {
+		display: none;
+	}
+	
+	.mobile_size_hidden {
+		display: block;
+	}
+	
+	@media screen and ( max-width: 767px ) {
+		.mobile_size_visible {
+			display: block;
+		}
+	
+		.mobile_size_hidden {
+			display: block;
+		}
+	}
+
+/* -- Touch devices */
+
+/*	
+**	(Showing/hiding based on touch capability check
+**	rather than size)
+*/
+
+	.touch_device_visible {
+	  display: none;
+	}
+	
+	.touch_device_hidden {
+	  display: block;
+	}
+	
+	.narrow_touch_device_visible {
+		display: none;
+	}
+	
+	.narrow_touch_device_hidden {
+		display: block;
+	}
+	
+	@media (hover:none), (hover:on-demand) { 
+	  .touch_device_visible {
+		  display: block;
+	  }
+	  
+	  .touch_device_hidden {
+		  display: none;
+	  }
+	}
+	
+	@media (hover:none), (hover:on-demand) { 
+	  @media (max-device-width: 767px) {
+		.narrow_touch_device_visible {
+			display: block;
+		}
+		
+		.narrow_touch_device_hidden {
+			display: none;
+		}
+	  }
+	}
+	
+	
+	
+/* - Misc basic styles */
+
+
+	.clearfix:after,
+	.floated-elements-container:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.padding_edge {
+		height: 1px;
+	}
+	
+/* - Class names for themes to define */
+
+.content_width_plus_padding {	
+/*
+	max-width: 1210px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	margin-left: auto;
+	margin-right: auto;
+*/
+}
+
+.content_width {
+/*
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+*/
+}
+
+/*************************************/
+/* - CSS features
+	 (z-index, etc.) */
+/*************************************/
+
+/* -- z-index */
+
+.over_everything_else {
+	z-index: 99999;
+	position: relative;
+	/* ↑ Some 'position' other than the default position:static is 
+		needed for z-index to work. position:relative is the best 
+		choice because it keeps the element where it is (if we 
+		don't set left/right/top/bottom). */
+}
+
+/*************************************/
+/* - Standard HTML elements 
+	 (images, videos, iframes, etc.) */
+/*************************************/
+
+/* -- Links */
+
+/* ↓ Pseudo-classes for links, for reference and with default lack of underlining */
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
+/* -- Images */
+
+img.bottom_aligned {
+	vertical-align: bottom;
+}
+
+img.bottom_aligned_via_block_display {
+	display: block;
+}
+
+img.bottom_aligned_via_vertical_align {
+	vertical-align: bottom;
+}
+
+/* --- Images that shrink down for mobile display */
+/*
+   Example:	
+			<div class="para_div">
+				<div class="max_width_inline" style="max-width: ______px"> <!-- ← Set max-width to the width of the image file -->
+					<img class="shrink_for_mobile sfm" src="__________" alt="" />
+				</div>
+			</div>
+*/
+			
+	.para_div {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	
+	.max_width_inline {
+		/* Set an inline style like max-width: 400px */
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.shrink_for_mobile,
+	.sfm {
+		max-width: 100%;
+	}
+	
+	.high_res_image {
+		max-width: 100%;
+	}
+	
+/* -- iFrames == */
+
+	.centred_iframe {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	.full_screen_iframe {
+		height: 100%;
+		height: 100vh; /* overrides the previous height for browsers that support it */
+		overflow:hidden;
+		width:100%;
+		border: 0px;
+	}
+	
+	
+	
+/* -- Lists */
+
+/* --- No bullet points */
+
+/* ↓ Exaxctly the same as Bootstrap's .list-unstyled */
+ul.unstyled,	/* ← Use .unstyled, so .list-unstyled */
+ol.unstyled,	/*	is memorable */
+ul.no_bullets,
+ol.no_bullets {
+	padding-left: 0;
+    list-style: none;
+}
+
+
+
+/* -- Horizontal rules */
+/* --- .s_rule */
+
+.s_rule {
+	border-bottom: 1px solid black;
+}
+
+
+/* -- Text */
+
+.flush_with_top_of_letters {
+	margin-top: -0.1428em; 
+	/* ↑ = 1/7th of an em, which removes the space above the top of letters 
+		given the 1em line-height. For 28px text this is is equivalent to
+		a margin-top of -4px (28/7) */
+	line-height: 1em;
+}
+
+.flush_with_top_of_letters.bottom_line_height_normal,
+.flush_with_top_of_letters.bottom_line_height_125 {
+/* 	[Wrong, but check] Extrapolation of above */
+	margin-bottom: 0.1428em; 
+/* 	[Wrong, but check] = (1.25-1)/2 = what you'd think it'd be */
+	margin-bottom: 0.0625em;
+/* 	[Think right, but check] = (1.25)/2 = what worked for 'About' atop Jim D column */
+	margin-bottom: 0.625em;
+}
+
+
+/* - Overlays */
+
+/* -- Version 1 */
+/*
+** See https://tomash.philosofiles.com/external/libraries/examples/html-css/absolute-positioning/horizontal-centering.html
+*/
+
+	.overlay_container {
+		position: relative;
+	}
+	
+	.overlay.tog {
+		position: absolute;
+	} 
+
+/* -- Horizontally centred overlays */
+
+	.overlay.s_centre {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+/* -- Overlay over a wider-than-viewport element */
+/*
+	** See https://tomash.philosofiles.com/external/libraries/examples/html-css/absolute-positioning/horizontal-centering.html
+	*/
+
+	.overlay_mid_container {
+		position: absolute;
+		width: 100vw;
+	}
+	
+/* -- Version 2 */
+/*
+** See https://tomash.philosofiles.com/external/libraries/examples/html-css/absolute-positioning/overlay-same-size-as-parent.html
+*/
+			
+			.overlay_and_content {
+				display: block;
+				/* ^ This is just a container to work around our using 
+					inline-block for [.overlay_and_content > .s_inner] */
+			}
+			
+			.overlay_and_content > .s_inner {
+				position: relative;
+				display: inline-block;
+				/* ^ Both inline-block and table are options here */
+			}
+			
+			.minimal_overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				
+				opacity: 0.8;
+				background: grey;
+				/* ^ Default, gets overwritten by e.g. .overlay.style_1 */
+			}
+			
+			.maximal_overlay {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				
+				opacity: 0.8;
+				background: grey;
+				/* ^ Default, gets overwritten by e.g. .overlay.style_1 */
+				
+				/* .minimal_overlay lacks these lines */
+				display: table;
+				height: 100%;
+				width: 100%;
+			}
+			
+			.overlay_inner {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			
+			
+			
+			.overlay.style_1,
+			.minimal_overlay.style_1 {
+				background: grey;
+				color: white;
+			}
+
+/* - Layouts */
+
+/* -- Even spacing between elements */
+
+/* --- Flexbox approach https://stackoverflow.com/questions/23226888/horizontal-list-items-fit-to-100-with-even-spacing */
+
+	.even_horizontal_spacing {
+		display: flex;
+		align-items: stretch; /* Default */
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+	.evenly_spaced_element {
+/* 		display: block; */
+		flex: 0 1 auto; /* Default */
+	}
+
+	/* ↓ List version */
+	ul.even_horizontal_spacing {
+		margin: 0;
+		padding: 0;
+	}
+	
+	li.evenly_spaced_element {
+		display: block;
+		list-style-type: none;
+	}
+
+/* --- Fully justified approach */
+
+	/*
+	NOTES:
+	
+	"The old method, while working perfectly, is a little more cumbersome as it requires you to reset the font-size in the unordered list element to eliminate spacing between child elements. It also requires you to render an pseudo-element to ensure that the content overflows the first row for text justification to kick in (remember that the default behavior of justified text is that a row that is not 100% will not be justified)." 
+	-- https://stackoverflow.com/questions/23226888/horizontal-list-items-fit-to-100-with-even-spacing
+	*/
+	
+	/*
+	Example usage:
+	
+	<div class="even_horizontal_spacing_JUSTIFIED_APPROACH">
+		<div class="evenly_spaced_element_JUSTIFIED_APPROACH">
+			About
+		</div>
+		<div class="evenly_spaced_element_JUSTIFIED_APPROACH">
+			Book
+		</div>
+	</div>
+	*/
+	
+	.even_horizontal_spacing_JUSTIFIED_APPROACH {
+        text-align: justify;
+        width: 100%;
+    }
+    
+    .even_horizontal_spacing_JUSTIFIED_APPROACH:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+		height: 0;
+    }
+    
+    .evenly_spaced_element_JUSTIFIED_APPROACH {
+		display: inline-block;
+    }
+
+
+/* -- Vertical centering */
+
+
+/* -- Vertical centering */
+
+	/*
+	Example usage:
+		
+	<div class="vertically_center_within_this">
+		<div class="vertically_center_this">
+			This appears in the center of its parent
+		</div>
+	</div>
+			
+	*/
+
+	.vertically_center_within_this {
+		position: relative;
+	}
+	
+	.vertically_center_this {
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		width: 100%;
+		height: 100%;
+	}
+
+
+/* - Other (no need to sort) */
+
+/* - To sort */
+
+	
