@@ -39,6 +39,7 @@ body {
 		 <body style="padding-top" is hardcoded */
 		 
 	padding-bottom: 800px;
+/* 	↑  Deliberate, for Tom's monitor */
 		
 }
 
@@ -490,11 +491,11 @@ footer .site_name {
 	margin-bottom: 0.75em; /* = 1.5/2 [*not* (1.5-1)/2] = literally half 1.5em line-height */
 }
 
-footer .s_email {
+.email_and_social_media .s_email {
 	margin-bottom: 38px;
 }
 
-footer .s_email h5 {
+.email_and_social_media .s_email h5 {
 	/* ↓ Styles already there from .flush_with_top_of_letters 
 	margin-top: -0.1428em; 
 	line-height: 1em; */
@@ -504,7 +505,7 @@ footer .s_email h5 {
 	margin-bottom: 1em;
 }
 
-footer .s_email .s_first {
+.email_and_social_media .s_email .s_first {
 /* 	margin: 1em 0; default, not needed */
 }
 
@@ -547,6 +548,7 @@ footer .s_rule {
 
 @media screen and ( max-width: 991px ) {
 	footer {
+		margin-top: 40px; /* temp, change towards very end */
 		padding-top: 70px;
 	}
 	
@@ -571,6 +573,15 @@ footer .s_rule {
 	
 	.main_menu br.s_breakpoint {
 		display: none;
+	}
+	
+	.email_and_social_media .s_email {
+		margin-top: 48px;
+		margin-bottom: 68px;
+	}
+	
+	footer .s_rule {
+		margin-top: 75px;
 	}
 }
 
@@ -616,3 +627,4 @@ footer .s_rule {
 
 
 
+/* Leave the space above this, for Tom's monitor */
