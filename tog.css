@@ -2,7 +2,7 @@
 ***************************
 **                       **
 **   TABLE OF CONTENTS   **
-**        (v1.04)        **
+**        (v1.05)        **
 **                       **
 ***************************
 **************************/
@@ -104,10 +104,11 @@
 	<479 - medium phones 
 	=480 - v biggest phones 
 		(↑ also do <767 ... but none in 2018 list are >480)
-	<991 - tablets
-		(↑ can also limit to >767 ... base choice on the specific design)
+	>= 768 - tablets
+		(↑ very rarely it might be worth using the same design for
+		>=481 ... but by default there's no point considering this)
 	💻
-	>992 - computers, except *unusually* narrowed windows
+	>992 - computers, except *unusually* narrowed windows; never tablets
 		(↑ 1170 is a 99% [IIRC] safe full screen width ... but no need to
 		   media query 1170, as it should go in content_width_plus_padding
 		   instead, via the maths shown there

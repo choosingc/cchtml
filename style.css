@@ -16,6 +16,10 @@
 /* --- Header */
 /* --- Main section */
 /* --- Footer */
+
+/* - Common page elements */
+/* -- Text elements */
+
  
 /**************************/
 
@@ -111,6 +115,13 @@ a:visited {
 	color: var(--cc-light-blue);
 }
 
+/* --- Paragraphs */
+
+p {
+	line-height: 1.5em;
+/* 	↑ 24px relative to the 16px root font size */
+}
+
 /* --- Headers */
 
 h1,
@@ -148,6 +159,11 @@ h2 {
 
 /* -- Widths for core design */
 
+/* (Note: if changing these, also change 'Other elements
+	 set to these widths') */
+
+/* --- Content width (full) */
+
 .content_width_plus_padding {	
 	max-width: 1250px;
 	padding-left: 40px;
@@ -157,18 +173,135 @@ h2 {
 	margin-right: auto;
 }
 
-@media screen and ( max-width: 991px ) {
+.content_width {
+	max-width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and 
+(max-width: 991px) and 
+(min-width: 768px) {
+	.content_width_plus_padding {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+}
+
+@media screen and 
+(max-width: 767px) {
 	.content_width_plus_padding {
 		padding-left: 1.5em; /* 1.5em = 24px */
 		padding-right: 1.5em; /* 1.5em = 24px */
 	}
 }
 
-.content_width {
+
+/* --- Medium width (many tab boxes, etc.) */
+
+.medium_width_plus_padding {
+/* 	↓ todo: check how this responsive extension of mine looks */	
+	max-width: 1050px;	
+	padding-left: 60px;
+	padding-right: 60px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and 
+(max-width: 991px) and 
+(min-width: 768px) {
+	.content_width_plus_padding {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+}
+
+@media screen and 
+(max-width: 767px) {
+	.content_width_plus_padding {
+		padding-left: 1.5em; /* 1.5em = 24px */
+		padding-right: 1.5em; /* 1.5em = 24px */
+	}
+}
+
+.medium_width {
+	max-width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* --- Narrow width (standfirsts, etc.) */
+
+.narrow_width_plus_padding {	
+/* 	↓ todo: check how this responsive extension of mine looks */
+	max-width: 930px;	
+	padding-left: 80px;
+	padding-right: 80px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and 
+(max-width: 991px) and 
+(min-width: 768px) {
+	.content_width_plus_padding {
+		padding-left: 4.5em;
+		padding-right: 4.5em;
+	}
+}
+
+@media screen and 
+(max-width: 767px) {
+	.content_width_plus_padding {
+		padding-left: 1.5em; /* 1.5em = 24px */
+		padding-right: 1.5em; /* 1.5em = 24px */
+	}
+}
+
+.narrow_width {
+	max-width: 770px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* --- Other elements set to these widths */
+
+#block-jd-breadcrumbs {	/* with padding */
+	max-width: 1250px;
+	padding-left: 40px;
+	padding-right: 40px;
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#block-jd-breadcrumbs .breadcrumb {
 	max-width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@media screen and 
+(max-width: 991px) and 
+(min-width: 768px) {
+	#block-jd-breadcrumbs {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+}
+
+@media screen and 
+(max-width: 767px) {
+	#block-jd-breadcrumbs {
+		padding-left: 1.5em; /* 1.5em = 24px */
+		padding-right: 1.5em; /* 1.5em = 24px */
+	}
+}
+
 
 /* -- Sections */
 
@@ -335,11 +468,14 @@ header.grey .menu_top a:visited {
 	height: 21px;
 }
 
-.menu_top.mobile .s_rule {
-	height: 1px;
-	background: white;
+header .s_rule {
+	border-bottom: 1px solid var(--cc-dark-blue);
 	clear: both;
 	margin-top: 31px;
+}
+
+header.grey .s_rule {
+	border-bottom: 1px solid white;
 }
 
 @media screen and ( max-width: 991px ) {
@@ -403,6 +539,11 @@ nav.breadcrumb {
 	    content: " \00a0>\00a0 ";
 }
 
+/* ---- Coloured sections */
+
+.node__content section > .s_inner {
+	padding-bottom: 200px; /* temp */
+}
 
 
 /* --- Footer */
@@ -410,6 +551,8 @@ nav.breadcrumb {
 footer {
 	background-color: #0A3B56;
 	padding-top: 104px;
+	
+	color: white;
 }
 
 footer a,
@@ -595,6 +738,19 @@ footer .s_rule {
 	.social_container  {
 		justify-content: space-between;
 	}
+}
+
+
+
+/* - Common page elements */
+
+/* -- Text elements */
+
+.standfirst {
+	font-size: 22px;
+	line-height: 32px;
+/* 	↑ Or I could leave this out, because it's close enough
+	to the default 1.5em line height I set for <p>s */
 }
 
 
