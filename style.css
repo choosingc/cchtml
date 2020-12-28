@@ -17,8 +17,14 @@
 /* --- Main section */
 /* --- Footer */
 
+/* - Zones */
+/* -- Sidebar zones */
+
 /* - Common page elements */
 /* -- Text elements */
+
+/* - Pages */
+/* -- About */
 
  
 /**************************/
@@ -69,6 +75,10 @@ body {
 	rem-global/em-local approach  */
 	
 	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
+}
+
+em {
+	font-weight: 300;
 }
 
 /* - Core design */
@@ -742,6 +752,33 @@ footer .s_rule {
 
 
 
+/* - Zones */
+
+/* -- Sidebar zones */
+
+.sidebar_and_content {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#about_page aside.sidebar {
+	flex-basis: 362px;
+	flex-shrink: 1;
+}
+
+#about_page .gutter_for_sidebar {
+	flex-basis: 143px;
+	flex-shrink: 0;
+}
+
+#about_page .sidebar_and_content .right_content {
+	flex-basis: 665px;
+	flex-shrink: 1;
+}
+
+
+
+
 /* - Common page elements */
 
 /* -- Text elements */
@@ -754,6 +791,47 @@ footer .s_rule {
 }
 
 
+/* - Pages */
+
+/* -- About */
+
+/* ---- Sidebar width */
+
+
+
+/* ---- Sidebar content */
+
+h2.sidebar_title {
+	color: #0a3b56;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+ul.follow_jim {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+}
+ul.follow_jim li a, .jim_cv a {
+    width: auto;
+    text-align: left;
+    font-size: 14px;
+    color: #0094d9;
+    border: none !important;
+}
+ul.follow_jim li a:hover, .jim_cv a:hover{
+    color: #66bfe8;
+}
+ul.follow_jim li a img {
+    margin-right: 18px;
+}
+ul.follow_jim li {
+    margin-right: 0;
+    margin-bottom: 5px;
+}
 
 
 
