@@ -1,0 +1,47 @@
+.text-gallery {
+
+	&__tabs {
+		display: flex;
+		margin-bottom: 73px;
+	}
+
+	&__tab {
+		@extend %transition;
+		width: calc(100%/3) !important;
+		min-height: 70px;
+		font-size: 16px;
+		font-weight: 700;
+		padding: 10px 60px;
+		text-align: center;
+		border: 1px solid $gray-100;
+		color: $gray-200;
+		cursor: pointer;
+
+		&.slick-current {
+			@extend %transition;
+			background-color: $blue-100;
+			color: $white;
+			border: 0;
+		}
+
+		&:first-of-type {
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+
+		&:last-of-type {
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+	}
+
+	&__item {
+		h4  {
+			font-size: 24px;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-family: 'Lato';
+			margin: 0 0 36px 0;
+		}
+	}
+}

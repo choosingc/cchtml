@@ -1,0 +1,20 @@
+.header {
+	&_action-center {
+		overflow: hidden;
+
+		.s_image {
+			right: 300px;
+    		transform: translateX(100%);
+		}
+
+		.menu_top {
+			position: relative;
+    		z-index: 2;
+		}
+
+		h1 {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+	}
+}

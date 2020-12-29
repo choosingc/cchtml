@@ -19,9 +19,6 @@
 
 /* - Zones */
 /* -- Sidebar zones */
-/* -- Colored zones */
-/* -- Specific zones */
-/* --- Pullquote zones */
 
 /* - Common page elements */
 /* -- Text elements */
@@ -792,22 +789,6 @@ section.grey_gradient {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5165', endColorstr='#61788d',GradientType=1 );
 }
 
-/* -- Specific zones */
-
-/* --- Pullquote zones */
-
-.pullquote_section {
-    font-size: 22px;
-    color: #fff;
-    letter-spacing: .5px;
-    padding-left: 100px;
-    position: relative;
-    max-width: 766px;
-    margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 
 
 /* - Common page elements */
@@ -881,6 +862,22 @@ h2.sidebar_title {
 	display: table-cell;
 	vertical-align: middle;
 }
+
+/* --- pullquote_section ("When individuals...") */
+
+.pullquote_section {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: .5px;
+    padding-left: 100px;
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+
+
 
 
 
