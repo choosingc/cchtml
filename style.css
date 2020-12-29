@@ -77,9 +77,11 @@ body {
 	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
 }
 
+/* Not needed:
 em {
 	font-weight: 300;
 }
+*/
 
 /* - Core design */
 
@@ -536,7 +538,7 @@ header.grey .s_rule {
 	}
 }
 
-.node__content h2 {
+.node__content h2.section_title {
 	text-align: center;
 }
 
@@ -551,8 +553,8 @@ nav.breadcrumb {
 
 /* ---- Coloured sections */
 
-.node__content section > .s_inner {
-	padding-bottom: 200px; /* temp */
+.node__content section.white > .s_inner {
+	padding-bottom: 152px; /* correct for top sect of about */
 }
 
 
@@ -776,6 +778,16 @@ footer .s_rule {
 	flex-shrink: 1;
 }
 
+/* -- Colored zones */
+
+section.grey_gradient {
+/* 	todo: Check these colours and gradients from San work well enough */
+	background: var(--cc-dark-blue);
+    background: -moz-linear-gradient(left, #3c5165 0%, #61788d 100%);
+    background: -webkit-linear-gradient(left, #3c5165 0%,#61788d 100%);
+    background: linear-gradient(to right, #3c5165 0%,#61788d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5165', endColorstr='#61788d',GradientType=1 );
+}
 
 
 
@@ -795,48 +807,73 @@ footer .s_rule {
 
 /* -- About */
 
+/* --- Sidebar */
+
 /* ---- Sidebar width */
 
 
 
 /* ---- Sidebar content */
 
+.sbar_img {
+	vertical-align: bottom;
+} 
+
+.sbar_img.jim {
+	margin-bottom: 46px;
+}
+
 h2.sidebar_title {
+	font-family: var(--cc-lato);
 	color: #0a3b56;
     text-transform: uppercase;
     letter-spacing: .5px;
     font-size: 13px;
     margin-bottom: 10px;
-    margin-top: 40px;
+    /* don't set margin-top ... it's currently set on links_w_small_images, though can move from there, just don't set it here  */
 }
 
-ul.follow_jim {
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-}
-ul.follow_jim li a, .jim_cv a {
-    width: auto;
-    text-align: left;
-    font-size: 14px;
-    color: #0094d9;
-    border: none !important;
-}
-ul.follow_jim li a:hover, .jim_cv a:hover{
-    color: #66bfe8;
-}
-ul.follow_jim li a img {
-    margin-right: 18px;
-}
-ul.follow_jim li {
-    margin-right: 0;
-    margin-bottom: 5px;
+.links_w_small_images {
+	display: table;
+	font-size: 13px;
+/* 	↑ Keep here to apply to img baseline */
+	margin-bottom: 57px;
 }
 
+.links_w_small_images .s_row {
+    display: table-row;
+    height: 35px;
+	
+}
 
+.links_w_small_images .s_image {
+	display: table-cell;
+	vertical-align: middle;
+	width: 44px;
+}
 
+.links_w_small_images .s_image img {
+ 	vertical-align: middle;
+/*  	↑ seems bizarre i know, but is the closest thing */
+	margin-top: -3px;
+}
 
+.links_w_small_images .s_text {
+	display: table-cell;
+	vertical-align: middle;
+}
 
+/* --- pullquote_section ("When individuals...") */
+
+.pullquote_section {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: .5px;
+    padding-left: 100px;
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+}
 
 
 

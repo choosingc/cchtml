@@ -40,6 +40,7 @@
 /* --- .s_rule */
 /*************************************/
 /* -- Text */
+/* --- Flush with top of letters */
 /*************************************/
 
 /* - Overlays */
@@ -260,6 +261,8 @@ a:visited {
 
 /* -- Images */
 
+/* --- Bottom aligned */
+
 img.bottom_aligned {
 	vertical-align: bottom;
 }
@@ -324,7 +327,7 @@ img.bottom_aligned_via_vertical_align {
 
 /* --- No bullet points */
 
-/* ↓ Exaxctly the same as Bootstrap's .list-unstyled */
+/* ↓ Exactly the same as Bootstrap's .list-unstyled */
 ul.unstyled,	/* ← Use .unstyled, so .list-unstyled */
 ol.unstyled,	/*	is memorable */
 ul.no_bullets,
@@ -345,7 +348,10 @@ ol.no_bullets {
 
 /* -- Text */
 
-.flush_with_top_of_letters {
+/* --- Flush with top of letters */
+
+.flush_with_top_of_letters,
+.flush_top {
 	margin-top: -0.1428em; 
 	/* ↑ = 1/7th of an em, which removes the space above the top of letters 
 		given the 1em line-height. For 28px text this is is equivalent to
@@ -354,7 +360,9 @@ ol.no_bullets {
 }
 
 .flush_with_top_of_letters.bottom_line_height_normal,
-.flush_with_top_of_letters.bottom_line_height_125 {
+.flush_with_top_of_letters.bottom_line_height_125,
+.flush_top.bottom_line_height_normal,
+.flush_top.bottom_line_height_125 {
 /* 	[Wrong, but check] Extrapolation of above */
 	margin-bottom: 0.1428em; 
 /* 	[Wrong, but check] = (1.25-1)/2 = what you'd think it'd be */
