@@ -810,6 +810,14 @@ input[type='submit'] {
 main {
   overflow: hidden; }
 
+.content-max-md {
+  max-width: 768px;
+  margin: 0 auto; }
+
+.underline-text {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #aebbc7; }
+
 .courage-gallery-section .container {
   max-width: 1130px;
   padding: 0 80px 55px;
@@ -838,6 +846,60 @@ main {
 
 .climb-section {
   margin-bottom: 197px; }
+
+.opportunities-section .container {
+  max-width: 968px;
+  margin: 0 auto; }
+
+.opportunities-section .standfirst {
+  margin-bottom: 55px; }
+
+.opportunities-section .tabset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px; }
+  .opportunities-section .tabset li {
+    width: calc(25% - 5px);
+    text-align: center;
+    padding: 10px 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #a4b2bf;
+    -webkit-transition: border-bottom 0s;
+    transition: border-bottom 0s; }
+    .opportunities-section .tabset li a {
+      color: #aebbc7; }
+    .opportunities-section .tabset li.active {
+      border-bottom: 3px solid #0094d9;
+      -webkit-transition: border-bottom 0s;
+      transition: border-bottom 0s; }
+      .opportunities-section .tabset li.active a {
+        color: #0094d9; }
+
+.opportunities-section .tab-content .tab {
+  display: none; }
+  .opportunities-section .tab-content .tab.active {
+    display: block; }
+
+.opportunities-section .underline-text:last-of-type {
+  margin-bottom: 60px; }
+
+.opportunities-section .question-start {
+  font-weight: 700;
+  margin-bottom: 7px; }
+
+.opportunities-section h5 {
+  margin-bottom: 22px; }
 
 .text-gallery__tabs {
   display: -webkit-box;
@@ -947,4 +1009,23 @@ main {
     font-family: 'Lato'; }
   .ladder p {
     margin-bottom: 40px; }
+
+.dotted-list {
+  margin-bottom: 12px; }
+  .dotted-list li {
+    position: relative;
+    padding-left: 30px; }
+    .dotted-list li:not(:last-of-type) {
+      margin-bottom: 10px; }
+    .dotted-list li::before {
+      width: 6px;
+      height: 6px;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      background-color: #0094d9; }
 /*# sourceMappingURL=main.css.map */

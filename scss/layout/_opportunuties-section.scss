@@ -1,0 +1,67 @@
+.opportunities-section {
+
+	.container {
+		max-width: 968px;
+		margin: 0 auto;
+	}
+	
+	.standfirst {
+		margin-bottom: 55px;
+	}
+
+	.tabset {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 70px;
+
+		li {
+			width: calc(25% - 5px);
+			text-align: center;
+			padding: 10px 23px;
+			font-weight: 700;
+			text-transform: uppercase;
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid $gray-300;
+			transition:border-bottom 0s;
+			
+			a {
+				color: $gray-200;
+			}
+
+			&.active {
+				border-bottom: 3px solid $blue-100;
+				transition:border-bottom 0s;
+
+				a {
+					color: $blue-100;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		.tab {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+		}
+	}
+
+	.underline-text {
+		&:last-of-type {
+			margin-bottom: 60px;
+		}
+	}
+
+	.question-start {
+		font-weight: 700;
+		margin-bottom: 7px;
+	}
+
+	h5 {
+		margin-bottom: 22px;
+	}
+}

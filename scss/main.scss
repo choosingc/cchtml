@@ -33,9 +33,11 @@ $media-expressions: (
 'layout/common',
 'layout/courage-gallery-section',
 'layout/resources-section',
-'layout/climb-section';
+'layout/climb-section',
+'layout/opportunuties-section';
 
 @import 'components/text-gallery',
 'components/journey-invitation',
-'components/ladder';
+'components/ladder',
+'components/dotted-list';
 
