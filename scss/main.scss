@@ -32,7 +32,10 @@ $media-expressions: (
 @import 'layout/header',
 'layout/common',
 'layout/courage-gallery-section',
-'layout/resources-section';
+'layout/resources-section',
+'layout/climb-section';
 
-@import 'components/text-gallery';
+@import 'components/text-gallery',
+'components/journey-invitation',
+'components/ladder';
 
