@@ -2,6 +2,11 @@
 	background: $blue-400;
 	background: linear-gradient(to right, $blue-400 0%, $blue-500 100%);
 	color: $white;
+	display: flex;
+
+	& > div {
+		width: 50%;
+	}
 
 	&__text-block {
 		padding: 80px 85px;
@@ -34,6 +39,7 @@
 		img {
 			position: relative;
 			z-index: 1;
+			max-width: 85%;
 		}
 	}
 }

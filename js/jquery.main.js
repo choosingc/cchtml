@@ -18,7 +18,9 @@ function initSlickCarouselCourage() {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			adaptiveHeight: false,
-			arrows: false,
+			arrows: true,
+			prevArrow: jQuery('.prev'),
+      		nextArrow: jQuery('.next'),
 			fade: true,
 			asNavFor: $sliderNav.length ? $sliderNav : null,
 		});
@@ -38,7 +40,16 @@ function initSlickCarouselCourage() {
 			swipeToSlide: false,
 			touchMove: false,
 			swipe: false,
-			// variableWidth: true,
+			responsive: [
+				{
+				  breakpoint: 1024,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				  }
+				},
+			  ]
 		});
 	});
 }

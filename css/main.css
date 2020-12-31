@@ -820,8 +820,8 @@ main {
 
 .courage-gallery-section .container {
   max-width: 1130px;
-  padding: 0 80px 55px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 55px; }
 
 .resources-section {
   position: relative; }
@@ -906,17 +906,62 @@ main {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 73px; }
+  @media (min-width: 1024px) {
+    .text-gallery__tabs {
+      padding: 0 79px; } }
+  .text-gallery__tabs .slick-list {
+    padding: 0 45px !important;
+    max-height: 71px; }
+    @media (min-width: 1024px) {
+      .text-gallery__tabs .slick-list {
+        padding: 0 !important; } }
+    .text-gallery__tabs .slick-list::before {
+      width: 19px;
+      height: 34px;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      background-image: url("../images/common/arrow-left.svg"); }
+      @media (min-width: 1024px) {
+        .text-gallery__tabs .slick-list::before {
+          display: none; } }
+    .text-gallery__tabs .slick-list::after {
+      width: 19px;
+      height: 34px;
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%) rotate(180deg);
+          -ms-transform: translateY(-50%) rotate(180deg);
+              transform: translateY(-50%) rotate(180deg);
+      background-image: url("../images/common/arrow-left.svg"); }
+      @media (min-width: 1024px) {
+        .text-gallery__tabs .slick-list::after {
+          display: none; } }
 
 .text-gallery__tab {
-  width: calc(100%/3) !important;
   min-height: 70px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  padding: 10px 60px;
+  padding: 10px 35px;
   text-align: center;
   border: 1px solid #bfc4c8;
   color: #aebbc7;
   cursor: pointer; }
+  @media (min-width: 480px) {
+    .text-gallery__tab {
+      font-size: 16px; } }
+  @media (min-width: 1024px) {
+    .text-gallery__tab {
+      width: calc(100%/3) !important; } }
+  @media (min-width: 1300px) {
+    .text-gallery__tab {
+      padding: 10px 60px; } }
   .text-gallery__tab.slick-current {
     background-color: #0094d9;
     color: #fff;
@@ -935,11 +980,37 @@ main {
   font-family: 'Lato';
   margin: 0 0 36px 0; }
 
+.text-gallery__content-block {
+  position: relative; }
+  @media (min-width: 1024px) {
+    .text-gallery__content-block {
+      padding: 0 80px; } }
+  .text-gallery__content-block .slick-arrow {
+    position: absolute;
+    top: 38%;
+    cursor: pointer;
+    display: none !important; }
+    @media (min-width: 1024px) {
+      .text-gallery__content-block .slick-arrow {
+        display: block !important; } }
+  .text-gallery__content-block .prev {
+    left: 0; }
+  .text-gallery__content-block .next {
+    right: 0;
+    -webkit-transform: rotate(180deg) translateY(10px);
+        -ms-transform: rotate(180deg) translateY(10px);
+            transform: rotate(180deg) translateY(10px); }
+
 .journey-invitation {
   background: #3c5165;
   background: -webkit-linear-gradient(left, #3c5165 0%, #61788d 100%);
   background: linear-gradient(to right, #3c5165 0%, #61788d 100%);
-  color: #fff; }
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .journey-invitation > div {
+    width: 50%; }
   .journey-invitation__text-block {
     padding: 80px 85px; }
     .journey-invitation__text-block h3 {
@@ -968,10 +1039,16 @@ main {
       mix-blend-mode: multiply; }
     .journey-invitation__image-block img {
       position: relative;
-      z-index: 1; }
+      z-index: 1;
+      max-width: 85%; }
 
 .ladder {
-  background-color: #fafae8; }
+  background-color: #fafae8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .ladder > div {
+    width: 50%; }
   .ladder__text-block {
     padding: 20px 85px;
     display: -webkit-box;
@@ -1011,6 +1088,9 @@ main {
     margin-bottom: 40px; }
 
 .dotted-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   margin-bottom: 12px; }
   .dotted-list li {
     position: relative;

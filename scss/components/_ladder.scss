@@ -1,5 +1,10 @@
 .ladder {
 	background-color: $yellow;
+	display: flex;
+
+	& > div {
+		width: 50%;
+	}
 
 	&__text-block {
 		padding: 20px 85px;
