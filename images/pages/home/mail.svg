@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 16" width="21" height="16">
-	<defs>
-		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-			<path d="M-741 -1912L699 -1912L699 2892L-741 2892Z" />
-		</clipPath>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-		.shp0 { fill: #0094d9 } 
-	</style>
-	<g id="Homepage " clip-path="url(#cp1)">
-		<g id="Group 11329">
-			<g id="Group 11328">
-				<path id="Path 5" fill-rule="evenodd" class="shp0" d="M20.35 16L0.35 16L0.35 0L20.35 0L20.35 16ZM18.35 4L10.35 9L2.35 4L2.35 14L18.35 14L18.35 4ZM18.35 2L2.35 2L10.35 7L18.35 2Z" />
-			</g>
-		</g>
-	</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 16" width="21" height="16"><defs><clipPath clipPathUnits="userSpaceOnUse" id="cp1"><path d="M-741-1912H699v4804H-741z"/></clipPath></defs><style></style><g id="Homepage" clip-path="url(#cp1)"><g id="Group 11329"><g id="Group 11328"><path id="Path 5" fill-rule="evenodd" d="M20.35 16h-20V0h20v16zm-2-12l-8 5-8-5v10h16V4zm0-2h-16l8 5 8-5z" fill="#0094d9"/></g></g></g></svg>

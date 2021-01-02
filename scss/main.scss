@@ -1,0 +1,43 @@
+$breakpoints: (
+	'xs-phone': 320px,
+	'phone': 480px,
+	'tablet': 768px,
+	'desktop': 1024px,
+	'widescreen': 1300px,
+	'w-widescreen': 1440px,
+);
+
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media',
+'vendors/slick';
+
+@import 'base/functions';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/forms';
+
+@import 'layout/header',
+'layout/common',
+'layout/courage-gallery-section',
+'layout/resources-section',
+'layout/climb-section',
+'layout/opportunuties-section';
+
+@import 'components/text-gallery',
+'components/journey-invitation',
+'components/ladder',
+'components/dotted-list';
+

@@ -1,2 +1,4 @@
-
-.DS_Store
+DS_Store
+*.css.map
+node_modules
+sourceimages

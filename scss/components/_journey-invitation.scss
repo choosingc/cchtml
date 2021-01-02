@@ -1,0 +1,45 @@
+.journey-invitation {
+	background: $blue-400;
+	background: linear-gradient(to right, $blue-400 0%, $blue-500 100%);
+	color: $white;
+	display: flex;
+
+	& > div {
+		width: 50%;
+	}
+
+	&__text-block {
+		padding: 80px 85px;
+
+		h3 {
+			margin-bottom: 40px;
+			text-transform: uppercase;
+			font-family: 'Lato';
+		}
+
+		p {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__image-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&::before {
+			@include size(100%);
+			content: '';
+			position: absolute;
+			background-color: rgba($color: $blue-300, $alpha: .15);
+			mix-blend-mode: multiply;
+		}
+
+		img {
+			position: relative;
+			z-index: 1;
+			max-width: 85%;
+		}
+	}
+}

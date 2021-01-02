@@ -1,0 +1,128 @@
+.text-gallery {
+
+	&__tabs {
+		display: flex;
+		margin-bottom: 73px;
+
+		@include media ('>=desktop') {
+			padding: 0 79px;
+		}
+
+		.slick-list{
+			padding:0 45px !important;
+			max-height: 71px;
+
+			@include media ('>=desktop') {
+				padding:0 !important;
+			}
+			
+			&::before {
+				@include size(19px, 34px);
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				background-image: url('../images/common/arrow-left.svg');
+
+				@include media ('>=desktop') {
+					display: none;
+				}
+			}
+
+			&::after {
+				@include size(19px, 34px);
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%) rotate(180deg);
+				background-image: url('../images/common/arrow-left.svg');
+
+				@include media ('>=desktop') {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__tab {
+		@extend %transition;
+		min-height: 70px;
+		font-size: 14px;
+		font-weight: 700;
+		padding: 10px 35px;
+		text-align: center;
+		border: 1px solid $gray-100;
+		color: $gray-200;
+		cursor: pointer;
+		// min-width: 235px;
+
+		@include media ('>=phone') {
+			font-size: 16px;
+		}
+
+		@include media ('>=desktop') {
+			width: calc(100%/3) !important;
+		}
+
+		@include media ('>=widescreen') {
+			padding: 10px 60px;
+		}
+
+		&.slick-current {
+			@extend %transition;
+			background-color: $blue-100;
+			color: $white;
+			border: 0;
+		}
+
+		&:first-of-type {
+			border-bottom-left-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+
+		&:last-of-type {
+			border-bottom-right-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+	}
+
+	&__item {
+		h3 {
+			font-size: 24px;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-family: 'Lato';
+			margin: 0 0 36px 0;
+		}
+	}
+
+	&__content-block {
+		position: relative;
+		
+		@include media ('>=desktop') {
+			padding: 0 80px;
+		}
+
+		.slick-arrow {
+			position: absolute;
+			top: 38%;
+			cursor: pointer;
+			display: none !important;
+
+			@include media ('>=desktop') {
+				display: block !important;
+			}
+		}
+
+		.prev {
+			left: 0;
+		}
+
+		.next {
+			right: 0;
+			transform: rotate(180deg) translateY(10px);
+		}
+	}
+}

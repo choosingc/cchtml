@@ -19,9 +19,6 @@
 
 /* - Zones */
 /* -- Sidebar zones */
-/* -- Colored zones */
-/* -- Specific zones */
-/* --- Pullquote zones */
 
 /* - Common page elements */
 /* -- Text elements */
@@ -33,7 +30,7 @@
 /* ---- Sidebar content */
 /* --- Grey box */
 
- 
+
 /**************************/
 
 /**************************
@@ -52,12 +49,12 @@
 
 body {
 	padding-top: 0px !important;
-	/* ↑ TO DO: at some point grep for where 
+	/* ↑ TO DO: at some point grep for where
 		 <body style="padding-top" is hardcoded */
-		 
+
 	padding-bottom: 800px;
 /* 	↑  Deliberate, for Tom's monitor */
-		
+
 }
 
 /* - Webfonts */
@@ -68,19 +65,19 @@ body {
 
 html {
 	font-size: 16px;
-	/* ↑ This is the default size for most browsers 
-	anyway - I think I need to set it to use my 
+	/* ↑ This is the default size for most browsers
+	anyway - I think I need to set it to use my
 	rem-global/em-local approach though */
 }
 
 body {
 /* 	background-color: #FAFAE8; */
-	font-size: 1rem; 
-	/* ↑ Creating a base parent module whose size 
+	font-size: 1rem;
+	/* ↑ Creating a base parent module whose size
 	I can increase to eg 1.2rem to increase the size
-	of child elements sized in em, a la my 
+	of child elements sized in em, a la my
 	rem-global/em-local approach  */
-	
+
 	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
 }
 
@@ -151,16 +148,16 @@ h5,
 h6 {
 	font-family: 'Libre Baskerville', 'Baskerville', serif;
 	font-family: var(--cc-basker);
-	
+
 	font-weight: normal;
 }
 
 h1 {
 	font-size: 58px;
-	
-	line-height: 1.27em; 
-	/* ↑ Rose has 1.25, but this looks better given the 
-		fatter font rendering, and is also the default 
+
+	line-height: 1.27em;
+	/* ↑ Rose has 1.25, but this looks better given the
+		fatter font rendering, and is also the default
 		Chrome browser line-height, at least for this line */
 }
 
@@ -183,11 +180,11 @@ h2 {
 
 /* --- Content width (full) */
 
-.content_width_plus_padding {	
+.content_width_plus_padding {
 	max-width: 1250px;
 	padding-left: 40px;
 	padding-right: 40px;
-	
+
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -198,8 +195,8 @@ h2 {
 	margin-right: auto;
 }
 
-@media screen and 
-(max-width: 991px) and 
+@media screen and
+(max-width: 991px) and
 (min-width: 768px) {
 	.content_width_plus_padding {
 		padding-left: 1.5em;
@@ -207,7 +204,7 @@ h2 {
 	}
 }
 
-@media screen and 
+@media screen and
 (max-width: 767px) {
 	.content_width_plus_padding {
 		padding-left: 1.5em; /* 1.5em = 24px */
@@ -219,17 +216,17 @@ h2 {
 /* --- Medium width (many tab boxes, etc.) */
 
 .medium_width_plus_padding {
-/* 	↓ todo: check how this responsive extension of mine looks */	
-	max-width: 1050px;	
+/* 	↓ todo: check how this responsive extension of mine looks */
+	max-width: 1050px;
 	padding-left: 60px;
 	padding-right: 60px;
-	
+
 	margin-left: auto;
 	margin-right: auto;
 }
 
-@media screen and 
-(max-width: 991px) and 
+@media screen and
+(max-width: 991px) and
 (min-width: 768px) {
 	.content_width_plus_padding {
 		padding-left: 1.5em;
@@ -237,7 +234,7 @@ h2 {
 	}
 }
 
-@media screen and 
+@media screen and
 (max-width: 767px) {
 	.content_width_plus_padding {
 		padding-left: 1.5em; /* 1.5em = 24px */
@@ -254,18 +251,18 @@ h2 {
 
 /* --- Narrow width (standfirsts, etc.) */
 
-.narrow_width_plus_padding {	
+.narrow_width_plus_padding {
 /* 	↓ todo: check how this responsive extension of mine looks */
-	max-width: 930px;	
+	max-width: 930px;
 	padding-left: 80px;
 	padding-right: 80px;
-	
+
 	margin-left: auto;
 	margin-right: auto;
 }
 
-@media screen and 
-(max-width: 991px) and 
+@media screen and
+(max-width: 991px) and
 (min-width: 768px) {
 	.content_width_plus_padding {
 		padding-left: 4.5em;
@@ -273,7 +270,7 @@ h2 {
 	}
 }
 
-@media screen and 
+@media screen and
 (max-width: 767px) {
 	.content_width_plus_padding {
 		padding-left: 1.5em; /* 1.5em = 24px */
@@ -293,7 +290,7 @@ h2 {
 	max-width: 1250px;
 	padding-left: 40px;
 	padding-right: 40px;
-	
+
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -304,8 +301,8 @@ h2 {
 	margin-right: auto;
 }
 
-@media screen and 
-(max-width: 991px) and 
+@media screen and
+(max-width: 991px) and
 (min-width: 768px) {
 	#block-jd-breadcrumbs {
 		padding-left: 1.5em;
@@ -313,7 +310,7 @@ h2 {
 	}
 }
 
-@media screen and 
+@media screen and
 (max-width: 767px) {
 	#block-jd-breadcrumbs {
 		padding-left: 1.5em; /* 1.5em = 24px */
@@ -336,10 +333,10 @@ header {
 header.beige {
 	background-color: #FAFAE8;
 }
-	
+
 header.grey {
 	color: white;
-	
+
 	background-color: #0A3B56;
 	background-color: var(--cc-dark-blue);
 	background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-desktop-grey-gradient@2x.jpg');
@@ -356,7 +353,7 @@ header.grey.home {
 	/* ↑ Area above menu was safest to set on header itself */
 	padding-bottom: 20px;
 	border-bottom: 1px solid #0A3B56;
-	
+
 	color: #0A3B56;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -432,19 +429,19 @@ header.grey .menu_top a:visited {
 	font-size: 58px;
 	font-weight: normal;
 	text-align: center;
-	
+
 	margin: 0em;
 	padding-top: 80px;
 	/* ↑ padding-bottom has no effect because of the larger
 		height set for the parent element */
-	
+
 	z-index: 2;
-	/* ↑ To be above background image, which is itself 
+	/* ↑ To be above background image, which is itself
 		z-index 1 to be above horizontal rule */
 	position: relative;
-	/* ↑ Some 'position' other than the default position:static is 
-		needed for z-index to work. position:relative is the best 
-		choice because it keeps the element where it is (if we 
+	/* ↑ Some 'position' other than the default position:static is
+		needed for z-index to work. position:relative is the best
+		choice because it keeps the element where it is (if we
 		don't set left/right/top/bottom). */
 }
 
@@ -454,7 +451,7 @@ header.grey .menu_top a:visited {
 	header {
 		padding-top: 30px;
 	}
-	
+
 	header.grey {
 		background-color: #0A3B56;
 		background-color: var(--cc-dark-blue);
@@ -462,7 +459,7 @@ header.grey .menu_top a:visited {
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	
+
 	.menu_top.desktop {
 		display: none;
 	}
@@ -522,7 +519,7 @@ header.grey .s_rule {
 		/* ↑ padding-bottom has no effect because of the larger
 			height set for the parent element */
 	}
-	
+
 }
 
 
@@ -532,10 +529,10 @@ header.grey .s_rule {
 .node__content {
 	line-height: 1.5em;
 	/* ↑ Most common line-height  */
-	
-	font-size: 1rem; 
+
+	font-size: 1rem;
 	/* ↑  Sizing module */
-	
+
 	margin-top: 110px;
 }
 
@@ -570,7 +567,7 @@ nav.breadcrumb {
 footer {
 	background-color: #0A3B56;
 	padding-top: 104px;
-	
+
 	color: white;
 }
 
@@ -590,9 +587,9 @@ footer h5,
 footer h6 {
 	font-family: 'Lato', 'Avant Garde', 'Century Gothic', sans-serif;
 	font-family: var(--cc-lato);
-	
+
 	font-weight: bold;
-	
+
 	margin-top: 0;
 }
 
@@ -616,40 +613,40 @@ footer h6 {
 	.foot {
 		display: flex;
 	}
-	
+
 	.flex_item {
 	}
-	
+
 	.flex_item.s_1 {
 		width: 34.5%;
 	}
-	
+
 	.flex_item.s_2 {
 		width: 26%;
 	}
-	
+
 	.flex_item.s_3 {
 		width: 39.5%;
 	}
 }
 
 footer .site_name {
-	line-height: 1em; 
+	line-height: 1em;
 /* 	↑ To be almost flush, matching 3/4px in spec */
 }
 
 .main_menu li {
 	text-transform: uppercase;
 	line-height: 1.5em;
-	
+
 	margin-bottom: 14px;
 }
 
 .main_menu li.s_col_top {
-	/* ↓ Styles already there from .flush_with_top_of_letters 
-	margin-top: -0.1428em; 
+	/* ↓ Styles already there from .flush_with_top_of_letters
+	margin-top: -0.1428em;
 	line-height: 1em; */
-	
+
 	margin-bottom: 0.75em; /* = 1.5/2 [*not* (1.5-1)/2] = literally half 1.5em line-height */
 }
 
@@ -658,10 +655,10 @@ footer .site_name {
 }
 
 .email_and_social_media .s_email h5 {
-	/* ↓ Styles already there from .flush_with_top_of_letters 
-	margin-top: -0.1428em; 
+	/* ↓ Styles already there from .flush_with_top_of_letters
+	margin-top: -0.1428em;
 	line-height: 1em; */
-	
+
 /* 	↓ Best applied here, as this has line-height 1em
 	(actually also works on .s_first below */
 	margin-bottom: 1em;
@@ -713,35 +710,35 @@ footer .s_rule {
 		margin-top: 40px; /* temp, change towards very end */
 		padding-top: 70px;
 	}
-	
+
 	footer h4.site_name {
 		margin-bottom: 48px;
 	}
-	
+
 	.main_menu {
 		font-size: 14px;
 	}
-	
+
 	.main_menu li,
 	.main_menu li.s_col_top {
 		border-top: 1px solid #61798E;
-		padding: 17px 0; 
+		padding: 17px 0;
 		margin: 0;
 	}
-	
+
 	.main_menu li.s_last {
 		border-bottom: 1px solid #61798E;
 	}
-	
+
 	.main_menu br.s_breakpoint {
 		display: none;
 	}
-	
+
 	.email_and_social_media .s_email {
 		margin-top: 48px;
 		margin-bottom: 68px;
 	}
-	
+
 	footer .s_rule {
 		margin-top: 75px;
 	}
@@ -753,7 +750,7 @@ footer .s_rule {
 	.social_container h6 {
 		max-width: 122px; /* Forces right line break */
 	}
-	
+
 	.social_container  {
 		justify-content: space-between;
 	}
@@ -796,22 +793,6 @@ section.grey_gradient {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5165', endColorstr='#61788d',GradientType=1 );
 }
 
-/* -- Specific zones */
-
-/* --- Pullquote zones */
-
-.pullquote_section {
-    font-size: 22px;
-    color: #fff;
-    letter-spacing: .5px;
-    padding-left: 100px;
-    position: relative;
-    max-width: 766px;
-    margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 
 
 /* - Common page elements */
@@ -840,7 +821,7 @@ section.grey_gradient {
 
 .sbar_img {
 	vertical-align: bottom;
-} 
+}
 
 .sbar_img.jim {
 	margin-bottom: 46px;
@@ -866,7 +847,7 @@ h2.sidebar_title {
 .links_w_small_images .s_row {
     display: table-row;
     height: 35px;
-	
+
 }
 
 .links_w_small_images .s_image {
@@ -885,6 +866,22 @@ h2.sidebar_title {
 	display: table-cell;
 	vertical-align: middle;
 }
+
+/* --- pullquote_section ("When individuals...") */
+
+.pullquote_section {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: .5px;
+    padding-left: 100px;
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+
+
 
 /* --- Grey box */
 

@@ -1,0 +1,41 @@
+.ladder {
+	background-color: $yellow;
+	display: flex;
+
+	& > div {
+		width: 50%;
+	}
+
+	&__text-block {
+		padding: 20px 85px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	&__image-block {
+		padding: 93px 0 60px;
+		display: flex;
+		justify-content: center;
+		position: relative;
+
+		&::before {
+			@include size(100%);
+			content: '';
+			position: absolute;
+			background-color: rgba($color: $yellow, $alpha: .42);
+			mix-blend-mode: multiply;
+		}
+	}
+
+	h3 {
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		font-family: 'Lato';
+	}
+
+	p {
+		margin-bottom: 40px;
+	}
+}
