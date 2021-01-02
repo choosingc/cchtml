@@ -28,6 +28,10 @@
 
 /* - Pages */
 /* -- About */
+/* --- Sidebar */
+/* ---- Sidebar width */
+/* ---- Sidebar content */
+/* --- Grey box */
 
  
 /**************************/
@@ -882,13 +886,32 @@ h2.sidebar_title {
 	vertical-align: middle;
 }
 
+/* --- Grey box */
+
+.grey_box {
+    margin-top: 40px;
+    border: 1px solid #aebbc7;
+    border-radius: 4px;
+    padding: 40px;
+/*     ↑ temp */
+}
+
+.grey_box > *:first-child {
+	margin-top: 0;
+}
 
 
+.grey_box > *:last-child {
+	margin-bottom: 0;
+}
 
-
-
-
-
+.grey_box h2 {
+	font-family: var(--cc-lato);
+	color: #0094d9;
+	color: var(--cc-blue);
+    text-transform: uppercase;
+    font-size: 16px;
+}
 
 
 
