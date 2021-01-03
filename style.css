@@ -228,15 +228,15 @@ h2 {
 @media screen and
 (max-width: 991px) and
 (min-width: 768px) {
-	.content_width_plus_padding {
-		padding-left: 1.5em;
-		padding-right: 1.5em;
+	.medium_width_plus_padding {
+		padding-left: 3em;
+		padding-right: 3em;
 	}
 }
 
 @media screen and
 (max-width: 767px) {
-	.content_width_plus_padding {
+	.cmedium_width_plus_padding {
 		padding-left: 1.5em; /* 1.5em = 24px */
 		padding-right: 1.5em; /* 1.5em = 24px */
 	}
@@ -264,7 +264,7 @@ h2 {
 @media screen and
 (max-width: 991px) and
 (min-width: 768px) {
-	.content_width_plus_padding {
+	.narrow_width_plus_padding {
 		padding-left: 4.5em;
 		padding-right: 4.5em;
 	}
@@ -272,7 +272,7 @@ h2 {
 
 @media screen and
 (max-width: 767px) {
-	.content_width_plus_padding {
+	.narrow_width_plus_padding {
 		padding-left: 1.5em; /* 1.5em = 24px */
 		padding-right: 1.5em; /* 1.5em = 24px */
 	}
