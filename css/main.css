@@ -815,7 +815,8 @@ main {
   margin: 0 auto; }
 
 .underline-text {
-  padding-bottom: 22px;
+  padding-bottom: 24px;
+  margin: 0 0 23px;
   border-bottom: 1px solid #aebbc7; }
 
 .page_title_and_image_cc-center h1 {
@@ -846,6 +847,22 @@ h3 {
     background-color: #0a3b56;
     top: 0;
     left: 0; }
+
+.medium_width_plus_padding {
+  padding-right: 40px;
+  padding-left: 40px; }
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .medium_width_plus_padding {
+    padding-left: 3em;
+    padding-right: 3em; } }
+
+@media screen and (max-width: 767px) {
+  .medium_width_plus_padding {
+    padding-left: 1.5em;
+    /* 1.5em = 24px */
+    padding-right: 1.5em;
+    /* 1.5em = 24px */ } }
 
 .courage-gallery-section .container {
   max-width: 1130px;
@@ -910,11 +927,11 @@ h3 {
   margin-top: 0; }
   @media (min-width: 768px) {
     .opportunities-section .tabset {
-      margin-bottom: 70px; } }
+      margin-bottom: 67px; } }
   .opportunities-section .tabset li {
     width: calc(50% - 2px);
     text-align: center;
-    padding: 10px 23px;
+    padding: 15px 18px;
     font-weight: 700;
     text-transform: uppercase;
     display: -webkit-box;
@@ -930,7 +947,9 @@ h3 {
     -webkit-transition: border-bottom 0s;
     transition: border-bottom 0s;
     width: calc(50% - 2px);
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    line-height: 20px;
+    letter-spacing: 1px; }
     @media (min-width: 1024px) {
       .opportunities-section .tabset li {
         width: calc(25% - 5px);
@@ -957,36 +976,50 @@ h3 {
 
 .opportunities-section .question-start {
   font-weight: 700;
-  margin-bottom: 7px; }
+  margin-bottom: 10px; }
 
 .opportunities-section .main-text p {
-  margin: 0 0 45px 0; }
+  margin: 0 0 38px 0;
+  letter-spacing: .3px; }
 
 .opportunities-section .secondary-text {
   margin-bottom: 62px; }
+  .opportunities-section .secondary-text:last-of-type h5 {
+    margin-bottom: 22px; }
 
 .opportunities-section .standfirst {
   font-size: 18px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  letter-spacing: .5px; }
   @media (min-width: 768px) {
     .opportunities-section .standfirst {
       margin-bottom: 35px; } }
   @media (min-width: 1024px) {
     .opportunities-section .standfirst {
       font-size: 22px;
-      margin-bottom: 55px; } }
+      margin-bottom: 46px; } }
 
 .opportunities-section h5 {
   margin-top: 0;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
   font-family: 'Lato';
+  font-size: 16px;
   font-weight: 700;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #0094d9; }
 
 .opportunities-section h3 {
   margin-top: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 28px; }
+
+.opportunities-section h2 {
+  letter-spacing: 1.9px;
+  margin-bottom: 50px; }
+
+.opportunities-section p {
+  letter-spacing: .3px; }
 
 .text-gallery {
   padding-bottom: 65px; }

@@ -8,7 +8,8 @@ main {
 }
 
 .underline-text {
-	padding-bottom: 22px;
+	padding-bottom: 24px;
+	margin: 0 0 23px;
 	border-bottom: 1px solid $gray-200;
 }
 
@@ -53,5 +54,29 @@ h3 {
 		background-color: $blue-200;
 		top: 0;
 		left: 0;
+	}
+}
+
+//copy styles with less padding to get 970px blocks (it was 930px somehow)
+
+.medium_width_plus_padding {
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+@media screen and
+(max-width: 991px) and
+(min-width: 768px) {
+	.medium_width_plus_padding {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+}
+
+@media screen and
+(max-width: 767px) {
+	.medium_width_plus_padding {
+		padding-left: 1.5em; /* 1.5em = 24px */
+		padding-right: 1.5em; /* 1.5em = 24px */
 	}
 }

@@ -14,13 +14,13 @@
 		margin-top: 0;
 
 		@include media ('>=tablet') {
-			margin-bottom: 70px;
+			margin-bottom: 67px;
 		}
 
 		li {
 			width: calc(50% - 2px);
 			text-align: center;
-			padding: 10px 23px;
+			padding: 15px 18px;
 			font-weight: 700;
 			text-transform: uppercase;
 			display: flex;
@@ -30,6 +30,8 @@
 			transition:border-bottom 0s;
 			width: calc(50% - 2px);
 			margin-bottom: 30px;
+			line-height: 20px;
+			letter-spacing: 1px;
 
 			@include media ('>=desktop') {
 				width: calc(25% - 5px);
@@ -73,22 +75,30 @@
 
 	.question-start {
 		font-weight: 700;
-		margin-bottom: 7px;
+		margin-bottom: 10px;
 	}
 
 	.main-text {
 		p {
-			margin: 0 0 45px 0;
+			margin: 0 0 38px 0;
+			letter-spacing: .3px;
 		}
 	}
 
 	.secondary-text {
 		margin-bottom: 62px;
+
+		&:last-of-type {
+			h5 {
+				margin-bottom: 22px;
+			}
+		}
 	}
 
 	.standfirst {
 		font-size: 18px;
 		margin-bottom: 25px;
+		letter-spacing: .5px;
 
 		@include media ('>=tablet') {
 			margin-bottom: 35px;
@@ -96,15 +106,17 @@
 
 		@include media ('>=desktop') {
 			font-size: 22px;
-			margin-bottom: 55px;
+			margin-bottom: 46px;
 		}
 	}
 
 	h5 {
 		margin-top: 0;
-		margin-bottom: 22px;
+		margin-bottom: 15px;
 		font-family: 'Lato';
+		font-size: 16px;
 		font-weight: 700;
+		letter-spacing: 1.2px;
 		text-transform: uppercase;
 		color: $blue-100;
 	}
@@ -112,5 +124,15 @@
 	h3 {
 		margin-top: 0;
 		text-transform: uppercase;
+		margin-bottom: 28px;
+	}
+
+	h2 {
+		letter-spacing: 1.9px;
+		margin-bottom: 50px;
+	}
+
+	p {
+		letter-spacing: .3px;
 	}
 }
