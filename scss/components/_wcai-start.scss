@@ -1,23 +1,61 @@
 .wcai-start {
-	padding: 74px 59px 81px;
+	padding: 30px 20px;
 	border: 1px solid $gray-200;
 	border-radius: 5px;
 	display: flex;
-	margin-bottom: 152px;
+	flex-direction: column-reverse;
+	margin-bottom: 80px;
+
+	@include media ('>=phone') {
+		padding: 74px 59px 81px;
+	}
+
+	@include media ('>=tablet') {
+		flex-direction: row;
+	}
+
+	@include media ('>=desktop') {
+		margin-bottom: 152px;
+	}
+	
 
 	&__block {
 		&:nth-of-type(1) {
-			width: 63%;
+			width: 100%;
+
+			@include media ('>=tablet') {
+				width: 80%;
+			}
+
+			@include media ('>=desktop') {
+				width: 63%;
+			}
 		}
 
 		&:nth-of-type(2) {
-			width: 37%;
+			width: 30%;
 			position: relative;
-			left: 90px;
-			top: -40px;
+			left: 76%;
+			top: -55px;
+			
+
+			@include media ('>=phone') {
+				top: -100px;
+			}
+
+			@include media ('>=tablet') {
+				width: 37%;
+				left: 90px;
+				top: -40px;
+			}
 
 			img {
 				position: absolute;
+				width: 100%;
+
+				@include media ('>=desktop') {
+					width: auto;
+				}
 			}
 		}
 

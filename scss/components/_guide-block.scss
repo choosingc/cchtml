@@ -1,7 +1,11 @@
 .guide-block {
 	background-color: $blue-100;
 	color: $white;
-	padding: 93px 0 200px;
+	padding: 50px 0 200px;
+
+	@include media ('>=widescreen') {
+		padding: 93px 0 200px;
+	}
 
 	&__content {
 		max-width: 570px;
@@ -16,9 +20,23 @@
 
 	&__image {
 		position: absolute;
-		top: -23px;
-		left: -62px;
-		transform: translateX(-100%);
+		top: calc(100% + 25px);
+		left: 50%;
+		transform: translateX(-50%);
+
+		@include media ('>=widescreen') {
+			top: -23px;
+			left: -62px;
+			transform: translateX(-100%);
+
+			img {
+				max-width: initial;
+			}
+		}
+
+		img {
+			max-width: 140px;
+		}
 	}
 
 	h3 {
