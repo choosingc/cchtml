@@ -20,3 +20,12 @@ main {
 		}
 	}
 }
+
+.slick-arrow {
+	@extend %transition;
+
+	&:hover {
+		@extend %transition;
+		filter: brightness(.8);
+	}
+}
