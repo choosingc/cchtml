@@ -23,6 +23,7 @@ function initSlickCarouselCourage() {
       		nextArrow: jQuery('.text-gallery__content-block .next'),
 			fade: true,
 			asNavFor: $sliderNav.length ? $sliderNav : null,
+			speed: 200,
 		});
 
 		$sliderNav.slick({
@@ -42,6 +43,7 @@ function initSlickCarouselCourage() {
 			swipeToSlide: false,
 			touchMove: false,
 			swipe: false,
+			speed: 200,
 			responsive: [
 				{
 				  breakpoint: 1024,
