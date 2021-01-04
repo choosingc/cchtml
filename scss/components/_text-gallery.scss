@@ -1,62 +1,47 @@
 .text-gallery {
+	padding-bottom: 65px;
 
 	&__tabs {
 		display: flex;
-		margin-bottom: 73px;
+		margin-bottom: 57px;
 
 		@include media ('>=desktop') {
-			padding: 0 79px;
+			margin-bottom: 76px;
 		}
 
 		.slick-list{
 			padding:0 45px !important;
-			max-height: 71px;
+			max-height: 84px;
 
 			@include media ('>=desktop') {
 				padding:0 !important;
+				max-height: initial;
+				max-height: 71px;
 			}
-			
-			&::before {
-				@include size(19px, 34px);
-				content: '';
-				position: absolute;
-				left: 0;
-				top: 50%;
-				transform: translateY(-50%);
-				background-image: url('../images/common/arrow-left.svg');
+		}
 
-				@include media ('>=desktop') {
-					display: none;
-				}
-			}
-
-			&::after {
-				@include size(19px, 34px);
-				content: '';
-				position: absolute;
-				right: 0;
-				top: 50%;
-				transform: translateY(-50%) rotate(180deg);
-				background-image: url('../images/common/arrow-left.svg');
-
-				@include media ('>=desktop') {
-					display: none;
-				}
-			}
+		.slick-track {
+			@include media ('>=desktop') {
+				width: 100% !important;
+			}	
 		}
 	}
 
 	&__tab {
 		@extend %transition;
-		min-height: 70px;
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+		min-height: 84px;
 		font-size: 14px;
 		font-weight: 700;
-		padding: 10px 35px;
+		padding: 10px 25px;
 		text-align: center;
 		border: 1px solid $gray-100;
-		color: $gray-200;
+		letter-spacing: 1.2px;
+		line-height: 18px;
+		color: $white;
 		cursor: pointer;
-		// min-width: 235px;
 
 		@include media ('>=phone') {
 			font-size: 16px;
@@ -64,10 +49,20 @@
 
 		@include media ('>=desktop') {
 			width: calc(100%/3) !important;
+			min-height: 70px;
+			color: $gray-200;
 		}
 
 		@include media ('>=widescreen') {
-			padding: 10px 60px;
+			padding: 10px 40px;
+		}
+
+		&:focus {
+			outline: 0;
+		}
+
+		&.active {
+			color: $gray-200;
 		}
 
 		&.slick-current {
@@ -90,24 +85,63 @@
 
 	&__item {
 		h3 {
-			font-size: 24px;
+			font-size: 21px;
 			font-weight: 400;
+			letter-spacing: .9px;
 			text-transform: uppercase;
 			font-family: 'Lato';
-			margin: 0 0 36px 0;
+			margin: 0 0 14px 0;
+			text-align: center;
+
+			@include media ('>=desktop') {
+				font-size: 24px;
+				text-align: left;
+				letter-spacing: 1px;
+				margin: 0 0 36px 0;
+			}
+		}
+
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	&__text {
+		letter-spacing: .3px;
+	}
+
+	&__tabs-block {
+		position: relative;
+
+		.slick-arrow {
+			position: absolute;
+			display: flex;
+			top: 50%;
+			cursor: pointer;
+			z-index: 1;
+
+			@include media ('>=desktop') {
+				display: none !important;
+			}
+		}
+
+		.prev {
+			left: 0;
+			transform: translateY(-50%);
+		}
+
+		.next {
+			right: 0;
+			transform: rotate(180deg) translate(0, 50%);
 		}
 	}
 
 	&__content-block {
 		position: relative;
-		
-		@include media ('>=desktop') {
-			padding: 0 80px;
-		}
 
 		.slick-arrow {
 			position: absolute;
-			top: 38%;
+			top: 41%;
 			cursor: pointer;
 			display: none !important;
 
@@ -117,12 +151,21 @@
 		}
 
 		.prev {
-			left: 0;
+			left: -40px;
+			transform: translate(-100%, 0);
+
+			@include media ('>=widescreen') {
+				left: -65px;
+			}
 		}
 
 		.next {
-			right: 0;
-			transform: rotate(180deg) translateY(10px);
+			right: -40px;
+			transform: rotate(180deg) translate(-100%, 6px);
+
+			@include media ('>=widescreen') {
+				right: -65px;
+			}
 		}
 	}
 }

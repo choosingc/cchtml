@@ -11,3 +11,12 @@ main {
 	padding-bottom: 22px;
 	border-bottom: 1px solid $gray-200;
 }
+
+.page_title_and_image {
+	&_cc-center {
+		h1 {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+	}
+}

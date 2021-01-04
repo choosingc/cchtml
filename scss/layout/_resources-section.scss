@@ -12,13 +12,21 @@
 	}
 
 	.container {
-		padding: 150px 0 26px;
+		padding: 57px 0 26px;
+
+		@include media ('>=desktop') {
+			padding: 150px 0 26px;
+		}
 	}
 
 	.standfirst {
 		text-align: center;
 		max-width: 968px;
-		margin: 0 auto 65px;
+		margin: 0 auto 45px;
 		padding: 0 20px;
+
+		@include media ('>=desktop') {
+			margin: 0 auto 65px;
+		}
 	}
 }

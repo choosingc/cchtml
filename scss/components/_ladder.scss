@@ -1,24 +1,36 @@
 .ladder {
 	background-color: $yellow;
 	display: flex;
+	flex-wrap: wrap;
 
 	& > div {
-		width: 50%;
+		width: 100%;
+
+		@include media ('>=desktop') {
+			width: 50%;
+		}
 	}
 
 	&__text-block {
-		padding: 20px 85px;
+		padding: 40px 20px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
+
+		@include media ('>=desktop') {
+			padding: 20px 91px;
+		}
 	}
 
 	&__image-block {
-		padding: 93px 0 60px;
-		display: flex;
-		justify-content: center;
+		padding: 35px 20px;
 		position: relative;
+		text-align: center;
+
+		@include media ('>=desktop') {
+			padding: 93px 50px 60px;
+		}
 
 		&::before {
 			@include size(100%);
@@ -26,16 +38,44 @@
 			position: absolute;
 			background-color: rgba($color: $yellow, $alpha: .42);
 			mix-blend-mode: multiply;
+			top: 0;
+			left: 0;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		text-align: center;
+
+		@include media ('>=desktop') {
+			text-align: left;
 		}
 	}
 
 	h3 {
 		text-transform: uppercase;
-		margin-bottom: 40px;
 		font-family: 'Lato';
+		font-size: 24px;
+		font-weight: 400;
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 30px;
+		text-align: center;
+		letter-spacing: 1px;
+
+		@include media ('>=desktop') {
+			text-align: left;
+			margin-bottom: 34px;
+		}
 	}
 
 	p {
+		margin-top: 0;
 		margin-bottom: 40px;
+		letter-spacing: .3px;
 	}
 }
