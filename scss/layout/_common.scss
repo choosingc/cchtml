@@ -29,3 +29,29 @@ main {
 		filter: brightness(.8);
 	}
 }
+
+h3 {
+	font-size: 21px;
+	letter-spacing: .9px;
+	line-height: 30px;
+
+	@include media ('>=tablet') {
+		font-size: 24px;
+		line-height: 34px;
+		letter-spacing: 1px;
+	}
+}
+
+.top-line {
+	padding-top: 23px;
+	position: relative;
+
+	&::before {
+		@include size(59px, 1px);
+		content: '';
+		position: absolute;
+		background-color: $blue-200;
+		top: 0;
+		left: 0;
+	}
+}

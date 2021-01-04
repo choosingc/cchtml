@@ -51,16 +51,18 @@
 			width: calc(100%/3) !important;
 			min-height: 70px;
 			color: $gray-200;
+
+			&:hover {
+				background-color: rgba($color: $gray-200, $alpha: .2);
+				color: $blue-700;
+			}
 		}
 
 		@include media ('>=widescreen') {
 			padding: 10px 40px;
 		}
 
-		&:hover {
-			background-color: rgba($color: $gray-200, $alpha: .2);
-			color: $blue-700;
-		}
+		
 
 		&:focus {
 			outline: 0;

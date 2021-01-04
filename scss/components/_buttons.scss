@@ -31,4 +31,14 @@ a.btn {
 			color: $white;
 		}
 	}
+
+	&_icon {
+		padding-right: 60px;
+		position: relative;
+
+		img {
+			position: absolute;
+			right: 32px;
+		}
+	}
 }

@@ -61,7 +61,27 @@
 		margin-bottom: 7px;
 	}
 
+	.main-text {
+		p {
+			margin: 0 0 45px 0;
+		}
+	}
+
+	.secondary-text {
+		margin-bottom: 62px;
+	}
+
 	h5 {
+		margin-top: 0;
 		margin-bottom: 22px;
+		font-family: 'Lato';
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $blue-100;
+	}
+
+	h3 {
+		margin-top: 0;
+		text-transform: uppercase;
 	}
 }
