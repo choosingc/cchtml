@@ -34,7 +34,8 @@ $media-expressions: (
 'layout/courage-gallery-section',
 'layout/resources-section',
 'layout/climb-section',
-'layout/opportunuties-section';
+'layout/opportunuties-section',
+'layout/start-courage-section';
 
 @import 'components/text-gallery',
 'components/journey-invitation',
@@ -42,5 +43,8 @@ $media-expressions: (
 'components/dotted-list',
 'components/buttons',
 'components/wcai-start',
-'components/guide-block';
+'components/guide-block',
+'components/accordion-block',
+'components/navigation-item',
+'components/start-courage';
 

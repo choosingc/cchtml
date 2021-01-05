@@ -1,7 +1,48 @@
 jQuery(function () {
 	initSlickCarouselCourage();
 	initTabs();
+	initAccordionToggle();
+	initReadMoreShow();
+	initTabNavigation();
 });
+
+function initTabNavigation() {
+	let navItem = jQuery('.navigation-item');
+
+	navItem.on('click', function(){
+		let link = jQuery(this).attr('href');
+		let nextTab = jQuery('.tabset').find(`a[href="${link}"]`)
+		nextTab.trigger('click');
+	});
+
+}
+
+//faq list toggling
+function initAccordionToggle() {
+	let question = jQuery('.accordion-block__title');
+	let answer = jQuery('.accordion-block__content')
+	question.on('click', function(){
+		
+		if( jQuery(this).hasClass('open') ) {
+			jQuery(this).siblings(answer).slideUp(300);
+			jQuery(this).removeClass('open')
+		} else {
+			jQuery(this).siblings(answer).slideDown(300);
+			jQuery(this).addClass('open');
+		}
+	});
+}
+
+function initReadMoreShow() {
+	let btn = jQuery('.accordion-block__btn');
+	let text = jQuery('.short-text');
+
+	btn.on('click', function(){
+		jQuery(this).siblings(text).removeClass('short-text');
+		jQuery(this).hide();
+	})
+
+}
 
 
 

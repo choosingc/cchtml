@@ -1,0 +1,9 @@
+.start-courage-section {
+	background: rgba($yellow, .5) no-repeat 50% 50%/cover;
+	background-image: url('../images/pages/start-journey/gradient-bg.png');
+	padding: 60px 0;
+	
+	@include media ('>=desktop') {
+		padding: 171px 0 145px;
+	}
+}

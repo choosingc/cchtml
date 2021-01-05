@@ -1,0 +1,63 @@
+.start-courage {
+	padding: 50px 20px;
+	max-width: 606px;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-align: center;
+	background-color: $white;
+	position: relative;
+
+	@include media ('>=tablet') {
+		padding: 50px 70px;
+	}
+
+	@include media ('>=desktop') {
+		padding: 100px;
+	}
+
+	&__heading {
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 400;
+		color: $blue-200;
+		margin-top: 0;
+		margin-bottom: 28px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	&__text {
+		font-size: 24px;
+		line-height: 34px;
+		text-transform: uppercase;
+		margin-bottom: 36px;
+		letter-spacing: .9px;
+	}
+
+	&__image-block {
+		position: absolute;
+		top: -70px;
+		right: -195px;
+		display: none;
+
+		@include media ('>=tablet') {
+			display: block;
+		}
+
+		@include media ('>=desktop') {
+			top: -240px;
+			right: -263px;
+		}
+		
+		
+
+		img {
+			mix-blend-mode: multiply;
+			max-width: 60%;
+
+			@include media ('>=desktop') {
+				max-width: 100%;
+			}
+		}
+	}
+}

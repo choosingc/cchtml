@@ -20,7 +20,6 @@
 		li {
 			width: calc(50% - 2px);
 			text-align: center;
-			padding: 15px 18px;
 			font-weight: 700;
 			text-transform: uppercase;
 			display: flex;
@@ -40,6 +39,7 @@
 			
 			a {
 				color: $gray-200;
+				padding: 15px 18px;
 			}
 
 			&.active {
@@ -136,5 +136,73 @@
 
 	p {
 		letter-spacing: .3px;
+	}
+
+	&_planning {
+		.standfirst {
+			margin-bottom: 18px;
+			letter-spacing: .4px;
+			line-height: 28px;
+
+			@include media ('>=tablet') {
+				letter-spacing: .5px;
+				line-height: 32px;
+			}
+		}
+
+		.tab-content {
+			margin-bottom: 50px;
+
+			@include media ('>=desktop') {
+				margin-bottom: 144px;
+			}
+
+			h3 {
+				letter-spacing: 2.5px;
+
+				@include media ('>=tablet') {
+					letter-spacing: .9px;
+				}
+			}
+		}
+
+		.main-text {
+			.standfirst {
+				margin: 0 0 51px;
+				letter-spacing: .4px;
+				font-size: 22px;
+
+				@include media ('>=tablet') {
+					margin: 0 0 15px;
+				}
+	
+				& + p {
+					margin-bottom: 0;
+				}
+			}
+
+			& > p {
+				margin-bottom: 41px;
+
+				@include media ('>=tablet') {
+					padding-right: 95px;
+					margin-bottom: 64px;
+				}
+			}
+
+			.top-line {
+				padding-top: 18px;
+			}
+		}
+
+		h2 {
+			margin-bottom: 16px;
+			margin-top: 72px;
+
+			@include media ('>=tablet') {
+				margin-top: 0;
+				margin-bottom: 56px;
+			}
+		}
 	}
 }
