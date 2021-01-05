@@ -15,6 +15,7 @@
 
 		p {
 			margin: 0 0 37px;
+			letter-spacing: .3px;
 		}
 	}
 
@@ -25,8 +26,8 @@
 		transform: translateX(-50%);
 
 		@include media ('>=widescreen') {
-			top: -23px;
-			left: -62px;
+			top: -17px;
+    		left: -49px;
 			transform: translateX(-100%);
 
 			img {
@@ -36,12 +37,16 @@
 
 		img {
 			max-width: 140px;
+
+			@include media ('>=widescreen') {
+				max-width: initial;
+			}
 		}
 	}
 
 	h3 {
 		text-transform: uppercase;
 		font-family: 'Lato';
-		margin: 0 0 15px;
+		margin: 0 0 9px;
 	}
 }

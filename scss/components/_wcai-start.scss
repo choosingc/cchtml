@@ -7,7 +7,7 @@
 	margin-bottom: 80px;
 
 	@include media ('>=phone') {
-		padding: 74px 59px 81px;
+		padding: 74px 59px 82px;
 	}
 
 	@include media ('>=tablet') {
@@ -62,11 +62,13 @@
 		h3 {
 			font-family: 'Lato';
 			text-transform: uppercase;
-			margin: 0 0 15px 0;
+			margin: 0 0 7px 0;
 		}
 
 		p {
-			margin-bottom: 25px;
+			margin-top: 0;
+			margin-bottom: 27px;
+			letter-spacing: .3px;
 		}
 	}
 }

@@ -963,13 +963,14 @@ h3 {
       .opportunities-section .tabset li.active a {
         color: #0094d9; }
 
-.opportunities-section .tab-content .tab {
-  display: none; }
-  .opportunities-section .tab-content .tab.active {
-    display: block; }
-
-.opportunities-section .tab-content h3 {
-  font-family: 'Lato'; }
+.opportunities-section .tab-content {
+  margin-bottom: 75px; }
+  .opportunities-section .tab-content .tab {
+    display: none; }
+    .opportunities-section .tab-content .tab.active {
+      display: block; }
+  .opportunities-section .tab-content h3 {
+    font-family: 'Lato'; }
 
 .opportunities-section .underline-text:last-of-type {
   margin-bottom: 60px; }
@@ -1306,12 +1307,13 @@ h3 {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 12px; }
+  margin-bottom: 19px; }
   .dotted-list li {
     position: relative;
-    padding-left: 33px; }
+    padding-left: 33px;
+    letter-spacing: .3px; }
     .dotted-list li:not(:last-of-type) {
-      margin-bottom: 10px; }
+      margin-bottom: 7px; }
     .dotted-list li::before {
       width: 6px;
       height: 6px;
@@ -1367,7 +1369,7 @@ a.btn {
   margin-bottom: 80px; }
   @media (min-width: 480px) {
     .wcai-start {
-      padding: 74px 59px 81px; } }
+      padding: 74px 59px 82px; } }
   @media (min-width: 768px) {
     .wcai-start {
       -webkit-box-orient: horizontal;
@@ -1407,9 +1409,11 @@ a.btn {
   .wcai-start__block h3 {
     font-family: 'Lato';
     text-transform: uppercase;
-    margin: 0 0 15px 0; }
+    margin: 0 0 7px 0; }
   .wcai-start__block p {
-    margin-bottom: 25px; }
+    margin-top: 0;
+    margin-bottom: 27px;
+    letter-spacing: .3px; }
 
 .guide-block {
   background-color: #0094d9;
@@ -1424,7 +1428,8 @@ a.btn {
     text-align: center;
     position: relative; }
     .guide-block__content p {
-      margin: 0 0 37px; }
+      margin: 0 0 37px;
+      letter-spacing: .3px; }
   .guide-block__image {
     position: absolute;
     top: calc(100% + 25px);
@@ -1434,8 +1439,8 @@ a.btn {
             transform: translateX(-50%); }
     @media (min-width: 1300px) {
       .guide-block__image {
-        top: -23px;
-        left: -62px;
+        top: -17px;
+        left: -49px;
         -webkit-transform: translateX(-100%);
             -ms-transform: translateX(-100%);
                 transform: translateX(-100%); }
@@ -1443,8 +1448,11 @@ a.btn {
           max-width: initial; } }
     .guide-block__image img {
       max-width: 140px; }
+      @media (min-width: 1300px) {
+        .guide-block__image img {
+          max-width: initial; } }
   .guide-block h3 {
     text-transform: uppercase;
     font-family: 'Lato';
-    margin: 0 0 15px; }
+    margin: 0 0 9px; }
 /*# sourceMappingURL=main.css.map */
