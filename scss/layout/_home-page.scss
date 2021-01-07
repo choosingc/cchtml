@@ -1,0 +1,14 @@
+.home-page {
+	header {
+		background: $blue-200 no-repeat 50% 50%/cover;
+		background-image: url('../images/pages/home/main_banner.jpg');
+	}
+
+	.node__content {
+		margin-top: 0;
+	}
+
+	.region-breadcrumb {
+		display: none;
+	}
+}

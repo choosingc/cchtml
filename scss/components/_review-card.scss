@@ -1,0 +1,30 @@
+.review-card {
+	padding: 36px 36px 28px;
+	background-color: $white;
+	border-radius: 5px;
+	max-width: 261px;
+	min-height: 270px;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	
+	&:not(:last-of-type) {
+		margin-right: 43px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 22px;
+		color: $blue-100;
+		margin: 0;
+		letter-spacing: .3px;
+	}
+
+	&__author {
+		font-size: 13px;
+		text-transform: uppercase;
+		color: $blue-200;
+		letter-spacing: 1.2px;
+	}
+}

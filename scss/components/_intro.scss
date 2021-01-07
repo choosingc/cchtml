@@ -1,0 +1,113 @@
+.intro {
+	padding: 175px 0 108px;
+	&__quote {
+		font-size: 35px;
+		line-height: 47px;
+		margin: 0 0 31px;
+		position: relative;
+		letter-spacing: 1.8px;
+		
+		&::before {
+			content: '\201C';
+			position: absolute;
+			top: 0;
+			left: -22px;
+		}
+	}
+
+	&__top {
+		max-width: 678px;
+		margin-bottom: 72px;
+	}
+
+	&__text-block {
+		max-width: 515px;
+		margin-bottom: 18px;
+		padding-left: 25px;
+
+		h2 {
+			margin: 0;
+		}
+	}
+
+	&__quote-author {
+		font-size: 13px;
+		color: $gray-200;
+		text-transform: uppercase;
+		letter-spacing: .3px;
+	}
+
+	&__download-button {
+		@include size(33px);
+		background-color: $blue-600;
+		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	&__button-text {
+		font-size: 13px;
+		line-height: 18px;
+		color: $blue-600;
+		padding-top: 20px;
+		display: inline-block;
+		letter-spacing: .3px;
+	}
+
+	&__button-block {
+		max-width: 110px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 0 0 0 auto;
+	}
+
+	&__order-text {
+		color: $white;
+
+		&-heading {
+			font-size: 24px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			position: relative;
+			padding-top: 33px;
+			letter-spacing: 1px;
+
+			&::before {
+				@include size(59px, 1px);
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: $gray-200;
+			}
+		}
+
+		&-date {
+			font-size: 16px;
+			letter-spacing: .3px;
+
+		}
+	}
+
+	&__bottom {
+		max-width: 970px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+
+	&__stores-list {
+		display: flex;
+
+		.btn {
+			&:not(:last-of-type) {
+				margin-right: 21px;
+			}
+		}
+	}
+}

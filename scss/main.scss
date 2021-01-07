@@ -27,7 +27,8 @@ $media-expressions: (
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/helpers';
-@import 'base/forms';
+@import 'base/forms',
+'base/icons';
 
 @import 'layout/header',
 'layout/common',
@@ -35,7 +36,10 @@ $media-expressions: (
 'layout/resources-section',
 'layout/climb-section',
 'layout/opportunuties-section',
-'layout/start-courage-section';
+'layout/start-courage-section',
+'layout/home-page',
+'layout/advance-section',
+'layout/message-section';
 
 @import 'components/text-gallery',
 'components/journey-invitation',
@@ -46,5 +50,9 @@ $media-expressions: (
 'components/guide-block',
 'components/accordion-block',
 'components/navigation-item',
-'components/start-courage';
+'components/start-courage',
+'components/intro',
+'components/review-card',
+'components/meet',
+'components/main-courage';
 

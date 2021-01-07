@@ -60,4 +60,28 @@
 			}
 		}
 	}
+
+	.btn {
+		position: relative;
+		z-index: 1;
+	}
+
+	&_home {
+		padding: 93px 100px 73px;
+
+		.start-courage__image-block {
+			top: 181px;
+			right: 35px
+		}
+
+		.start-courage__text {
+			margin-top: 0;
+			margin-bottom: 30px;
+			letter-spacing: 1px;
+		}
+
+		.start-courage__heading {
+			margin-bottom: 13px;
+		}
+	}
 }

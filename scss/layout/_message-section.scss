@@ -1,0 +1,22 @@
+.message-section {
+	background: linear-gradient(to right, $blue-400 0%, $blue-500 100%);
+	padding: 90px 0;
+
+	&__text {
+		font-size: 22px;
+		line-height: 32px;
+		color: $white;
+		position: relative;
+		letter-spacing: .9px;
+		
+		&::before {
+			@include size(59px, 1px);
+			content: '';
+			position: absolute;
+			background-color: $white;
+			top: 10px;
+			left: -42px;
+			transform: translateX(-100%);
+		}
+	}
+}
