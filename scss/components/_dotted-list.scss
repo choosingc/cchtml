@@ -6,8 +6,12 @@
 	
 	li {
 		position: relative;
-		padding-left: 33px;
+		padding-left: 46px;
 		letter-spacing: .3px;
+
+		@include media ('>=tablet') {
+			padding-left: 33px;
+		}
 
 		&:not(:last-of-type) {
 			margin-bottom: 7px;

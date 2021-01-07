@@ -1,7 +1,12 @@
 .home-page {
 	header {
-		background: $blue-200 no-repeat 50% 50%/cover;
-		background-image: url('../images/pages/home/main_banner.jpg');
+		background-image: linear-gradient(200deg, #61798e 0%, #3b5064 100%);
+		
+		@include media ('>=desktop') {
+			background: $blue-200 no-repeat 50% 50%/cover;
+			background-image: url('../images/pages/home/main_banner.jpg');
+		}
+		
 	}
 
 	.node__content {

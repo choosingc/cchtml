@@ -1,11 +1,28 @@
 .intro {
-	padding: 175px 0 108px;
+	padding: 47px 0 77px;
+
+	@include media ('>=desktop') {
+		padding: 175px 0 108px;
+	}
+
 	&__quote {
-		font-size: 35px;
-		line-height: 47px;
-		margin: 0 0 31px;
+		font-size: 25px;
+		line-height: 35px;
+		margin: 0 0 51px;
 		position: relative;
-		letter-spacing: 1.8px;
+		letter-spacing: 1.1px;
+
+		@include media ('>=tablet') {
+			font-size: 32px;
+			line-height: 38px;
+			letter-spacing: 1.8px;
+		}
+
+		@include media ('>=desktop') {
+			margin: 0 0 31px;
+			font-size: 35px;
+			line-height: 47px;
+		}
 		
 		&::before {
 			content: '\201C';
@@ -16,8 +33,19 @@
 	}
 
 	&__top {
-		max-width: 678px;
-		margin-bottom: 72px;
+		margin-bottom: 28px;
+		display: flex;
+		flex-direction: column-reverse;
+
+		@include media ('>=desktop') {
+			max-width: 632px;
+			display: block;
+			margin-bottom: 72px;
+		}
+
+		@include media ('>=widescreen') {
+			max-width: 678px;
+		}
 	}
 
 	&__text-block {
@@ -34,7 +62,11 @@
 		font-size: 13px;
 		color: $gray-200;
 		text-transform: uppercase;
-		letter-spacing: .3px;
+		letter-spacing: 1px;
+
+		@include media ('>=tablet') {
+			letter-spacing: .3px;
+		}
 	}
 
 	&__download-button {
@@ -63,19 +95,37 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		margin: 0 0 0 auto;
+		margin: 0 auto 59px;
+
+		@include media ('>=desktop') {
+			margin: 0 0 0 auto;
+		}
 	}
 
 	&__order-text {
 		color: $white;
+		min-width: 143px;
+		margin-right: 40px;
+		margin-bottom: 13px;
+
+		@include media ('>=desktop') {
+			margin-bottom: 0;
+		}
 
 		&-heading {
-			font-size: 24px;
-			margin-bottom: 10px;
+			font-size: 21px;
+			margin-bottom: 4px;
 			text-transform: uppercase;
 			position: relative;
-			padding-top: 33px;
-			letter-spacing: 1px;
+			padding-top: 29px;
+			letter-spacing: .7px;
+
+			@include media ('>=tablet') {
+				font-size: 24px;
+				padding-top: 33px;
+				letter-spacing: 1px;
+				margin-bottom: 10px;
+			}
 
 			&::before {
 				@include size(59px, 1px);
@@ -97,17 +147,41 @@
 	&__bottom {
 		max-width: 970px;
 		display: flex;
-		align-items: flex-end;
+		flex-direction: column;
+		align-items: flex-start;
+		
 		justify-content: space-between;
+
+		@include media ('>=desktop') {
+			flex-direction: row;
+			align-items: flex-end;
+		}
 	}
 
 	&__stores-list {
 		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+
+		@include media ('>=desktop') {
+			flex-direction: row;
+		}
 
 		.btn {
+			margin-top: 17px;
+
 			&:not(:last-of-type) {
 				margin-right: 21px;
 			}
+		}
+	}
+
+	&__image-block {
+		text-align: center;
+		margin-bottom: 22px;
+
+		@include media ('>=desktop') {
+			display: none;
 		}
 	}
 }

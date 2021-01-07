@@ -1,6 +1,10 @@
 .message-section {
 	background: linear-gradient(to right, $blue-400 0%, $blue-500 100%);
-	padding: 90px 0;
+	padding: 125px 0 103px;
+
+	@include media ('>=desktop') {
+		padding: 90px 0;
+	}
 
 	&__text {
 		font-size: 22px;
@@ -14,9 +18,14 @@
 			content: '';
 			position: absolute;
 			background-color: $white;
-			top: 10px;
-			left: -42px;
-			transform: translateX(-100%);
+			top: -24px;
+			left: 0;
+
+			@include media ('>=desktop') {
+				top: 10px;
+				left: -42px;
+				transform: translateX(-100%);
+			}
 		}
 	}
 }

@@ -1,14 +1,19 @@
 a.btn {
 		@extend %transition;
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		padding: 15px 36px;
+		padding: 13px 36px;
 		display: inline-block;
 		border-radius: 4px;
 		text-align: center;
 		line-height: 1.2;
+
+		@include media ('>=desktop') {
+			font-size: 16px;
+			padding: 15px 36px;
+		}
 	
 	&_primary {
 		background-color: $blue-100;

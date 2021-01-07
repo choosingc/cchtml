@@ -1,27 +1,49 @@
 .advance-section {
 	background: $yellow-100;
 	background: linear-gradient(to right, $yellow-100 0%, $yellow-200 100%);
-	padding: 92px 0 151px;
+	padding: 75px 0;
+
+	@include media ('>=desktop') {
+		padding: 92px 0 151px;
+	}
 
 	&__block {
 		display: flex;
+		flex-direction: column;
+		
+
+		@include media ('>=desktop') {
+			flex-direction: row;
+		}
 	}
 
 	&__cards-block {
 		display: flex;
 		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+
+		@include media ('>=desktop') {
+			flex-direction: row;
+		}
 	}
 
 	&__text {
-		font-size: 24px;
-		line-height: 34px;
+		font-size: 21px;
+		line-height: 30px;
 		text-transform: uppercase;
-		max-width: 145px;
-		margin-right: 55px;
 		padding-top: 20px;
 		position: relative;
-		margin-top: 23px;
 		letter-spacing: 1px;
+		margin: 0 0 40px 0;
+
+		@include media ('>=desktop') {
+			margin-top: 23px;
+			margin-right: 55px;
+			max-width: 145px;
+			font-size: 24px;
+		line-height: 34px;
+		}
 
 		&::before {
 			@include size(59px, 1px);

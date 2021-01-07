@@ -2,15 +2,23 @@
 	padding: 36px 36px 28px;
 	background-color: $white;
 	border-radius: 5px;
-	max-width: 261px;
-	min-height: 270px;
+	max-width: 326px;
+	min-height: 231px;
 	display: flex;
     flex-direction: column;
 	justify-content: space-between;
-	margin-bottom: 30px;
+	margin-bottom: 23px;
+
+	@include media ('>=desktop') {
+		min-height: 270px;
+		max-width: 261px;
+	}
 	
 	&:not(:last-of-type) {
-		margin-right: 43px;
+
+		@include media ('>=desktop') {
+			margin-right: 43px;
+		}
 	}
 
 	&__text {

@@ -27,11 +27,16 @@
 	}
 
 	&__text {
-		font-size: 24px;
-		line-height: 34px;
+		font-size: 21px;
+		line-height: 30px;
 		text-transform: uppercase;
 		margin-bottom: 36px;
 		letter-spacing: .9px;
+
+		@include media ('>=desktop') {
+			font-size: 24px;
+			line-height: 34px;
+		}
 	}
 
 	&__image-block {
@@ -67,11 +72,36 @@
 	}
 
 	&_home {
-		padding: 93px 100px 73px;
+		padding: 50px 50px 188px;
+		overflow: hidden;
+
+		@include media ('>=desktop') {
+			padding: 93px 100px 73px;
+			overflow: visible;
+		}
 
 		.start-courage__image-block {
-			top: 181px;
-			right: 35px
+			top: 229px;
+    		right: -71px;
+			display: block;
+
+			@include media ('>=desktop') {
+				top: 181px;
+    			right: 13px;
+			}
+
+			@include media ('>=widescreen') {
+				top: 181px;
+				right: 35px;
+			}
+
+			img {
+				max-width: 56%;
+				
+				@include media ('>=desktop') {
+					max-width: 100%;
+				}
+			}
 		}
 
 		.start-courage__text {
