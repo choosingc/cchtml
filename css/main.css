@@ -1050,6 +1050,10 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1216,7 +1220,8 @@ h3 {
   background: #f7f7e1;
   background: -webkit-linear-gradient(left, #f7f7e1 0%, #fdfdf3 100%);
   background: linear-gradient(to right, #f7f7e1 0%, #fdfdf3 100%);
-  padding: 75px 0; }
+  padding: 75px 0;
+  border-bottom: 1px solid #aebbc7; }
   @media (min-width: 1024px) {
     .advance-section {
       padding: 92px 0 151px; } }
@@ -2191,11 +2196,7 @@ a.btn {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+        flex-wrap: wrap; }
     @media (min-width: 1024px) {
       .intro__stores-list {
         -webkit-box-orient: horizontal;
@@ -2325,10 +2326,10 @@ a.btn {
   .meet__heading {
     line-height: 1;
     margin: 0 0 23px;
-    letter-spacing: 2px; }
+    letter-spacing: .4px; }
     @media (min-width: 768px) {
       .meet__heading {
-        margin: 0 0 52px; } }
+        margin: 0 0 55px; } }
   .meet__text {
     margin-bottom: 25px;
     letter-spacing: .3px; }
@@ -2489,4 +2490,79 @@ a.btn {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+
+.tab-image {
+  margin: 0 auto; }
+  .tab-image__block {
+    width: 122px;
+    height: 108px;
+    margin: 0 auto 35px; }
+    .tab-image__block .image-chat {
+      width: 122px;
+      height: 107px;
+      background-image: -webkit-image-set(url(../images/pages/start-journey/chat-icon.png) 1x, url(../images/pages/start-journey/chat-icon@2x.png) 2x);
+      background-image: image-set(url(../images/pages/start-journey/chat-icon.png) 1x, url(../images/pages/start-journey/chat-icon@2x.png) 2x); }
+    .tab-image__block .image-choose {
+      width: 122px;
+      height: 108px;
+      background-image: -webkit-image-set(url(../images/pages/start-journey/choose-icon.png) 1x, url(../images/pages/start-journey/choose-icon@2x.png) 2x);
+      background-image: image-set(url(../images/pages/start-journey/choose-icon.png) 1x, url(../images/pages/start-journey/choose-icon@2x.png) 2x); }
+    .tab-image__block .image-time {
+      width: 82px;
+      height: 108px;
+      background-image: -webkit-image-set(url(../images/pages/start-journey/time-icon.png) 1x, url(../images/pages/start-journey/time-icon@2x.png) 2x);
+      background-image: image-set(url(../images/pages/start-journey/time-icon.png) 1x, url(../images/pages/start-journey/time-icon@2x.png) 2x); }
+    .tab-image__block .image-way {
+      width: 93px;
+      height: 108px;
+      background-image: -webkit-image-set(url(../images/pages/start-journey/way-icon.png) 1x, url(../images/pages/start-journey/way-icon@2x.png) 2x);
+      background-image: image-set(url(../images/pages/start-journey/way-icon.png) 1x, url(../images/pages/start-journey/way-icon@2x.png) 2x); }
+
+.tabset_images li:hover .image-chat {
+  width: 122px;
+  height: 107px;
+  background-image: -webkit-image-set(url(../images/pages/start-journey/chat-icon-hover.png) 1x, url(../images/pages/start-journey/chat-icon-hover@2x.png) 2x);
+  background-image: image-set(url(../images/pages/start-journey/chat-icon-hover.png) 1x, url(../images/pages/start-journey/chat-icon-hover@2x.png) 2x); }
+
+.tabset_images li:hover .image-choose {
+  width: 122px;
+  height: 108px;
+  background-image: -webkit-image-set(url(../images/pages/start-journey/choose-icon-hover.png) 1x, url(../images/pages/start-journey/choose-icon-hover@2x.png) 2x);
+  background-image: image-set(url(../images/pages/start-journey/choose-icon-hover.png) 1x, url(../images/pages/start-journey/choose-icon-hover@2x.png) 2x); }
+
+.tabset_images li:hover .image-time {
+  width: 82px;
+  height: 108px;
+  background-image: -webkit-image-set(url(../images/pages/start-journey/time-icon-hover.png) 1x, url(../images/pages/start-journey/time-icon-hover@2x.png) 2x);
+  background-image: image-set(url(../images/pages/start-journey/time-icon-hover.png) 1x, url(../images/pages/start-journey/time-icon-hover@2x.png) 2x); }
+
+.tabset_images li:hover .image-way {
+  width: 93px;
+  height: 108px;
+  background-image: -webkit-image-set(url(../images/pages/start-journey/way-icon-hover.png) 1x, url(../images/pages/start-journey/way-icon-hover@2x.png) 2x);
+  background-image: image-set(url(../images/pages/start-journey/way-icon-hover.png) 1x, url(../images/pages/start-journey/way-icon-hover@2x.png) 2x); }
+
+.tabset_images li.active .image-chat {
+  width: 122px;
+  height: 107px;
+  background-image: -webkit-image-set(url(../images/pages/start-journey/chat-icon-active.png) 1x, url(../images/pages/start-journey/chat-icon-active@2x.png) 2x);
+  background-image: image-set(url(../images/pages/start-journey/chat-icon-active.png) 1x, url(../images/pages/start-journey/chat-icon-active@2x.png) 2x); }
+
+.tabset_images li.active .image-choose {
+  width: 122px;
+  height: 108px;
+  background-image: -webkit-image-set(url(../images/pages/start-journey/choose-icon-active.png) 1x, url(../images/pages/start-journey/choose-icon-active@2x.png) 2x);
+  background-image: image-set(url(../images/pages/start-journey/choose-icon-active.png) 1x, url(../images/pages/start-journey/choose-icon-active@2x.png) 2x); }
+
+.tabset_images li.active .image-time {
+  width: 82px;
+  height: 108px;
+  background-image: -webkit-image-set(url(../images/pages/start-journey/time-icon-active.png) 1x, url(../images/pages/start-journey/time-icon-active@2x.png) 2x);
+  background-image: image-set(url(../images/pages/start-journey/time-icon-active.png) 1x, url(../images/pages/start-journey/time-icon-active@2x.png) 2x); }
+
+.tabset_images li.active .image-way {
+  width: 93px;
+  height: 108px;
+  background-image: -webkit-image-set(url(../images/pages/start-journey/way-icon-active.png) 1x, url(../images/pages/start-journey/way-icon-active@2x.png) 2x);
+  background-image: image-set(url(../images/pages/start-journey/way-icon-active.png) 1x, url(../images/pages/start-journey/way-icon-active@2x.png) 2x); }
 /*# sourceMappingURL=main.css.map */

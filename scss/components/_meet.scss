@@ -64,10 +64,10 @@
 	&__heading {
 		line-height: 1;
 		margin: 0 0 23px;
-		letter-spacing: 2px;
+		letter-spacing: .4px;
 
 		@include media ('>=tablet') {
-			margin: 0 0 52px;
+			margin: 0 0 55px;
 		}
 	}
 

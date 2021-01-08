@@ -2,6 +2,7 @@
 	background: $yellow-100;
 	background: linear-gradient(to right, $yellow-100 0%, $yellow-200 100%);
 	padding: 75px 0;
+	border-bottom: 1px solid $gray-200;
 
 	@include media ('>=desktop') {
 		padding: 92px 0 151px;

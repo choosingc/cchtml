@@ -161,7 +161,6 @@
 	&__stores-list {
 		display: flex;
 		flex-wrap: wrap;
-		flex-direction: column;
 
 		@include media ('>=desktop') {
 			flex-direction: row;
