@@ -3,7 +3,7 @@
 	@include media ('>=desktop') {
 		margin-bottom: 115px;
 	}
-	
+
 	&__order {
 		max-width: 300px;
 		margin: 0 auto 40px;
@@ -33,9 +33,10 @@
 		letter-spacing: .3px;
 		color: $blue-100;
 		margin: 0 0 40px;
+		font-family: 'Libre Baskerville';
 
 		@include media ('>=desktop') {
-			margin: 0 0 72px;
+			margin: 0 0 34px;
 		}
 	}
 

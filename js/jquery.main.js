@@ -77,8 +77,6 @@ function initSlickCarouselCourage() {
 			prevArrow: jQuery('.text-gallery__tabs-block .prev'),
       		nextArrow: jQuery('.text-gallery__tabs-block .next'),
 			dots: false,
-			centerMode: true,
-			centerPadding: 0,
 			focusOnSelect: true,
 			infinite: false,
 			draggable: false,

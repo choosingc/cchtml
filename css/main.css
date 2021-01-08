@@ -1973,7 +1973,8 @@ a.btn {
     margin-top: 0;
     margin-bottom: 28px;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-family: 'Lato'; }
   .start-courage__text {
     font-size: 21px;
     line-height: 30px;
@@ -2420,10 +2421,11 @@ a.btn {
   line-height: 40px;
   letter-spacing: .3px;
   color: #0094d9;
-  margin: 0 0 40px; }
+  margin: 0 0 40px;
+  font-family: 'Libre Baskerville'; }
   @media (min-width: 1024px) {
     .book__quote-text {
-      margin: 0 0 72px; } }
+      margin: 0 0 34px; } }
 
 .book__quote-author {
   font-size: 13px;
@@ -2455,7 +2457,8 @@ a.btn {
 .book-cards h3 {
   margin-bottom: 60px;
   text-transform: uppercase;
-  letter-spacing: .96px; }
+  letter-spacing: .96px;
+  font-family: 'Lato'; }
 
 .book-cards .review-card {
   background-color: rgba(174, 187, 199, 0.2);
