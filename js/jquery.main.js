@@ -104,8 +104,8 @@ function initTabs() {
 	jQuery('.tabset').tabset({
         activeClass: 'active',	// active class for active tab navigation link
         addToParent: true,		// add the class not to the link but to its parent
-        autoHeight: false,		// smooth changing of the height during tabs switching (first parent node is used)
-        animSpeed: 500,			// animation speed
+        autoHeight: true,		// smooth changing of the height during tabs switching (first parent node is used)
+        animSpeed: 10,			// animation speed
         tabLinks: 'a',			// selector of tab navigation links in the tabset
 		    event: 'click' 		// switch on event "click", "mouseover", etc.
 	});
