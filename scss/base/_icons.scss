@@ -25,6 +25,14 @@
 	-moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-close:before {
+	content: "\e907";
+	color: #0a3b56;
+  }
+  .icon-arrow-left:before {
+	content: "\e908";
+	color: #0a3b56;
+  }
   .icon-open:before {
 	content: "\e906";
 	color: #fff;
@@ -52,5 +60,4 @@
   .icon-linkedin:before {
 	content: "\e905";
 	color: #2d638f;
-  }
-  
+  }  
