@@ -1331,7 +1331,9 @@ h3 {
           max-height: 71px; } }
     @media (min-width: 1024px) {
       .text-gallery__tabs .slick-track {
-        width: 100% !important; } }
+        width: 100% !important;
+        -webkit-transform: translate3d(0px, 0px, 0px) !important;
+                transform: translate3d(0px, 0px, 0px) !important; } }
   .text-gallery__tab {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
