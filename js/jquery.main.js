@@ -9,7 +9,8 @@ jQuery(function () {
 function initTabNavigation() {
 	let navItem = jQuery('.navigation-item');
 
-	navItem.on('click', function(){
+	navItem.on('click', function(e){
+		e.preventDefault();
 		let link = jQuery(this).attr('href');
 		let nextTab = jQuery('.tabset').find(`a[href="${link}"]`)
 		nextTab.trigger('click');
