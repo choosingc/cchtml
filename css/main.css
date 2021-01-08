@@ -971,6 +971,9 @@ h3 {
 .breadcrumb ol li:last-of-type a {
   color: #0a3b56; }
 
+.standfirst {
+  letter-spacing: .44px; }
+
 .courage-gallery-section .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -1008,7 +1011,11 @@ h3 {
     padding: 0 20px; }
     @media (min-width: 1024px) {
       .resources-section .standfirst {
-        margin: 0 auto 65px; } }
+        margin: 0 auto 62px; } }
+  .resources-section h2 {
+    line-height: 50px; }
+  .resources-section h3 {
+    letter-spacing: .8px; }
 
 .climb-section {
   margin-bottom: 40px; }
@@ -1459,7 +1466,7 @@ h3 {
     padding: 35px; }
     @media (min-width: 1024px) {
       .journey-invitation__text-block {
-        padding: 80px 91px; } }
+        padding: 80px 91px 80px 92px; } }
     .journey-invitation__text-block h3 {
       margin-bottom: 27px;
       margin-top: 0;
@@ -1469,7 +1476,7 @@ h3 {
       font-size: 21px;
       line-height: 34px;
       text-align: center;
-      letter-spacing: 1px; }
+      letter-spacing: .8px; }
       @media (min-width: 1024px) {
         .journey-invitation__text-block h3 {
           text-align: left;
@@ -1570,8 +1577,8 @@ h3 {
     font-size: 24px;
     font-weight: 400;
     width: 100%;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin-top: -6px;
+    margin-bottom: 29px;
     text-align: center;
     letter-spacing: 1px; }
     @media (min-width: 1024px) {
@@ -2377,6 +2384,10 @@ a.btn {
   .main-courage h5 {
     margin-bottom: 12px; }
 
+@media (min-width: 1024px) {
+  .book {
+    margin-bottom: 115px; } }
+
 .book__order {
   max-width: 300px;
   margin: 0 auto 40px; }
@@ -2461,10 +2472,10 @@ a.btn {
   @media (max-width: 768px) {
     .book-cards .review-card {
       max-width: calc(50% - 21px); }
-      .book-cards .review-card:nth-child(2n+2) {
-        margin-right: 0; }
       .book-cards .review-card:nth-child(3n+3) {
-        margin-right: 42px; } }
+        margin-right: 42px; }
+      .book-cards .review-card:nth-child(2n+2) {
+        margin-right: 0; } }
   @media (max-width: 480px) {
     .book-cards .review-card {
       max-width: 100%;

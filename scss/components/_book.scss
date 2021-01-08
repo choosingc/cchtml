@@ -1,4 +1,9 @@
 .book {
+
+	@include media ('>=desktop') {
+		margin-bottom: 115px;
+	}
+	
 	&__order {
 		max-width: 300px;
 		margin: 0 auto 40px;

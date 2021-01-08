@@ -31,12 +31,12 @@
 		@include media ('<=tablet') {
 			max-width: calc(50% - 21px);
 
-			&:nth-child(2n+2) {
-				margin-right: 0;
-			}
-
 			&:nth-child(3n+3) {
 				margin-right: 42px;
+			}
+
+			&:nth-child(2n+2) {
+				margin-right: 0;
 			}
 		}
 
