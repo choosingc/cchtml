@@ -739,7 +739,7 @@ textarea {
   input[type='search']:focus,
   input[type='password']:focus,
   textarea:focus {
-    border-color: #333; }
+    border-color: #000; }
   input[type='text']::-webkit-input-placeholder,
   input[type='tel']::-webkit-input-placeholder,
   input[type='email']::-webkit-input-placeholder,
@@ -912,6 +912,53 @@ h3 {
     /* 1.5em = 24px */
     padding-right: 1.5em;
     /* 1.5em = 24px */ } }
+
+.book-page h1 {
+  letter-spacing: .58px; }
+
+.book-page .header_action-center .s_image {
+  right: 218px;
+  bottom: 70px; }
+
+.book-page .page_title_and_image h1 {
+  padding-top: 112px; }
+
+.book-page .main-courage {
+  padding: 90px 0 100px; }
+  @media (min-width: 1024px) {
+    .book-page .main-courage {
+      padding: 157px 0 200px; } }
+  .book-page .main-courage .standfirst {
+    margin-bottom: 20px; }
+    @media (min-width: 1024px) {
+      .book-page .main-courage .standfirst {
+        margin-bottom: 40px; } }
+  .book-page .main-courage__text {
+    margin-bottom: 24px; }
+  .book-page .main-courage__bold-italic {
+    font-weight: 700;
+    font-style: italic; }
+  .book-page .main-courage .col:nth-of-type(2) {
+    margin-top: 20px; }
+    @media (min-width: 1024px) {
+      .book-page .main-courage .col:nth-of-type(2) {
+        margin-top: -29px; } }
+
+.book-page .start-courage {
+  padding: 50px 50px 50px; }
+  @media (min-width: 768px) {
+    .book-page .start-courage {
+      padding: 93px 100px 95px; } }
+  .book-page .start-courage .start-courage__image-block {
+    top: 72px;
+    right: -136px;
+    display: none; }
+    @media (min-width: 768px) {
+      .book-page .start-courage .start-courage__image-block {
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 1px;
+        display: block; } }
 
 .courage-gallery-section .container {
   max-width: 1130px;
@@ -2131,6 +2178,23 @@ a.btn {
     @media (min-width: 1024px) {
       .intro__image-block {
         display: none; } }
+  .intro_book {
+    padding: 0; }
+    .intro_book .intro__button-block {
+      margin: 0 auto 64px; }
+    .intro_book .intro__order-text {
+      color: #000;
+      margin-bottom: 18px; }
+    .intro_book .intro__bottom {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .intro_book .intro__order-text-heading {
+      padding-top: 37px; }
 
 .review-card {
   padding: 36px 36px 28px;
@@ -2148,14 +2212,14 @@ a.btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 23px; }
+  margin-bottom: 42px; }
   @media (min-width: 1024px) {
     .review-card {
       min-height: 270px;
       max-width: 261px; } }
   @media (min-width: 1024px) {
     .review-card:not(:last-of-type) {
-      margin-right: 43px; } }
+      margin-right: 42px; } }
   .review-card__text {
     font-size: 14px;
     line-height: 22px;
@@ -2285,4 +2349,106 @@ a.btn {
     letter-spacing: 2.7px; }
   .main-courage h5 {
     margin-bottom: 12px; }
+
+.book__order {
+  max-width: 300px;
+  margin: 0 auto 40px; }
+  @media (min-width: 1024px) {
+    .book__order {
+      margin: 0 108px 0 0; } }
+
+.book__image {
+  margin-bottom: 29px;
+  min-width: 397px; }
+
+.book__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+  @media (min-width: 1024px) {
+    .book__block {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.book__quote-text {
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: .3px;
+  color: #0094d9;
+  margin: 0 0 40px; }
+  @media (min-width: 1024px) {
+    .book__quote-text {
+      margin: 0 0 72px; } }
+
+.book__quote-author {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1.04px;
+  color: #0a3b56;
+  text-transform: uppercase; }
+
+.book__quote-block {
+  padding-bottom: 45px;
+  border-bottom: 1px solid #aebbc7; }
+
+.book__content-bottom {
+  margin-bottom: 50px; }
+  @media (min-width: 1024px) {
+    .book__content-bottom {
+      margin-bottom: 0; } }
+  .book__content-bottom h2 {
+    margin: 55px 0 25px; }
+    @media (min-width: 1024px) {
+      .book__content-bottom h2 {
+        margin: 102px 0 38px; } }
+  .book__content-bottom p {
+    letter-spacing: .32px;
+    margin-bottom: 24px; }
+  .book__content-bottom .standfirst {
+    margin-bottom: 35px; }
+
+.book-cards h3 {
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: .96px; }
+
+.book-cards .review-card {
+  background-color: rgba(174, 187, 199, 0.2);
+  max-width: calc(25% - 32px);
+  margin-right: 42px; }
+  .book-cards .review-card:nth-child(4n+4) {
+    margin-right: 0; }
+  @media (max-width: 1024px) {
+    .book-cards .review-card {
+      max-width: calc(33% - 28px); }
+      .book-cards .review-card:nth-child(3n+3) {
+        margin-right: 0; }
+      .book-cards .review-card:nth-child(4n+4) {
+        margin-right: 42px; } }
+  @media (max-width: 768px) {
+    .book-cards .review-card {
+      max-width: calc(50% - 21px); }
+      .book-cards .review-card:nth-child(2n+2) {
+        margin-right: 0; }
+      .book-cards .review-card:nth-child(3n+3) {
+        margin-right: 42px; } }
+  @media (max-width: 480px) {
+    .book-cards .review-card {
+      max-width: 100%;
+      margin-right: 0; }
+      .book-cards .review-card:nth-child(3n+3) {
+        margin-right: 0; } }
+
+.book-cards__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 /*# sourceMappingURL=main.css.map */

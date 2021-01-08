@@ -1,0 +1,74 @@
+.book {
+	&__order {
+		max-width: 300px;
+		margin: 0 auto 40px;
+
+		@include media ('>=desktop') {
+			margin:0 108px 0 0;
+		}
+	}
+
+	&__image {
+		margin-bottom: 29px;
+		min-width: 397px;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column-reverse;
+
+		@include media ('>=desktop') {
+			flex-direction: row;
+		}
+	}
+
+	&__quote-text {
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: .3px;
+		color: $blue-100;
+		margin: 0 0 40px;
+
+		@include media ('>=desktop') {
+			margin: 0 0 72px;
+		}
+	}
+
+	&__quote-author {
+		font-size: 13px;
+		line-height: 18px;
+		letter-spacing: 1.04px;
+		color: $blue-200;
+		text-transform: uppercase;
+	}
+
+	&__quote-block {
+		padding-bottom: 45px;
+		border-bottom: 1px solid $gray-200;
+	}
+
+	&__content-bottom {
+		margin-bottom: 50px;
+
+		@include media ('>=desktop') {
+			margin-bottom: 0;
+		}
+		
+		h2 {
+			margin: 55px 0 25px;
+
+			@include media ('>=desktop') {
+				margin: 102px 0 38px;
+			}
+		}
+
+		p {
+			letter-spacing: .32px;
+			margin-bottom: 24px;
+		}
+
+		.standfirst {
+			margin-bottom: 35px;
+		}
+	}
+}

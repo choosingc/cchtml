@@ -184,4 +184,26 @@
 			display: none;
 		}
 	}
+
+	&_book {
+		padding: 0;
+
+		.intro__button-block {
+			margin: 0 auto 64px;
+		}
+
+		.intro__order-text {
+			color: $black;
+			margin-bottom: 18px;
+		}
+
+		.intro__bottom {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.intro__order-text-heading {
+			padding-top: 37px;
+		}
+	}
 }

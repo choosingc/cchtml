@@ -7,7 +7,7 @@
 	display: flex;
     flex-direction: column;
 	justify-content: space-between;
-	margin-bottom: 23px;
+	margin-bottom: 42px;
 
 	@include media ('>=desktop') {
 		min-height: 270px;
@@ -17,7 +17,7 @@
 	&:not(:last-of-type) {
 
 		@include media ('>=desktop') {
-			margin-right: 43px;
+			margin-right: 42px;
 		}
 	}
 

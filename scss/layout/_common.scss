@@ -80,3 +80,74 @@ h3 {
 		padding-right: 1.5em; /* 1.5em = 24px */
 	}
 }
+
+.book-page {
+	h1 {
+		letter-spacing: .58px;
+	}
+
+	.header_action-center .s_image {
+		right: 218px;
+		bottom: 70px;
+	}
+
+	.page_title_and_image h1 {
+		padding-top: 112px;
+	}
+
+	.main-courage {
+		padding: 90px 0 100px;
+
+		@include media ('>=desktop') {
+			padding: 157px 0 200px;
+		}
+
+		.standfirst {
+			margin-bottom: 20px;
+
+			@include media ('>=desktop') {
+				margin-bottom: 40px;
+			}
+		}
+
+		&__text {
+			margin-bottom: 24px;
+		}
+		
+		&__bold-italic {
+			font-weight: 700;
+			font-style: italic;
+		}
+
+		.col {
+			&:nth-of-type(2) {
+				margin-top: 20px;
+
+				@include media ('>=desktop') {
+					margin-top: -29px;
+				}
+			}
+		}
+	}
+
+	.start-courage {
+		padding: 50px 50px 50px;
+
+		@include media ('>=tablet') {
+			padding: 93px 100px 95px;
+		}
+
+		.start-courage__image-block {
+			top: 72px;
+			right: -136px;
+			display: none;
+
+			@include media ('>=tablet') {
+				font-size: 24px;
+				line-height: 34px;
+				letter-spacing: 1px;
+				display: block;
+			}
+		}
+	}
+}
