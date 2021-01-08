@@ -17,4 +17,12 @@
 			margin: 0 auto;
 		}
 	}
+
+	&_brands {
+		padding-top: 25px;
+
+		@include media ('>=tablet') {
+			padding-top: 50px;
+		}
+	}
 }
