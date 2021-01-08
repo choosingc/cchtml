@@ -28,7 +28,8 @@ $media-expressions: (
 @import 'base/mixins';
 @import 'base/helpers';
 @import 'base/forms',
-'base/icons';
+'base/icons',
+'base/fonts';
 
 @import 'layout/header',
 'layout/common',

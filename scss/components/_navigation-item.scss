@@ -49,6 +49,8 @@
 	&_prev {
 		padding-right: 24px;
 		display: none;
+		width: 100%;
+		justify-content: flex-end;
 
 		@include media ('>=tablet') {
 			display: flex;
@@ -60,6 +62,10 @@
 
 		span {
 			padding-left: 12px;
+		}
+
+		img {
+			max-width: 7px;
 		}
 	}
 

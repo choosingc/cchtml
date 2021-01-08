@@ -16,8 +16,10 @@ main {
 .page_title_and_image {
 	&_cc-center {
 		h1 {
-			padding-right: 40px;
-			padding-left: 40px;
+			@include media ('>=tablet') {
+				padding-right: 40px;
+				padding-left: 40px;
+			}
 		}
 	}
 }
@@ -29,6 +31,10 @@ main {
 		@extend %transition;
 		filter: brightness(.8);
 	}
+}
+
+h2 {
+	letter-spacing: .4px;
 }
 
 h3 {
@@ -151,3 +157,20 @@ h3 {
 		}
 	}
 }
+
+.breadcrumb {
+	ol {
+		li {
+			a {
+				letter-spacing: .28px;
+			}
+
+			&:last-of-type {
+				a {
+					color: $blue-200;
+				}
+			}
+		}
+	}
+}
+

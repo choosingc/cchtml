@@ -167,8 +167,20 @@
 		}
 
 		.main-text {
+
+			.df-row {
+				.col-md-6 {
+					&:nth-of-type(1) {
+						margin-bottom: 40px;
+
+						@include media ('>=desktop') {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
 			.standfirst {
-				margin: 0 0 51px;
+				margin: 0 0 15px;
 				letter-spacing: .4px;
 				font-size: 22px;
 

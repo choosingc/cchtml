@@ -9,10 +9,11 @@ a.btn {
 		border-radius: 4px;
 		text-align: center;
 		line-height: 1.2;
+		letter-spacing: 1.28px;
 
 		@include media ('>=desktop') {
 			font-size: 16px;
-			padding: 15px 36px;
+			padding: 16px 34px 14px;
 		}
 	
 	&_primary {

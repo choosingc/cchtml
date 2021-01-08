@@ -114,7 +114,12 @@
 	}
 
 	&__text {
-		letter-spacing: .3px;
+		letter-spacing: .32px;
+
+		p {
+			margin-top: 0;
+			margin-bottom: 25px;
+		}
 	}
 
 	&__tabs-block {
