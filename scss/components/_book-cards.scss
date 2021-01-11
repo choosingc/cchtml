@@ -1,0 +1,58 @@
+.book-cards {
+	h3 {
+		margin-bottom: 60px;
+		text-transform: uppercase;
+		letter-spacing: .96px;
+		font-family: 'Lato';
+	}
+
+	.review-card {
+		background-color: rgba(174, 187, 199, .2);
+		max-width: calc(25% - 32px);
+		margin-right: 42px;
+		
+		&:nth-child(4n+4) {
+			margin-right: 0;
+		}
+
+
+		@include media ('<=desktop') {
+			max-width: calc(33% - 28px);
+
+			&:nth-child(3n+3) {
+				margin-right: 0;
+			}
+
+			&:nth-child(4n+4) {
+				margin-right: 42px;
+			}
+
+		}
+
+		@include media ('<=tablet') {
+			max-width: calc(50% - 21px);
+
+			&:nth-child(3n+3) {
+				margin-right: 42px;
+			}
+
+			&:nth-child(2n+2) {
+				margin-right: 0;
+			}
+		}
+
+		@include media ('<=phone') {
+			max-width: 100%;
+			margin-right: 0;
+
+			&:nth-child(3n+3) {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

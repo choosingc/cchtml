@@ -4,4 +4,13 @@
 		margin: 0 auto;
 		padding-bottom: 55px;
 	}
+
+	h2 {
+		margin-bottom: 22px;
+		line-height: 42px;
+
+		@include media ('>=desktop') {
+			margin-bottom: 58px;
+		}
+	}
 }

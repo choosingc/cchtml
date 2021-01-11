@@ -1,0 +1,137 @@
+.accordion-block {
+	margin-top: 41px;
+
+	@include media ('>=tablet') {
+		margin-top: 61px;
+	}
+
+	&__heading {
+		font-size: 13px;
+		font-family: 'Lato';
+		line-height: 18px;
+		font-weight: 400;
+		color: $blue-200;
+		text-transform: uppercase;
+		margin-top: 0;
+		margin-bottom: 21px;
+		letter-spacing: 1px;
+	}
+
+	&__item {
+		border-bottom: 1px solid $gray-300;
+
+		&:first-of-type {
+			border-top: 1px solid $gray-300;
+		}
+	}
+
+	&__title {
+		min-height: 67px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 12px 11px 14px 15px;
+		cursor: pointer;
+
+		@include media ('>=tablet') {
+			padding: 12px 20px 14px 15px;
+		}
+
+		span {
+			font-size: 16px;
+			line-height: 21px;
+			font-weight: 700;
+			font-family: 'Lato';
+			text-transform: uppercase;
+			color: $blue-100;
+			padding-right: 10px;
+			letter-spacing: -.1px;
+
+			@include media ('>=tablet') {
+				letter-spacing: 1.2px;
+				padding-right: 20px;
+			}
+		}
+		
+		&.open {
+			.accordion-block__icon {
+				&::after {
+					content: none;
+				}
+			}
+		}
+	}
+
+	&__icon {
+		@include size(18px);
+		min-width: 18px;
+		position: relative;
+
+		@include media ('>=tablet') {
+			@include size(22px);
+			min-width: 22px;
+		}
+
+		&::before {
+			@include size(100%, 3px);
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			background-color: $blue-100;
+			border-radius: 5px;
+		}
+
+		&::after {
+			@include size(3px, 100%);
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: $blue-100;
+			border-radius: 5px;
+		}
+	}
+
+	&__content {
+		display: none;
+		padding: 0 55px 27px 15px;
+
+		.short-text {
+			max-height: 176px;
+			overflow: hidden;
+		}
+
+		p {
+
+			font-size: 14px;
+			line-height: 22px;
+			margin-top: 0;
+		}
+	}
+
+	&__btn {
+		font-size: 12px;
+		font-weight: 700;
+		color: $blue-700;
+		text-transform: uppercase;
+		padding: 5px 12px;
+		line-height: 1.2;
+		border: 1px solid $gray-300;
+		border-radius: 5px;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.col-md-6 {
+		&:nth-of-type(1) {
+			margin-bottom: 73px;
+
+			@include media ('>=desktop') {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

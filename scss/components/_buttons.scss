@@ -1,0 +1,50 @@
+a.btn {
+		@extend %transition;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		padding: 13px 36px;
+		display: inline-block;
+		border-radius: 4px;
+		text-align: center;
+		line-height: 1.2;
+		letter-spacing: 1.28px;
+
+		@include media ('>=desktop') {
+			font-size: 16px;
+			padding: 16px 34px 14px;
+		}
+	
+	&_primary {
+		background-color: $blue-100;
+		color: $white;
+
+		&:hover {
+			@extend %transition;
+			background-color: $blue-600;
+			color: $white;
+		}
+	}
+
+	&_secondary {
+		background-color: $white;
+		color: $blue-200;
+
+		&:hover {
+			@extend %transition;
+			background-color: $blue-600;
+			color: $white;
+		}
+	}
+
+	&_icon {
+		padding-right: 60px;
+		position: relative;
+
+		img {
+			position: absolute;
+			right: 32px;
+		}
+	}
+}

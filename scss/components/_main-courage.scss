@@ -1,0 +1,63 @@
+.main-courage {
+	background: $yellow-100;
+	background: linear-gradient(to right, $yellow-100 0%, $yellow-200 100%);
+	padding: 75px 0 75px;
+
+	@include media ('>=desktop') {
+		padding: 150px 0 144px;
+	}
+
+	.col {
+		&:nth-of-type(1) {
+			width: 100%;
+			
+			@include media ('>=desktop') {
+				width: 48.2%;
+				padding-right: 105px;
+			}
+		}
+
+		&:nth-of-type(2) {
+			width: 100%;
+			margin-top: 7px;
+
+			@include media ('>=desktop') {
+				width: 51.8%;
+				margin-top: 71px;
+			}
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+
+		@include media ('>=desktop') {
+			flex-direction: row;
+		}
+	}
+
+	&__text {
+		margin-bottom: 34px;
+
+		p {
+			margin: 0;
+
+			&:not(:last-of-type) {
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+	&__heading {
+		margin: 0 0 47px;
+	}
+
+	h2 {
+		letter-spacing: 2.7px;
+	}
+
+	h5 {
+		margin-bottom: 12px;
+	}
+}

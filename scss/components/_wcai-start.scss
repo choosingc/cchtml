@@ -1,0 +1,74 @@
+.wcai-start {
+	padding: 30px 20px;
+	border: 1px solid $gray-200;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 80px;
+
+	@include media ('>=phone') {
+		padding: 74px 59px 82px;
+	}
+
+	@include media ('>=tablet') {
+		flex-direction: row;
+	}
+
+	@include media ('>=desktop') {
+		margin-bottom: 152px;
+	}
+	
+
+	&__block {
+		&:nth-of-type(1) {
+			width: 100%;
+
+			@include media ('>=tablet') {
+				width: 80%;
+			}
+
+			@include media ('>=desktop') {
+				width: 63%;
+			}
+		}
+
+		&:nth-of-type(2) {
+			width: 30%;
+			position: relative;
+			left: 76%;
+			top: -55px;
+			
+
+			@include media ('>=phone') {
+				top: -100px;
+			}
+
+			@include media ('>=tablet') {
+				width: 37%;
+				left: 90px;
+				top: -40px;
+			}
+
+			img {
+				position: absolute;
+				width: 100%;
+
+				@include media ('>=desktop') {
+					width: auto;
+				}
+			}
+		}
+
+		h3 {
+			font-family: 'Lato';
+			text-transform: uppercase;
+			margin: 0 0 7px 0;
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 27px;
+			letter-spacing: .3px;
+		}
+	}
+}

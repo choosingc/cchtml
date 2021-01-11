@@ -236,7 +236,7 @@ h2 {
 
 @media screen and
 (max-width: 767px) {
-	.cmedium_width_plus_padding {
+	.medium_width_plus_padding {
 		padding-left: 1.5em; /* 1.5em = 24px */
 		padding-right: 1.5em; /* 1.5em = 24px */
 	}

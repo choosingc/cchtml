@@ -13,8 +13,16 @@
 		}
 
 		h1 {
-			max-width: 650px;
+			max-width: 690px;
 			margin: 0 auto;
+		}
+	}
+
+	&_brands {
+		padding-top: 25px;
+
+		@include media ('>=tablet') {
+			padding-top: 50px;
 		}
 	}
 }

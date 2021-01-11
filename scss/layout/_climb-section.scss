@@ -1,3 +1,7 @@
 .climb-section {
-	margin-bottom: 197px;
+	margin-bottom: 40px;
+
+	@include media ('>=desktop') {
+		margin-bottom: 197px;
+	}
 }

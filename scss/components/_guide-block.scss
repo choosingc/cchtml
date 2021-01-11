@@ -1,0 +1,52 @@
+.guide-block {
+	background-color: $blue-100;
+	color: $white;
+	padding: 50px 0 200px;
+
+	@include media ('>=widescreen') {
+		padding: 93px 0 200px;
+	}
+
+	&__content {
+		max-width: 570px;
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+
+		p {
+			margin: 0 0 37px;
+			letter-spacing: .3px;
+		}
+	}
+
+	&__image {
+		position: absolute;
+		top: calc(100% + 25px);
+		left: 50%;
+		transform: translateX(-50%);
+
+		@include media ('>=widescreen') {
+			top: -17px;
+    		left: -49px;
+			transform: translateX(-100%);
+
+			img {
+				max-width: initial;
+			}
+		}
+
+		img {
+			max-width: 140px;
+
+			@include media ('>=widescreen') {
+				max-width: initial;
+			}
+		}
+	}
+
+	h3 {
+		text-transform: uppercase;
+		font-family: 'Lato';
+		margin: 0 0 9px;
+	}
+}
