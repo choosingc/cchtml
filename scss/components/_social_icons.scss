@@ -1,0 +1,39 @@
+.social_pages {
+	a {
+		@include animate(opacity);
+
+		@include media ('>=tablet') {
+			margin-right: 10px;
+		}
+
+		@include media ('>=desktop') {
+			margin-right: 17px;
+		}
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	i {
+		@include size(30px);
+
+		position: relative;
+		display: inline-block;
+		line-height: 30px;
+		background-color: $white;
+		border-radius: 50%;
+
+		@include media ('>=desktop') {
+			@include size(33px);
+
+			line-height: 33px;
+		}
+
+		&:before {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%)
+		}
+	}
+}
