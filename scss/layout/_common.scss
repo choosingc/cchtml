@@ -1,5 +1,6 @@
 body {
 	min-width: 320px;
+	padding-bottom: 0;
 }
 
 main {
@@ -186,3 +187,17 @@ h3 {
 	letter-spacing: .44px;
 }
 
+.competent_sec {
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.latest_blog {
+	padding-top: 80px;
+}
+
+footer {
+	@include media ('<=991px') {
+		margin-top: 0;
+	}
+}

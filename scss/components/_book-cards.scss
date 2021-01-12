@@ -54,5 +54,14 @@
 	&__block {
 		display: flex;
 		flex-wrap: wrap;
+		padding-bottom: 12vw;
+
+		@include media ('>=tablet') {
+			padding-bottom: 7vw;
+		}
+
+		@include media ('>=desktop') {
+			padding-bottom: 108px;
+		}
 	}
 }
