@@ -2145,6 +2145,10 @@ a.btn {
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer; }
+    .intro__download-button:hover {
+      -webkit-transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
+      background-color: #0094d9; }
   .intro__button-text {
     font-size: 13px;
     line-height: 18px;
@@ -2530,7 +2534,14 @@ a.btn {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  padding-bottom: 12vw; }
+  @media (min-width: 768px) {
+    .book-cards__block {
+      padding-bottom: 7vw; } }
+  @media (min-width: 1024px) {
+    .book-cards__block {
+      padding-bottom: 108px; } }
 
 .tab-image {
   margin: 0 auto; }
