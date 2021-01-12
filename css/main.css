@@ -997,6 +997,17 @@ h3 {
 .standfirst {
   letter-spacing: .44px; }
 
+.competent_sec {
+  margin-bottom: 40px;
+  overflow: hidden; }
+
+.latest_blog {
+  padding-top: 80px; }
+
+@media (max-width: 991px) {
+  footer {
+    margin-top: 0; } }
+
 .courage-gallery-section .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -2367,7 +2378,9 @@ a.btn {
   background: #f7f7e1;
   background: -webkit-linear-gradient(left, #f7f7e1 0%, #fdfdf3 100%);
   background: linear-gradient(to right, #f7f7e1 0%, #fdfdf3 100%);
-  padding: 75px 0 75px; }
+  padding: 75px 0 75px;
+  margin-bottom: 40px;
+  overflow: hidden; }
   @media (min-width: 1024px) {
     .main-courage {
       padding: 150px 0 144px; } }
