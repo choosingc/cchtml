@@ -1,4 +1,5 @@
 .home-page {
+
 	header {
 		background-image: linear-gradient(200deg, #61798e 0%, #3b5064 100%);
 		
@@ -16,4 +17,42 @@
 	.region-breadcrumb {
 		display: none;
 	}
+
+	
+
+	.start-courage {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@include media ('<=desktop') {
+			padding: 50px;
+		}
+
+		.btn {
+			@include media ('<=desktop') {
+				order: 3;
+				margin-top: 30px;
+			}
+		}
+
+		.start-courage__image-block {
+		
+			@include media ('<=desktop') {
+				top: 152px;
+				right: 89px;
+				height: 30vw;
+				max-height: 200px;
+				overflow: hidden;
+				position: static;
+				margin-left: -30px;
+			}
+	
+			 img {
+				 position: static;
+			 }
+		}
+	}
+
+	
 }

@@ -331,7 +331,7 @@ header {
 }
 
 header.beige {
-	background-color: #FAFAE8;
+	background-image: linear-gradient(260deg, #fafae8 0%, #f1f0cd 100%);
 }
 
 header.grey {
@@ -410,6 +410,7 @@ header.grey .menu_top a:visited {
 .page_title_and_image {
 	position: relative;
 	height: 293px;
+	z-index: 1;
 }
 
 .page_title_and_image .s_image {

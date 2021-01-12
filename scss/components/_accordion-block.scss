@@ -14,7 +14,12 @@
 		text-transform: uppercase;
 		margin-top: 0;
 		margin-bottom: 21px;
+		margin-top: 45px;
 		letter-spacing: 1px;
+
+		@include media ('>=desktop') {
+			margin-top: 60px;
+		}
 	}
 
 	&__item {

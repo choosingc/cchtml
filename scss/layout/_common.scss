@@ -12,7 +12,7 @@ main {
 }
 
 .underline-text {
-	padding-bottom: 24px;
+	padding-bottom: 25px;
 	margin: 0 0 23px;
 	border-bottom: 1px solid $gray-200;
 }
@@ -21,8 +21,8 @@ main {
 	&_cc-center {
 		h1 {
 			@include media ('>=tablet') {
-				padding-right: 40px;
-				padding-left: 40px;
+				padding-right: 90px;
+				padding-left: 90px;
 			}
 		}
 	}
@@ -151,6 +151,10 @@ h3 {
 			top: 72px;
 			right: -136px;
 			display: none;
+
+			img {
+				position: static;
+			}
 
 			@include media ('>=tablet') {
 				font-size: 24px;

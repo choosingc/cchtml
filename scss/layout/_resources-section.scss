@@ -31,7 +31,10 @@
 	}
 
 	h2 {
-		line-height: 50px;
+		line-height: 42px;
+		@include media ('>=tablet') {
+			line-height: 50px;
+		}
 	}
 
 	h3 {

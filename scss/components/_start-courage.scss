@@ -46,7 +46,7 @@
 		right: -195px;
 		display: none;
 
-		@include media ('>=tablet') {
+		@include media ('>=desktop') {
 			display: block;
 		}
 
@@ -54,15 +54,19 @@
 			top: -240px;
 			right: -263px;
 		}
-		
-		
 
 		img {
-			mix-blend-mode: multiply;
-			max-width: 60%;
+			position: relative;
 
-			@include media ('>=desktop') {
-				max-width: 100%;
+			&:nth-of-type(1) {
+				left: 296px;
+				top: 9px;
+			}
+
+			&:nth-of-type(2) {
+				mix-blend-mode: multiply;
+				left: -51px;
+				top: 1px;
 			}
 		}
 	}

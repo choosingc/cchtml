@@ -4,6 +4,8 @@
 	align-items: flex-start;
 	padding-bottom: 25px;
 	border-bottom: 1px solid $blue-200;
+	z-index: 2;
+    position: relative;
 
 	@include media ('>=tablet') {
 		margin: 0;

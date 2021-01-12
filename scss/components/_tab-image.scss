@@ -7,34 +7,26 @@
 
 		.image-chat {
 			@include size(122px, 107px);
-			background-image: image-set(
-				url(../images/pages/start-journey/chat-icon.png) 1x,
-				url(../images/pages/start-journey/chat-icon@2x.png) 2x
-			);
+
+			background-image: url(../images/pages/start-journey/chat-icon.png);
 		}
 
 		.image-choose {
 			@include size(122px, 108px);
-			background-image: image-set(
-				url(../images/pages/start-journey/choose-icon.png) 1x,
-				url(../images/pages/start-journey/choose-icon@2x.png) 2x
-			);
+
+			background-image: url(../images/pages/start-journey/choose-icon.png);
 		}
 
 		.image-time {
 			@include size(82px, 108px);
-			background-image: image-set(
-				url(../images/pages/start-journey/time-icon.png) 1x,
-				url(../images/pages/start-journey/time-icon@2x.png) 2x
-			);
+
+			background-image: url(../images/pages/start-journey/time-icon.png);
 		}
 
 		.image-way {
 			@include size(93px, 108px);
-			background-image: image-set(
-				url(../images/pages/start-journey/way-icon.png) 1x,
-				url(../images/pages/start-journey/way-icon@2x.png) 2x
-			);
+			
+			background-image: url(../images/pages/start-journey/way-icon.png);
 		}
 	}
 }
@@ -44,68 +36,52 @@
 		li:hover {
 			.image-chat {
 				@include size(122px, 107px);
-				background-image: image-set(
-					url(../images/pages/start-journey/chat-icon-hover.png) 1x,
-					url(../images/pages/start-journey/chat-icon-hover@2x.png) 2x
-				);
+
+				background-image: url(../images/pages/start-journey/chat-icon-hover.png);
 			}
 
 			.image-choose {
 				@include size(122px, 108px);
-				background-image: image-set(
-					url(../images/pages/start-journey/choose-icon-hover.png) 1x,
-					url(../images/pages/start-journey/choose-icon-hover@2x.png) 2x
-				);
+
+				background-image: url(../images/pages/start-journey/choose-icon-hover.png);
 			}
 
 			.image-time {
 				@include size(82px, 108px);
-				background-image: image-set(
-					url(../images/pages/start-journey/time-icon-hover.png) 1x,
-					url(../images/pages/start-journey/time-icon-hover@2x.png) 2x
-				);
+
+				background-image: url(../images/pages/start-journey/time-icon-hover.png);
 			}
 
 			.image-way {
 				@include size(93px, 108px);
-				background-image: image-set(
-					url(../images/pages/start-journey/way-icon-hover.png) 1x,
-					url(../images/pages/start-journey/way-icon-hover@2x.png) 2x
-				);
+
+				background-image: url(../images/pages/start-journey/way-icon-hover.png);
 			}
 		}
 
 		li.active {
 			.image-chat {
 				@include size(122px, 107px);
-				background-image: image-set(
-					url(../images/pages/start-journey/chat-icon-active.png) 1x,
-					url(../images/pages/start-journey/chat-icon-active@2x.png) 2x
-				);
+
+				background-image: url(../images/pages/start-journey/chat-icon-active.png);
 			}
 
 			.image-choose {
 				@include size(122px, 108px);
-				background-image: image-set(
-					url(../images/pages/start-journey/choose-icon-active.png) 1x,
-					url(../images/pages/start-journey/choose-icon-active@2x.png) 2x
-				);
+
+				background-image: url(../images/pages/start-journey/choose-icon-active.png);
 			}
 
 			.image-time {
 				@include size(82px, 108px);
-				background-image: image-set(
-					url(../images/pages/start-journey/time-icon-active.png) 1x,
-					url(../images/pages/start-journey/time-icon-active@2x.png) 2x
-				);
+				
+				background-image: url(../images/pages/start-journey/time-icon-active.png);
 			}
 
 			.image-way {
 				@include size(93px, 108px);
-				background-image: image-set(
-					url(../images/pages/start-journey/way-icon-active.png) 1x,
-					url(../images/pages/start-journey/way-icon-active@2x.png) 2x
-				);
+
+				background-image: url(../images/pages/start-journey/way-icon-active.png);
 			}
 		}
 	}

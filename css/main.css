@@ -859,15 +859,17 @@ input[type='submit'] {
 .header_action-center {
   overflow: hidden; }
   .header_action-center .s_image {
-    right: 300px;
+    right: 308px;
+    bottom: -33px;
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
             transform: translateX(100%); }
+    .header_action-center .s_image img {
+      width: 78%; }
   .header_action-center .menu_top {
     position: relative;
     z-index: 2; }
   .header_action-center h1 {
-    max-width: 690px;
     margin: 0 auto; }
 
 .header_brands {
@@ -887,14 +889,14 @@ main {
   margin: 0 auto; }
 
 .underline-text {
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   margin: 0 0 23px;
   border-bottom: 1px solid #aebbc7; }
 
 @media (min-width: 768px) {
   .page_title_and_image_cc-center h1 {
-    padding-right: 40px;
-    padding-left: 40px; } }
+    padding-right: 90px;
+    padding-left: 90px; } }
 
 .slick-arrow:hover {
   filter: brightness(0.8); }
@@ -980,6 +982,8 @@ h3 {
     top: 72px;
     right: -136px;
     display: none; }
+    .book-page .start-courage .start-courage__image-block img {
+      position: static; }
     @media (min-width: 768px) {
       .book-page .start-courage .start-courage__image-block {
         font-size: 24px;
@@ -1035,7 +1039,10 @@ h3 {
       .resources-section .standfirst {
         margin: 0 auto 62px; } }
   .resources-section h2 {
-    line-height: 50px; }
+    line-height: 42px; }
+    @media (min-width: 768px) {
+      .resources-section h2 {
+        line-height: 50px; } }
   .resources-section h3 {
     letter-spacing: .8px; }
 
@@ -1088,7 +1095,7 @@ h3 {
     width: calc(50% - 2px);
     margin-bottom: 30px;
     line-height: 20px;
-    letter-spacing: 1px; }
+    letter-spacing: 1.28px; }
     @media (min-width: 1024px) {
       .opportunities-section .tabset li {
         width: calc(25% - 5px);
@@ -1238,6 +1245,38 @@ h3 {
 .home-page .region-breadcrumb {
   display: none; }
 
+.home-page .start-courage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1024px) {
+    .home-page .start-courage {
+      padding: 50px; } }
+  @media (max-width: 1024px) {
+    .home-page .start-courage .btn {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3;
+      margin-top: 30px; } }
+  @media (max-width: 1024px) {
+    .home-page .start-courage .start-courage__image-block {
+      top: 152px;
+      right: 89px;
+      height: 30vw;
+      max-height: 200px;
+      overflow: hidden;
+      position: static;
+      margin-left: -30px; } }
+  .home-page .start-courage .start-courage__image-block img {
+    position: static; }
+
 .advance-section {
   background: #f7f7e1;
   background: -webkit-linear-gradient(left, #f7f7e1 0%, #fdfdf3 100%);
@@ -1372,7 +1411,7 @@ h3 {
     padding: 10px 25px;
     text-align: center;
     border: 1px solid #bfc4c8;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.28px;
     line-height: 18px;
     color: #fff;
     cursor: pointer; }
@@ -1794,7 +1833,11 @@ a.btn {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 21px;
+    margin-top: 45px;
     letter-spacing: 1px; }
+    @media (min-width: 1024px) {
+      .accordion-block__heading {
+        margin-top: 60px; } }
   .accordion-block__item {
     border-bottom: 1px solid #a4b2bf; }
     .accordion-block__item:first-of-type {
@@ -2014,7 +2057,7 @@ a.btn {
     top: -70px;
     right: -195px;
     display: none; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .start-courage__image-block {
         display: block; } }
     @media (min-width: 1024px) {
@@ -2022,11 +2065,14 @@ a.btn {
         top: -240px;
         right: -263px; } }
     .start-courage__image-block img {
-      mix-blend-mode: multiply;
-      max-width: 60%; }
-      @media (min-width: 1024px) {
-        .start-courage__image-block img {
-          max-width: 100%; } }
+      position: relative; }
+      .start-courage__image-block img:nth-of-type(1) {
+        left: 296px;
+        top: 9px; }
+      .start-courage__image-block img:nth-of-type(2) {
+        mix-blend-mode: multiply;
+        left: -51px;
+        top: 1px; }
   .start-courage .btn {
     position: relative;
     z-index: 1; }
@@ -2069,7 +2115,7 @@ a.btn {
   .intro__quote {
     font-size: 25px;
     line-height: 35px;
-    margin: 0 0 51px;
+    margin: 0 0 20px;
     position: relative;
     letter-spacing: 1.1px; }
     @media (min-width: 768px) {
@@ -2527,71 +2573,59 @@ a.btn {
     .tab-image__block .image-chat {
       width: 122px;
       height: 107px;
-      background-image: -webkit-image-set(url(../images/pages/start-journey/chat-icon.png) 1x, url(../images/pages/start-journey/chat-icon@2x.png) 2x);
-      background-image: image-set(url(../images/pages/start-journey/chat-icon.png) 1x, url(../images/pages/start-journey/chat-icon@2x.png) 2x); }
+      background-image: url(../images/pages/start-journey/chat-icon.png); }
     .tab-image__block .image-choose {
       width: 122px;
       height: 108px;
-      background-image: -webkit-image-set(url(../images/pages/start-journey/choose-icon.png) 1x, url(../images/pages/start-journey/choose-icon@2x.png) 2x);
-      background-image: image-set(url(../images/pages/start-journey/choose-icon.png) 1x, url(../images/pages/start-journey/choose-icon@2x.png) 2x); }
+      background-image: url(../images/pages/start-journey/choose-icon.png); }
     .tab-image__block .image-time {
       width: 82px;
       height: 108px;
-      background-image: -webkit-image-set(url(../images/pages/start-journey/time-icon.png) 1x, url(../images/pages/start-journey/time-icon@2x.png) 2x);
-      background-image: image-set(url(../images/pages/start-journey/time-icon.png) 1x, url(../images/pages/start-journey/time-icon@2x.png) 2x); }
+      background-image: url(../images/pages/start-journey/time-icon.png); }
     .tab-image__block .image-way {
       width: 93px;
       height: 108px;
-      background-image: -webkit-image-set(url(../images/pages/start-journey/way-icon.png) 1x, url(../images/pages/start-journey/way-icon@2x.png) 2x);
-      background-image: image-set(url(../images/pages/start-journey/way-icon.png) 1x, url(../images/pages/start-journey/way-icon@2x.png) 2x); }
+      background-image: url(../images/pages/start-journey/way-icon.png); }
 
 .tabset_images li:hover .image-chat {
   width: 122px;
   height: 107px;
-  background-image: -webkit-image-set(url(../images/pages/start-journey/chat-icon-hover.png) 1x, url(../images/pages/start-journey/chat-icon-hover@2x.png) 2x);
-  background-image: image-set(url(../images/pages/start-journey/chat-icon-hover.png) 1x, url(../images/pages/start-journey/chat-icon-hover@2x.png) 2x); }
+  background-image: url(../images/pages/start-journey/chat-icon-hover.png); }
 
 .tabset_images li:hover .image-choose {
   width: 122px;
   height: 108px;
-  background-image: -webkit-image-set(url(../images/pages/start-journey/choose-icon-hover.png) 1x, url(../images/pages/start-journey/choose-icon-hover@2x.png) 2x);
-  background-image: image-set(url(../images/pages/start-journey/choose-icon-hover.png) 1x, url(../images/pages/start-journey/choose-icon-hover@2x.png) 2x); }
+  background-image: url(../images/pages/start-journey/choose-icon-hover.png); }
 
 .tabset_images li:hover .image-time {
   width: 82px;
   height: 108px;
-  background-image: -webkit-image-set(url(../images/pages/start-journey/time-icon-hover.png) 1x, url(../images/pages/start-journey/time-icon-hover@2x.png) 2x);
-  background-image: image-set(url(../images/pages/start-journey/time-icon-hover.png) 1x, url(../images/pages/start-journey/time-icon-hover@2x.png) 2x); }
+  background-image: url(../images/pages/start-journey/time-icon-hover.png); }
 
 .tabset_images li:hover .image-way {
   width: 93px;
   height: 108px;
-  background-image: -webkit-image-set(url(../images/pages/start-journey/way-icon-hover.png) 1x, url(../images/pages/start-journey/way-icon-hover@2x.png) 2x);
-  background-image: image-set(url(../images/pages/start-journey/way-icon-hover.png) 1x, url(../images/pages/start-journey/way-icon-hover@2x.png) 2x); }
+  background-image: url(../images/pages/start-journey/way-icon-hover.png); }
 
 .tabset_images li.active .image-chat {
   width: 122px;
   height: 107px;
-  background-image: -webkit-image-set(url(../images/pages/start-journey/chat-icon-active.png) 1x, url(../images/pages/start-journey/chat-icon-active@2x.png) 2x);
-  background-image: image-set(url(../images/pages/start-journey/chat-icon-active.png) 1x, url(../images/pages/start-journey/chat-icon-active@2x.png) 2x); }
+  background-image: url(../images/pages/start-journey/chat-icon-active.png); }
 
 .tabset_images li.active .image-choose {
   width: 122px;
   height: 108px;
-  background-image: -webkit-image-set(url(../images/pages/start-journey/choose-icon-active.png) 1x, url(../images/pages/start-journey/choose-icon-active@2x.png) 2x);
-  background-image: image-set(url(../images/pages/start-journey/choose-icon-active.png) 1x, url(../images/pages/start-journey/choose-icon-active@2x.png) 2x); }
+  background-image: url(../images/pages/start-journey/choose-icon-active.png); }
 
 .tabset_images li.active .image-time {
   width: 82px;
   height: 108px;
-  background-image: -webkit-image-set(url(../images/pages/start-journey/time-icon-active.png) 1x, url(../images/pages/start-journey/time-icon-active@2x.png) 2x);
-  background-image: image-set(url(../images/pages/start-journey/time-icon-active.png) 1x, url(../images/pages/start-journey/time-icon-active@2x.png) 2x); }
+  background-image: url(../images/pages/start-journey/time-icon-active.png); }
 
 .tabset_images li.active .image-way {
   width: 93px;
   height: 108px;
-  background-image: -webkit-image-set(url(../images/pages/start-journey/way-icon-active.png) 1x, url(../images/pages/start-journey/way-icon-active@2x.png) 2x);
-  background-image: image-set(url(../images/pages/start-journey/way-icon-active.png) 1x, url(../images/pages/start-journey/way-icon-active@2x.png) 2x); }
+  background-image: url(../images/pages/start-journey/way-icon-active.png); }
 
 .top {
   display: -webkit-box;
@@ -2604,7 +2638,9 @@ a.btn {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-bottom: 25px;
-  border-bottom: 1px solid #0a3b56; }
+  border-bottom: 1px solid #0a3b56;
+  z-index: 2;
+  position: relative; }
   @media (min-width: 768px) {
     .top {
       margin: 0;

@@ -3,8 +3,13 @@
 		overflow: hidden;
 
 		.s_image {
-			right: 300px;
-    		transform: translateX(100%);
+			right: 308px;
+			bottom: -33px;
+			transform: translateX(100%);
+			
+			img {
+				width: 78%;
+			}
 		}
 
 		.menu_top {
@@ -13,7 +18,6 @@
 		}
 
 		h1 {
-			max-width: 690px;
 			margin: 0 auto;
 		}
 	}
