@@ -5,6 +5,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	border-radius: 5px;
+	flex-direction: column-reverse;
+
+	@include media ('>=desktop') {
+		flex-direction: row;
+	}
 
 
 	& > div {

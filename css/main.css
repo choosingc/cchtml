@@ -1555,7 +1555,17 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+  @media (min-width: 1024px) {
+    .journey-invitation {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
   .journey-invitation > div {
     width: 100%; }
     @media (min-width: 1024px) {
