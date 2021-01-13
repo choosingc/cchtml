@@ -1,9 +1,16 @@
 .tab-image {
 	margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 	&__block {
 		@include size(122px, 108px);
-		margin: 0 auto 35px;
+		margin: 0 auto 20px;
+
+		@include media ('>=tablet') {
+			margin: 0 auto 35px;
+		}
 
 		.image-chat {
 			@include size(122px, 107px);
@@ -34,6 +41,11 @@
 .tabset {
 	&_images {
 		li:hover {
+
+			span {
+				color: $blue-700
+			}
+			
 			.image-chat {
 				@include size(122px, 107px);
 

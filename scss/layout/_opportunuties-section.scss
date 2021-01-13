@@ -218,4 +218,35 @@
 			}
 		}
 	}
+
+	&_start {
+		
+		@include media ('>=tablet') {
+			margin-bottom: 62px;
+		}
+
+		h2 {
+			letter-spacing: .4px;
+		}
+
+		.standfirst {
+			letter-spacing: .44px;
+		}
+
+		p {
+			letter-spacing: .32px;
+		}
+
+		.tabset {
+			li {
+				span {
+					font-size: 14px;
+
+					@include media ('>=tablet') {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 }
