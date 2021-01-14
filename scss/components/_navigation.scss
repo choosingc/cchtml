@@ -107,11 +107,7 @@
 
 		.site_name {
 			a {
-				color: $blue-700;
-
-				@include media ('>=tablet') {
-					color: $blue-200;
-				}
+				color: $blue-200;
 			}
 		}
 	}

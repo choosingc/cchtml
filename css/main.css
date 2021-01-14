@@ -2757,10 +2757,7 @@ a.btn {
       .beige .top :not(.site_name) a {
         color: #0a3b56; } }
   .beige .top .site_name a {
-    color: #61798e; }
-    @media (min-width: 768px) {
-      .beige .top .site_name a {
-        color: #0a3b56; } }
+    color: #0a3b56; }
 
 @media (min-width: 768px) {
   .site_name {
