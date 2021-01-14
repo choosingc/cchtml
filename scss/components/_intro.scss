@@ -23,13 +23,6 @@
 			font-size: 35px;
 			line-height: 47px;
 		}
-		
-		&::before {
-			content: '\201C';
-			position: absolute;
-			top: 0;
-			left: -22px;
-		}
 	}
 
 	&__top {
@@ -51,7 +44,6 @@
 	&__text-block {
 		max-width: 515px;
 		margin-bottom: 18px;
-		padding-left: 25px;
 
 		h2 {
 			margin: 0;

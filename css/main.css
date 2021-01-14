@@ -954,7 +954,8 @@ h3 {
   padding-top: 112px; }
 
 .book-page .main-courage {
-  padding: 90px 0 100px; }
+  padding: 90px 0 100px;
+  position: relative; }
   @media (min-width: 1024px) {
     .book-page .main-courage {
       padding: 157px 0 200px; } }
@@ -979,18 +980,38 @@ h3 {
   @media (min-width: 768px) {
     .book-page .start-courage {
       padding: 93px 100px 95px; } }
+  @media (min-width: 1024px) {
+    .book-page .start-courage {
+      position: static; } }
+  .book-page .start-courage__text {
+    position: relative;
+    z-index: 1; }
   .book-page .start-courage .start-courage__image-block {
-    top: 72px;
-    right: -136px;
     display: none; }
-    .book-page .start-courage .start-courage__image-block img {
-      position: static; }
     @media (min-width: 768px) {
       .book-page .start-courage .start-courage__image-block {
         font-size: 24px;
         line-height: 34px;
         letter-spacing: 1px;
-        display: block; } }
+        display: block;
+        top: 72px;
+        right: -136px; } }
+    @media (min-width: 1024px) {
+      .book-page .start-courage .start-courage__image-block {
+        top: 100%;
+        right: 0;
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%); } }
+    @media (min-width: 1300px) {
+      .book-page .start-courage .start-courage__image-block {
+        top: calc(100% - 35px);
+        right: 0;
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%); } }
+    .book-page .start-courage .start-courage__image-block img {
+      position: static; }
 
 .breadcrumb ol li a {
   letter-spacing: .28px; }
@@ -2169,11 +2190,6 @@ a.btn {
         margin: 0 0 31px;
         font-size: 35px;
         line-height: 47px; } }
-    .intro__quote::before {
-      content: '\201C';
-      position: absolute;
-      top: 0;
-      left: -22px; }
   .intro__top {
     margin-bottom: 28px;
     display: -webkit-box;
@@ -2193,8 +2209,7 @@ a.btn {
         max-width: 678px; } }
   .intro__text-block {
     max-width: 515px;
-    margin-bottom: 18px;
-    padding-left: 25px; }
+    margin-bottom: 18px; }
     .intro__text-block h2 {
       margin: 0; }
   .intro__quote-author {
