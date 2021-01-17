@@ -12,6 +12,11 @@
 
 /* - Core design */
 /* -- Widths for core design */
+/* -- Common HTML elements (links, etc.) */
+/* --- Links */
+/* ---- Default link colours, from components spec */
+/* --- Paragraphs */
+/* --- Headings */
 /* -- Sections */
 /* --- Header */
 /* --- Main section */
@@ -22,6 +27,7 @@
 
 /* - Common page elements */
 /* -- Text elements */
+/* -- Blue buttons */
 
 /* - Pages */
 /* -- About */
@@ -29,6 +35,7 @@
 /* ---- Sidebar width */
 /* ---- Sidebar content */
 /* --- Grey box */
+/* -- Contact */
 
 
 /**************************/
@@ -138,7 +145,7 @@ p {
 /* 	↑ 24px relative to the 16px root font size */
 }
 
-/* --- Headers */
+/* --- Headings */
 
 h1,
 h2,
@@ -172,6 +179,35 @@ h2 {
 		line-height: 42px;
 	}
 }
+
+/* ---- Medium black headings */
+
+h2.mid_heading {
+    font-family: 'Lato';
+	font-family: var(--cc-lato);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    font-size: 24px;
+}
+@media (min-width: 768px) {
+	h2.mid_heading {
+	    letter-spacing: .9px;
+	}
+}
+
+/* ---- Small blue headings */
+
+h2.small_heading {
+	font-family: var(--cc-lato);
+	color: #0094d9;
+	color: var(--cc-blue);
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
 
 /* -- Widths for core design */
 
@@ -761,10 +797,54 @@ footer .s_rule {
 
 /* - Zones */
 
-/* -- Sidebar zones */
+/* -- Columns & sidebars */
+
+/* --- Multicolumn zones */
+
+.multi_column {
+	display: flex;
+}
+
+.multi_column > .s_left,
+.multi_column > .s_right {
+	flex-shrink: 1;
+/* 	flex-basis: 45%; */
+}
+
+.multi_column > .s_gutter {
+	flex-shrink: 0;
+/* 	flex-basis: 10%; */
+}
+
+.multi_column.s_2_columns {
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 767px) {
+	.multi_column {
+		flex-direction: column;
+	}
+	
+	.multi_column > .s_gutter {
+		flex-basis: 2em !important;
+	}
+	
+	
+	.multi_column > .s_left,
+	.multi_column > .s_right {
+		width: 100%;
+		flex-basis: auto !important;
+	}
+}
+
+/* --- Sidebar zones */
 
 .sidebar_and_content {
 	display: flex;
+}
+
+#about_page .sidebar_and_content {
 	flex-direction: row-reverse;
 }
 
@@ -807,7 +887,52 @@ section.grey_gradient {
 	to the default 1.5em line height I set for <p>s */
 }
 
+/* -- Blue buttons */
 
+/* (Note: Based on CMC's input.btn classes
+	*/
+
+input.btn, input.btn_primary:hover, input.btn_secondary:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
+}
+
+input.btn {
+  border: none;
+  
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 13px 36px;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 1.28px; }
+  @media (min-width: 1024px) {
+    input.btn {
+      font-size: 16px;
+      padding: 16px 34px 14px; } }
+  input.btn_primary {
+    background-color: #0094d9;
+    color: #fff; }
+    input.btn_primary:hover {
+      background-color: #66bfe8;
+      color: #fff; }
+  input.btn_secondary {
+    background-color: #fff;
+    color: #0a3b56; }
+    input.btn_secondary:hover {
+      background-color: #66bfe8;
+      color: #fff; }
+  input.btn_icon {
+    padding-right: 60px;
+    position: relative; }
+    input.btn_icon img {
+      position: absolute;
+      right: 32px; }
+      
 /* - Pages */
 
 /* -- About */
@@ -903,13 +1028,93 @@ h2.sidebar_title {
 	margin-bottom: 0;
 }
 
-.grey_box h2 {
-	font-family: var(--cc-lato);
-	color: #0094d9;
-	color: var(--cc-blue);
-    text-transform: uppercase;
-    font-size: 16px;
+
+/* -- Contact */
+
+#contact_page .page_title_and_image .s_image {
+    bottom: 56px;
+    right: -4px;
 }
+
+#contact_page #only_contact_section {
+    margin-bottom: 200px;
+}
+
+#contact_page .multi_column > .s_left {
+    flex-basis: 564px;
+}
+
+#contact_page .multi_column > .s_right {
+    flex-basis: 420px;
+}
+
+#contact_page .multi_column > .s_gutter {
+	flex-basis: 143px;
+}
+
+
+/*********  Contact form  ***********/
+
+form.flex-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form.flex-form p {
+    color: #0A3B56;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+form.flex-form input, form.flex-form textarea { 
+	max-width: 450px;
+	border-radius:4px;
+	border: 1px solid #AEBBC7;
+	margin-bottom: 25px;
+	padding-left: 15px;
+}
+
+form.flex-form input {
+	height: 58px;
+}
+
+form.flex-form input[type=submit] {
+    height: 49px;
+    background: #0094D9;
+    max-width: 140px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+form.flex-form textarea { 
+	height: 178px;
+}
+
+form.flex-form input::placeholder, form.flex-form textarea::placeholder {
+	color: #AEBBC7;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
