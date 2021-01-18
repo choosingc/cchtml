@@ -77,7 +77,7 @@
   display: block;
   clear: both; }
 
-.slick-arrow, .slick-arrow:hover, .text-gallery__tab, .text-gallery__tab.slick-current, a.btn, a.btn_primary:hover, a.btn_secondary:hover {
+.slick-arrow, .slick-arrow:hover, .text-gallery__tab, .text-gallery__tab.slick-current, a.btn, a.btn_primary:hover, a.btn_secondary:hover, .article__heading i::before, .article__heading a:hover i::before {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
@@ -1013,6 +1013,117 @@ h3 {
     .book-page .start-courage .start-courage__image-block img {
       position: static; }
 
+.articles-page h1 {
+  letter-spacing: .58px; }
+
+.articles-page .opportunities-section h2 {
+  text-align: center; }
+
+.articles-page .navigation-item-block {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .articles-page .navigation-item-block .col {
+    width: 56px !important; }
+  .articles-page .navigation-item-block .navigation-item {
+    padding: 0 !important; }
+    .articles-page .navigation-item-block .navigation-item_prev {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: end; }
+      .articles-page .navigation-item-block .navigation-item_prev span {
+        padding-left: 20px; }
+    .articles-page .navigation-item-block .navigation-item_next {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .articles-page .navigation-item-block .navigation-item_next span {
+        padding-right: 20px; }
+    .articles-page .navigation-item-block .navigation-item_middle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .articles-page .navigation-item-block .navigation-item_middle span {
+        padding: 0 10px; }
+    .articles-page .navigation-item-block .navigation-item.active span {
+      color: #0094d9; }
+
+.articles-page .header_action-center .s_image {
+  right: 218px;
+  bottom: 70px; }
+
+.articles-page .page_title_and_image h1 {
+  padding-top: 112px; }
+
+.articles-page .main-courage {
+  padding: 90px 0 100px;
+  position: relative; }
+  @media (min-width: 1024px) {
+    .articles-page .main-courage {
+      padding: 157px 0 200px; } }
+  .articles-page .main-courage .standfirst {
+    margin-bottom: 20px; }
+    @media (min-width: 1024px) {
+      .articles-page .main-courage .standfirst {
+        margin-bottom: 40px; } }
+  .articles-page .main-courage__text {
+    margin-bottom: 24px; }
+  .articles-page .main-courage__bold-italic {
+    font-weight: 700;
+    font-style: italic; }
+  .articles-page .main-courage .col:nth-of-type(2) {
+    margin-top: 20px; }
+    @media (min-width: 1024px) {
+      .articles-page .main-courage .col:nth-of-type(2) {
+        margin-top: -29px; } }
+
+.articles-page .start-courage {
+  padding: 50px 50px 50px; }
+  @media (min-width: 768px) {
+    .articles-page .start-courage {
+      padding: 93px 100px 95px; } }
+  @media (min-width: 1024px) {
+    .articles-page .start-courage {
+      position: static; } }
+  .articles-page .start-courage__text {
+    position: relative;
+    z-index: 1; }
+  .articles-page .start-courage .start-courage__image-block {
+    display: none; }
+    @media (min-width: 768px) {
+      .articles-page .start-courage .start-courage__image-block {
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: 1px;
+        display: block;
+        top: 72px;
+        right: -136px; } }
+    @media (min-width: 1024px) {
+      .articles-page .start-courage .start-courage__image-block {
+        top: 100%;
+        right: 0;
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%); } }
+    @media (min-width: 1300px) {
+      .articles-page .start-courage .start-courage__image-block {
+        top: calc(100% - 35px);
+        right: 0;
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%); } }
+    .articles-page .start-courage .start-courage__image-block img {
+      position: static; }
+
 .breadcrumb ol li a {
   letter-spacing: .28px; }
 
@@ -1142,6 +1253,8 @@ h3 {
       transition: border-bottom 0s; }
       .opportunities-section .tabset li.active a {
         color: #0094d9; }
+  .opportunities-section .tabset_articles li {
+    width: calc(50% - 2px); }
 
 .opportunities-section .tab-content {
   margin-bottom: 75px; }
@@ -3098,4 +3211,43 @@ a.btn {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
+
+.article {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .article__item {
+    border-bottom: 1px solid #a4b2bf;
+    padding-bottom: 24px; }
+    .article__item:not(:last-of-type) {
+      margin-bottom: 42px; }
+  .article__top {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #0a3b56;
+    letter-spacing: 1.08px; }
+  .article__time {
+    padding-left: 5px; }
+  .article__heading {
+    position: relative;
+    margin: 12px 20px 20px 0; }
+    .article__heading i {
+      position: absolute;
+      font-size: 16px;
+      right: 0;
+      top: 0; }
+      .article__heading i::before {
+        color: #aebbc7; }
+    .article__heading a {
+      padding-right: 30px;
+      font-size: 22px;
+      color: #000;
+      display: block; }
+      @media (min-width: 768px) {
+        .article__heading a {
+          padding-right: 45px; } }
+      .article__heading a:hover i::before {
+        color: #0094d9; }
+  .article p {
+    letter-spacing: .4px; }
 /*# sourceMappingURL=main.css.map */
