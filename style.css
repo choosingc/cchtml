@@ -180,7 +180,13 @@ h2 {
 	}
 }
 
-/* ---- Medium black headings */
+/* ---- Large black headings (big serif section titles) */
+
+h2.large_heading {
+	letter-spacing: 1.9px;
+}
+
+/* ---- Medium black headings (sans serif) */
 
 h2.mid_heading {
     font-family: 'Lato';
@@ -1095,7 +1101,21 @@ form.flex-form input::placeholder, form.flex-form textarea::placeholder {
 	font-size: 14px;
 }
 
+/* -- Curriculum */
+	
+#def_mom_sit .s_text {
+	
+}
 
+/* - Unsorted */
+	
+.type_1 h2.large_heading {
+    margin-bottom: 50px;
+}
+
+ul.dotted-list.in_middle_of_text {
+	margin-bottom: 30px;
+}
 
 
 
