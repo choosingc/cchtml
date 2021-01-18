@@ -52,6 +52,12 @@
 				}
 			}
 		}
+
+		&_articles {
+			li {
+				width: calc(50% - 2px);
+			}
+		}
 	}
 
 	.tab-content {
