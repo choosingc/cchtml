@@ -1,0 +1,57 @@
+.about-intro {
+	margin-bottom: 50px;
+
+	@include media ('>=tablet') {
+		margin-bottom: 150px;
+	}
+
+	h2.section_title {
+		text-align: left;
+	}
+
+	.grey_box {
+		margin-top: 50px;
+		
+		@include media ('<=desktop') {
+			padding: 20px;
+		}
+	}
+
+	.links_w_small_images {
+		@include media ('<=desktop') {
+			margin-bottom: 10px;
+		}
+	}
+
+	.details_about_jim {
+		@include media ('<=desktop') {
+			max-width: 562px;
+			margin: 0 auto;
+		}
+	}
+
+	.sbar_img {
+		img {
+			@include media ('<=desktop') {
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+#about_page {
+	.sidebar_and_content {
+		flex-direction: column;
+		
+		@include media ('>=desktop') {
+			flex-direction: row-reverse;
+		}
+	}
+
+	.gutter_for_sidebar {
+		@include media ('<=desktop') {
+			flex-basis: 60px;
+		}
+	}
+}

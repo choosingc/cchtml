@@ -1,0 +1,81 @@
+.intro-card {
+	padding: 31px 32px 69px;
+	background-color: $blue-100;
+	color: $white;
+	width: calc(100% / 3 - 28px);
+	margin-right: 42px;
+	margin-bottom: 42px;
+
+	@include media ('>desktop') {
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+	}
+
+	@include media ('<=desktop') {
+		width: calc(50% - 21px);
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+	}
+
+	@include media ('<=tablet') {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	
+
+	&__block {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-bottom: 28px;
+		margin-bottom: 20px;
+		position: relative;
+
+		&::before {
+			@include size(59px, 1px);
+			position: absolute;
+			content: "";
+			background-color: $white;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&__icon-block {
+		display: flex;
+		margin-bottom: 12px;
+	}
+
+	&__heading {
+		font-size: 24px;
+		text-transform: uppercase;
+		padding-right: 15px;
+	}
+
+	.btn {
+		width: 100%;
+
+		&:not(:last-of-type) {
+			margin-bottom: 33px;
+		}
+
+		&:only-of-type {
+			margin-top: 80px;
+		}
+	}
+
+	p {
+		margin-bottom: 36px;
+		font-weight: 700;
+		padding-right: 20px;
+	}
+}
