@@ -3358,13 +3358,18 @@ a.btn {
     #about_page .start-courage .start-courage__image-block img {
       position: static; }
 
+@media (min-width: 1025px) {
+  #about_page .resources-section .container {
+    padding: 150px 0 113px; } }
+
 .intro-card {
   padding: 31px 32px 69px;
   background-color: #0094d9;
   color: #fff;
   width: calc(100% / 3 - 28px);
   margin-right: 42px;
-  margin-bottom: 42px; }
+  margin-bottom: 42px;
+  border-radius: 4px; }
   @media (min-width: 1025px) {
     .intro-card:nth-child(3n) {
       margin-right: 0; } }

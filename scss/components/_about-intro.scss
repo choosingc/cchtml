@@ -149,4 +149,12 @@
 			}
 		}
 	}
+
+	.resources-section {
+		.container {
+			@include media ('>desktop') {
+				padding: 150px 0 113px;
+			}
+		}
+	}
 }
