@@ -1960,6 +1960,29 @@ a.btn {
   @media (min-width: 1300px) {
     .guide-block {
       padding: 93px 0 200px; } }
+  .guide-block_curriculum {
+    padding: 50px 0; }
+    @media (min-width: 1300px) {
+      .guide-block_curriculum {
+        padding: 93px 0 99px; } }
+    .guide-block_curriculum .guide-block__content {
+      position: relative; }
+      .guide-block_curriculum .guide-block__content h3 {
+        margin: 0px 0 27px; }
+      .guide-block_curriculum .guide-block__content::before {
+        width: 290px;
+        height: 280px;
+        content: '';
+        position: absolute;
+        background-image: url(../images/pages/curriculum/notebook.png);
+        left: 0;
+        top: -33px;
+        -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+                transform: translateX(-100%); }
+        @media (max-width: 1300px) {
+          .guide-block_curriculum .guide-block__content::before {
+            content: none; } }
   .guide-block__content {
     max-width: 570px;
     margin: 0 auto;

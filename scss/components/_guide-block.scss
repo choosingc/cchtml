@@ -7,6 +7,36 @@
 		padding: 93px 0 200px;
 	}
 
+	&_curriculum {
+		padding: 50px 0;
+
+		@include media ('>=widescreen') {
+			padding: 93px 0 99px;
+		}
+
+		.guide-block__content {
+			position: relative;
+
+			h3 {
+				margin: 0px 0 27px;
+			}
+
+			&::before {
+				@include size(290px, 280px);
+				content: '';
+				position: absolute;
+				background-image: url(../images/pages/curriculum/notebook.png);
+				left: 0;
+				top: -33px;
+				transform: translateX(-100%);
+
+				@include media ('<=widescreen') {
+					content: none;
+				}
+			}
+		}
+	}
+
 	&__content {
 		max-width: 570px;
 		margin: 0 auto;
