@@ -77,7 +77,7 @@
   display: block;
   clear: both; }
 
-.slick-arrow, .slick-arrow:hover, .text-gallery__tab, .text-gallery__tab.slick-current, a.btn, a.btn_primary:hover, a.btn_secondary:hover, .article__heading i::before, .article__heading a:hover i::before {
+.slick-arrow, .slick-arrow:hover, .text-gallery__tab, .text-gallery__tab.slick-current, a.btn, a.btn_primary:hover, a.btn_secondary:hover, .article__heading i::before, .article__heading a:hover i::before, .subscribe-form input[type="submit"], .subscribe-form input[type="submit"]:hover {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
@@ -3479,4 +3479,37 @@ a.btn {
     margin-bottom: 36px;
     font-weight: 700;
     padding-right: 20px; }
+
+.subscribe-form .mc-field-group {
+  min-height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #61798e;
+  border-radius: 3px;
+  overflow: hidden; }
+
+.subscribe-form label {
+  display: none; }
+
+.subscribe-form input[type="email"] {
+  width: 71%;
+  background-color: transparent;
+  border: 0; }
+  .subscribe-form input[type="email"]:focus {
+    outline: 0;
+    border: 0; }
+
+.subscribe-form input[type="submit"] {
+  width: 29%;
+  min-width: 130px;
+  background-color: #0094d9;
+  border: 0;
+  padding: 5px 32px;
+  margin: 0; }
+  .subscribe-form input[type="submit"]:hover {
+    background-color: #66bfe8; }
+  .subscribe-form input[type="submit"]:focus {
+    outline: 0;
+    border: 0; }
 /*# sourceMappingURL=main.css.map */
