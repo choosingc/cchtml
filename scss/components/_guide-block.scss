@@ -37,6 +37,44 @@
 		}
 	}
 
+	&_assessments {
+		padding: 50px 0;
+
+		@include media ('>=widescreen') {
+			padding: 93px 0 75px;
+		}
+
+		.guide-block__content {
+			position: relative;
+			max-width: 766px;
+
+			.btn {
+				margin-bottom: 40px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+
+			h3 {
+				margin: 0px 0 27px;
+			}
+
+			&::before {
+				@include size(290px, 280px);
+				content: '';
+				position: absolute;
+				background-image: url("../images/pages/planning journey/laptop.png");
+				right: -131px;
+    			top: -145px;
+
+				@include media ('<=desktop') {
+					content: none;
+				}
+			}
+		}
+	}
+
 	&__content {
 		max-width: 570px;
 		margin: 0 auto;

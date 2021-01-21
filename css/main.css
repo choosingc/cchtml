@@ -1144,6 +1144,9 @@ h3 {
   footer {
     margin-top: 0; } }
 
+.article-intro {
+  padding-bottom: 130px; }
+
 .courage-gallery-section .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -1982,6 +1985,31 @@ a.btn {
                 transform: translateX(-100%); }
         @media (max-width: 1300px) {
           .guide-block_curriculum .guide-block__content::before {
+            content: none; } }
+  .guide-block_assessments {
+    padding: 50px 0; }
+    @media (min-width: 1300px) {
+      .guide-block_assessments {
+        padding: 93px 0 75px; } }
+    .guide-block_assessments .guide-block__content {
+      position: relative;
+      max-width: 766px; }
+      .guide-block_assessments .guide-block__content .btn {
+        margin-bottom: 40px; }
+      .guide-block_assessments .guide-block__content p {
+        font-size: 14px; }
+      .guide-block_assessments .guide-block__content h3 {
+        margin: 0px 0 27px; }
+      .guide-block_assessments .guide-block__content::before {
+        width: 290px;
+        height: 280px;
+        content: '';
+        position: absolute;
+        background-image: url("../images/pages/planning journey/laptop.png");
+        right: -131px;
+        top: -145px; }
+        @media (max-width: 1024px) {
+          .guide-block_assessments .guide-block__content::before {
             content: none; } }
   .guide-block__content {
     max-width: 570px;
