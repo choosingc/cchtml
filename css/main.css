@@ -3585,8 +3585,8 @@ a.btn {
 .paginate-pagination ul > li > a.page {
   cursor: pointer;
   display: inline-block;
-  padding-left: 15px;
-  padding-right: 12px;
+  padding-left: 19px;
+  padding-right: 19px;
   font-size: 13px;
   color: #0a3b56;
   letter-spacing: .2px; }
@@ -3594,4 +3594,41 @@ a.btn {
 .paginate-pagination ul > li > a.page.active {
   color: #0094d9;
   cursor: default; }
+
+.paginate-pagination ul > li > a.page-next {
+  position: relative;
+  color: transparent;
+  padding: 0; }
+  .paginate-pagination ul > li > a.page-next::before {
+    width: 7px;
+    height: 9px;
+    background-image: url("../images/pages/start-journey/arrow-right-blue.svg");
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+.paginate-pagination ul > li > a.page-prev {
+  position: relative;
+  color: transparent;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding: 0; }
+  .paginate-pagination ul > li > a.page-prev::before {
+    width: 7px;
+    height: 9px;
+    background-image: url("../images/pages/start-journey/arrow-right-blue.svg");
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 /*# sourceMappingURL=main.css.map */

@@ -28,8 +28,8 @@
 .paginate-pagination ul > li > a.page {
 	cursor: pointer;
 	display: inline-block;
-	padding-left: 15px;
-	padding-right: 12px;
+	padding-left: 19px;
+	padding-right: 19px;
 	font-size: 13px;
 	color: $blue-200;
 	letter-spacing: .2px;
@@ -42,9 +42,36 @@
 	cursor: default;
 }
 
-.paginate-pagination ul > li > a.page-next.deactive {
+.paginate-pagination ul > li > a.page-next {
+	position: relative;
+	color: transparent;
+	padding: 0;
 
+	&::before {
+		@include size(7px, 9px);
+		background-image: url('../images/pages/start-journey/arrow-right-blue.svg');
+		background-repeat: no-repeat;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
-.paginate-pagination ul > li > a.page-prev.deactive {
-	
+.paginate-pagination ul > li > a.page-prev {
+	position: relative;
+	color: transparent;
+	transform: rotate(180deg);
+	padding: 0;
+
+	&::before {
+		@include size(7px, 9px);
+		background-image: url('../images/pages/start-journey/arrow-right-blue.svg');
+		background-repeat: no-repeat;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
