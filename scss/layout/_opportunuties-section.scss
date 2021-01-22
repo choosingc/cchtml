@@ -18,6 +18,7 @@
 		}
 
 		li {
+			
 			width: calc(50% - 2px);
 			text-align: center;
 			font-weight: 700;
@@ -39,6 +40,7 @@
 			}
 			
 			a {
+				@extend %transition;
 				color: $gray-200;
 				padding: 15px 18px;
 			}
@@ -137,8 +139,9 @@
 	}
 
 	h2 {
-		letter-spacing: 1.9px;
+		letter-spacing: 1.3px;
 		margin-bottom: 50px;
+		line-height: 42px;
 	}
 
 	p {

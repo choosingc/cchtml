@@ -8,7 +8,7 @@
 	}
 
 	&_curriculum {
-		padding: 50px 0;
+		padding: 50px 0 30px;
 
 		@include media ('>=widescreen') {
 			padding: 93px 0 99px;
@@ -21,24 +21,56 @@
 				margin: 0px 0 27px;
 			}
 
-			&::before {
-				@include size(290px, 280px);
-				content: '';
-				position: absolute;
-				background-image: url(../images/pages/curriculum/notebook.png);
+			.guide-block__image {
+				width: 300px;
+				right: -131px;
 				left: 0;
-				top: -33px;
-				transform: translateX(-100%);
+				top: 38px;
+				transform: translateX(0);
+				margin: 0 auto;
+				position: relative;
 
-				@include media ('<=widescreen') {
-					content: none;
+				@include media ('>=desktop') {
+					position: absolute;
+					left: 60px;
+					top: -33px;
+					transform: translateX(-100%);
+					margin: unset;
+				}
+
+				@include media ('>=widescreen') {
+					left: 0;
+				}
+				
+				img {
+					max-width: 40%;
+
+					@include media ('>=desktop') {
+						max-width: 80%
+					}
+
+					@include media ('>=widescreen') {
+						max-width: 300px;
+					}
 				}
 			}
+
+			// &::before {
+			// 	@include size(290px, 280px);
+			// 	content: '';
+			// 	position: absolute;
+			// 	background-image: url(../images/pages/curriculum/notebook.png);
+				
+
+			// 	@include media ('<=widescreen') {
+			// 		content: none;
+			// 	}
+			// }
 		}
 	}
 
 	&_assessments {
-		padding: 50px 0;
+		padding: 50px 0 30px;
 
 		@include media ('>=widescreen') {
 			padding: 93px 0 75px;
@@ -60,18 +92,37 @@
 				margin: 0px 0 27px;
 			}
 
-			&::before {
-				@include size(290px, 280px);
-				content: '';
-				position: absolute;
-				background-image: url("../images/pages/planning journey/laptop.png");
+			.guide-block__image {
 				right: -131px;
-    			top: -145px;
+				left: unset;
+				top: -145px;
+				transform: translate(0);
+				position: static;
 
-				@include media ('<=desktop') {
-					content: none;
+				@include media ('>=desktop') {
+					position: absolute;
+				}
+				
+				img {
+					max-width: 40%;
+
+					@include media ('>=desktop') {
+						max-width: 300px;
+					}
 				}
 			}
+
+			// &::before {
+			// 	@include size(290px, 280px);
+			// 	content: '';
+			// 	position: absolute;
+			// 	background-image: url("../images/pages/planning journey/laptop.png");
+				
+
+			// 	@include media ('<=desktop') {
+			// 		content: none;
+			// 	}
+			// }
 		}
 	}
 

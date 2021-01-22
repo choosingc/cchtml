@@ -38,7 +38,7 @@
 		justify-content: space-between;
 		align-items: flex-end;
 		padding-bottom: 28px;
-		margin-bottom: 20px;
+		margin-bottom: 17px;
 		position: relative;
 
 		&::before {
@@ -60,6 +60,7 @@
 		font-size: 24px;
 		text-transform: uppercase;
 		padding-right: 15px;
+		letter-spacing: .6px;
 	}
 
 	.btn {
@@ -78,5 +79,6 @@
 		margin-bottom: 36px;
 		font-weight: 700;
 		padding-right: 20px;
+		letter-spacing: .3px;
 	}
 }
