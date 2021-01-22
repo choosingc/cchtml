@@ -1,0 +1,50 @@
+/*
+	jquery.paginate.css  
+	Version 0.1.1
+*/
+
+.paginate-pagination {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.paginate-pagination ul {
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.paginate-pagination ul:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.paginate-pagination ul > li {
+	float: left;
+	margin-right: 3px;
+}
+
+.paginate-pagination ul > li > a.page {
+	cursor: pointer;
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 12px;
+	font-size: 13px;
+	color: $blue-200;
+	letter-spacing: .2px;
+}
+
+
+
+.paginate-pagination ul > li > a.page.active {
+	color: $blue-100;
+	cursor: default;
+}
+
+.paginate-pagination ul > li > a.page-next.deactive {
+
+}
+.paginate-pagination ul > li > a.page-prev.deactive {
+	
+}

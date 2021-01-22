@@ -3555,4 +3555,43 @@ a.btn {
   .subscribe-form input[type="submit"]:focus {
     outline: 0;
     border: 0; }
+
+/*
+	jquery.paginate.css  
+	Version 0.1.1
+*/
+.paginate-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.paginate-pagination ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none; }
+
+.paginate-pagination ul:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.paginate-pagination ul > li {
+  float: left;
+  margin-right: 3px; }
+
+.paginate-pagination ul > li > a.page {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 12px;
+  font-size: 13px;
+  color: #0a3b56;
+  letter-spacing: .2px; }
+
+.paginate-pagination ul > li > a.page.active {
+  color: #0094d9;
+  cursor: default; }
 /*# sourceMappingURL=main.css.map */
