@@ -1117,8 +1117,14 @@ ul.dotted-list.in_middle_of_text {
 	margin-bottom: 30px;
 }
 
+.accordion-block__heading {
+	opacity: 0; 
+/* 	↑ Because copy wasn't provided */
+}
 
-
+.accordion-block__btn {
+	margin-top: 1.5em;
+}
 
 
 
