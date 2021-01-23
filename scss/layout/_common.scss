@@ -377,3 +377,36 @@ footer {
 		margin-top: 0;
 	}
 }
+
+.article-intro {
+	padding-bottom: 130px;
+
+	h2 {
+		font-size: 34px;
+		text-align: center
+	}
+}
+
+.links_w_small_images {
+	a {
+		@extend %transition;
+		color: $blue-100;
+
+		&:hover {
+			@extend %transition;
+			color: $blue-600;
+		}
+
+		&:visited {
+			color: $blue-600;
+		  }
+	}
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.text-align-center {
+	text-align: center;
+}

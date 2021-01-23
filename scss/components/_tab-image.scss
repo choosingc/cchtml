@@ -97,4 +97,18 @@
 			}
 		}
 	}
+
+	li {
+
+		&:hover {
+			@extend %transition;
+			background-color: rgba($color: $gray-200, $alpha: .2);
+			border-bottom: 1px solid $blue-700;
+			
+			a {
+				@extend %transition;
+				color: $blue-700;
+			}
+		}
+	}
 }
