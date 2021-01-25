@@ -469,11 +469,11 @@ header.grey .menu_top a:visited {
 	z-index: 1; /* This seems best */
 }
 
-@media screen and ( max-width: 991px ) {
+/* @media screen and ( max-width: 991px ) {
 	.page_title_and_image .s_image {
 		display: none;
 	}
-}
+} */ 
 
 .page_title_and_image h1 {
 	font-size: 58px;
@@ -1124,8 +1124,14 @@ ul.dotted-list.in_middle_of_text {
 	margin-bottom: 30px;
 }
 
+.accordion-block__heading {
+	opacity: 0; 
+/* 	↑ Because copy wasn't provided */
+}
 
-
+.accordion-block__btn {
+	margin-top: 1.5em;
+}
 
 
 

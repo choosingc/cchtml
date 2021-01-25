@@ -19,6 +19,17 @@ main {
 }
 
 .page_title_and_image {
+	
+
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		padding-top: 0 !important;
+		transform: translate(-50%, -50%);
+		width: 100%;
+	}
+
 	&_cc-center {
 		h1 {
 			@include media ('>=tablet') {
@@ -102,8 +113,24 @@ h3 {
 		bottom: 70px;
 	}
 
-	.page_title_and_image h1 {
-		padding-top: 112px;
+	.page_title_and_image  {
+		.s_image {
+			
+			@include media ('<=tablet') {
+				right: -78px;
+				width: 50%;
+			}
+
+			img {
+				@include media ('<=tablet') {
+					width: 78%;
+				}
+			}
+		}
+
+		h1 {
+			padding-top: 112px;
+		}
 	}
 
 	.main-courage {
@@ -375,5 +402,61 @@ h3 {
 footer {
 	@include media ('<=991px') {
 		margin-top: 0;
+	}
+}
+
+.article-intro {
+	padding-bottom: 130px;
+
+	h2 {
+		font-size: 34px;
+		text-align: center
+	}
+}
+
+.links_w_small_images {
+	a {
+		@extend %transition;
+		color: $blue-100;
+
+		&:hover {
+			@extend %transition;
+			color: $blue-600;
+		}
+	}
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+
+#contact_page {
+	@include media ('<=tablet') {
+		.page_title_and_image {
+			.s_image {
+				bottom: 37px;
+				right: -23px;
+				width: 32%;
+	
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	@include media ('<=phone') {
+		.page_title_and_image {
+			.s_image {
+				bottom: 25px;
+				width: 40%;
+				max-width: 140px;
+			}
+		}
 	}
 }
