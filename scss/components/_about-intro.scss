@@ -11,6 +11,10 @@
 
 	.grey_box {
 		margin-top: 50px;
+
+		.small_heading {
+			letter-spacing: 0.5px;
+		}
 		
 		@include media ('<=desktop') {
 			padding: 20px;
@@ -41,10 +45,25 @@
 }
 
 #about_page {
+	.content_width_plus_padding {
+		overflow: hidden;
+	}
+
 	.page_title_and_image {
 		.s_image {
 			bottom: 20px;
 			right: -52px;
+
+			@include media ('<=tablet') {
+				right: -150px;
+			}
+
+			img {
+				@include media ('<=tablet') {
+					height: auto !important;
+					width: 60%;
+				}
+			}
 		}
 
 		h1 {

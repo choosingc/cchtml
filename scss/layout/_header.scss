@@ -3,12 +3,24 @@
 		overflow: hidden;
 
 		.s_image {
-			right: 308px;
+			
+			right: -29%;
 			bottom: -33px;
-			transform: translateX(100%);
+			width: 80vw;
+
+			@include media ('>=tablet') {
+				width: auto;
+				right: 308px;
+				transform: translateX(100%);
+
+			}
 			
 			img {
-				width: 78%;
+				width: 70vw;
+
+				@include media ('>=tablet') {
+					width: 78%;
+				}
 			}
 		}
 

@@ -19,6 +19,17 @@ main {
 }
 
 .page_title_and_image {
+	
+
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		padding-top: 0 !important;
+		transform: translate(-50%, -50%);
+		width: 100%;
+	}
+
 	&_cc-center {
 		h1 {
 			@include media ('>=tablet') {
@@ -102,8 +113,24 @@ h3 {
 		bottom: 70px;
 	}
 
-	.page_title_and_image h1 {
-		padding-top: 112px;
+	.page_title_and_image  {
+		.s_image {
+			
+			@include media ('<=tablet') {
+				right: -78px;
+				width: 50%;
+			}
+
+			img {
+				@include media ('<=tablet') {
+					width: 78%;
+				}
+			}
+		}
+
+		h1 {
+			padding-top: 112px;
+		}
 	}
 
 	.main-courage {
@@ -396,10 +423,6 @@ footer {
 			@extend %transition;
 			color: $blue-600;
 		}
-
-		&:visited {
-			color: $blue-600;
-		  }
 	}
 }
 

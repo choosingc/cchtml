@@ -859,13 +859,21 @@ input[type='submit'] {
 .header_action-center {
   overflow: hidden; }
   .header_action-center .s_image {
-    right: 308px;
+    right: -29%;
     bottom: -33px;
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%); }
+    width: 80vw; }
+    @media (min-width: 768px) {
+      .header_action-center .s_image {
+        width: auto;
+        right: 308px;
+        -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+                transform: translateX(100%); } }
     .header_action-center .s_image img {
-      width: 78%; }
+      width: 70vw; }
+      @media (min-width: 768px) {
+        .header_action-center .s_image img {
+          width: 78%; } }
   .header_action-center .menu_top {
     position: relative;
     z-index: 2; }
@@ -893,6 +901,16 @@ main {
   padding-bottom: 25px;
   margin: 0 0 23px;
   border-bottom: 1px solid #aebbc7; }
+
+.page_title_and_image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 0 !important;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%; }
 
 @media (min-width: 768px) {
   .page_title_and_image_cc-center h1 {
@@ -949,6 +967,15 @@ h3 {
 .book-page .header_action-center .s_image {
   right: 218px;
   bottom: 70px; }
+
+@media (max-width: 768px) {
+  .book-page .page_title_and_image .s_image {
+    right: -78px;
+    width: 50%; } }
+
+@media (max-width: 768px) {
+  .book-page .page_title_and_image .s_image img {
+    width: 78%; } }
 
 .book-page .page_title_and_image h1 {
   padding-top: 112px; }
@@ -1153,8 +1180,6 @@ h3 {
 .links_w_small_images a {
   color: #0094d9; }
   .links_w_small_images a:hover {
-    color: #66bfe8; }
-  .links_w_small_images a:visited {
     color: #66bfe8; }
 
 .bold {
@@ -2046,6 +2071,21 @@ a.btn {
           @media (min-width: 1024px) {
             .guide-block_assessments .guide-block__content .guide-block__image img {
               max-width: 300px; } }
+  .guide-block_planning {
+    padding: 220px 0 50px; }
+    @media (min-width: 1300px) {
+      .guide-block_planning {
+        padding: 50px 0; } }
+    .guide-block_planning .guide-block__image {
+      -webkit-transform: translate(-50%, -100%);
+          -ms-transform: translate(-50%, -100%);
+              transform: translate(-50%, -100%);
+      top: -20px; }
+      @media (min-width: 1300px) {
+        .guide-block_planning .guide-block__image {
+          -webkit-transform: translate(-100%, 0);
+              -ms-transform: translate(-100%, 0);
+                  transform: translate(-100%, 0); } }
   .guide-block__content {
     max-width: 570px;
     margin: 0 auto;
@@ -2586,7 +2626,7 @@ a.btn {
     .review-card:not(:last-of-type) {
       margin-right: 42px; } }
   .review-card__text {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 22px;
     color: #0094d9;
     margin: 0;
@@ -3352,6 +3392,8 @@ a.btn {
     text-align: left; }
   .about-intro .grey_box {
     margin-top: 50px; }
+    .about-intro .grey_box .small_heading {
+      letter-spacing: 0.5px; }
     @media (max-width: 1024px) {
       .about-intro .grey_box {
         padding: 20px; } }
@@ -3366,9 +3408,19 @@ a.btn {
     .about-intro .sbar_img img {
       width: 100%; } }
 
+#about_page .content_width_plus_padding {
+  overflow: hidden; }
+
 #about_page .page_title_and_image .s_image {
   bottom: 20px;
   right: -52px; }
+  @media (max-width: 768px) {
+    #about_page .page_title_and_image .s_image {
+      right: -150px; } }
+  @media (max-width: 768px) {
+    #about_page .page_title_and_image .s_image img {
+      height: auto !important;
+      width: 60%; } }
 
 #about_page .page_title_and_image h1 {
   padding-top: 113px; }
@@ -3521,7 +3573,7 @@ a.btn {
     margin-bottom: 36px;
     font-weight: 700;
     padding-right: 20px;
-    letter-spacing: .3px; }
+    letter-spacing: .8px; }
 
 .subscribe-form .mc-field-group {
   min-height: 49px;
