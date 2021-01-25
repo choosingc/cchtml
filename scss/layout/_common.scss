@@ -433,3 +433,30 @@ footer {
 .text-align-center {
 	text-align: center;
 }
+
+
+#contact_page {
+	@include media ('<=tablet') {
+		.page_title_and_image {
+			.s_image {
+				bottom: 37px;
+				right: -23px;
+				width: 32%;
+	
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	@include media ('<=phone') {
+		.page_title_and_image {
+			.s_image {
+				bottom: 25px;
+				width: 40%;
+				max-width: 140px;
+			}
+		}
+	}
+}

@@ -14,6 +14,7 @@
 
 		.small_heading {
 			letter-spacing: 0.5px;
+			line-height: 1.5;
 		}
 		
 		@include media ('<=desktop') {
@@ -55,13 +56,13 @@
 			right: -52px;
 
 			@include media ('<=tablet') {
-				right: -150px;
+				right: -165px;
 			}
 
 			img {
 				@include media ('<=tablet') {
 					height: auto !important;
-					width: 60%;
+					width: 55%;
 				}
 			}
 		}

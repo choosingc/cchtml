@@ -1188,6 +1188,20 @@ h3 {
 .text-align-center {
   text-align: center; }
 
+@media (max-width: 768px) {
+  #contact_page .page_title_and_image .s_image {
+    bottom: 37px;
+    right: -23px;
+    width: 32%; }
+    #contact_page .page_title_and_image .s_image img {
+      width: 100%; } }
+
+@media (max-width: 480px) {
+  #contact_page .page_title_and_image .s_image {
+    bottom: 25px;
+    width: 40%;
+    max-width: 140px; } }
+
 .courage-gallery-section .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -3393,7 +3407,8 @@ a.btn {
   .about-intro .grey_box {
     margin-top: 50px; }
     .about-intro .grey_box .small_heading {
-      letter-spacing: 0.5px; }
+      letter-spacing: 0.5px;
+      line-height: 1.5; }
     @media (max-width: 1024px) {
       .about-intro .grey_box {
         padding: 20px; } }
@@ -3416,11 +3431,11 @@ a.btn {
   right: -52px; }
   @media (max-width: 768px) {
     #about_page .page_title_and_image .s_image {
-      right: -150px; } }
+      right: -165px; } }
   @media (max-width: 768px) {
     #about_page .page_title_and_image .s_image img {
       height: auto !important;
-      width: 60%; } }
+      width: 55%; } }
 
 #about_page .page_title_and_image h1 {
   padding-top: 113px; }
