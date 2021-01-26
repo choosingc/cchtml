@@ -13,6 +13,7 @@
 /* - Core design */
 /* -- Widths for core design */
 /* -- Common HTML elements (links, etc.) */
+/* --- Misc */
 /* --- Links */
 /* ---- Default link colours, from components spec */
 /* --- Paragraphs */
@@ -112,6 +113,12 @@ em {
 }
 
 /* -- Common HTML elements (links, etc.) */
+
+/* --- Misc */
+
+u {
+	text-decoration: underline;
+}
 
 /* --- Links */
 
