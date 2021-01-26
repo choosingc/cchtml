@@ -1199,7 +1199,7 @@ h3 {
 @media (max-width: 480px) {
   #contact_page .page_title_and_image .s_image {
     bottom: 25px;
-    width: 40%;
+    width: 35%;
     max-width: 140px; } }
 
 .courage-gallery-section .container {
@@ -3060,7 +3060,7 @@ a.btn {
       border-top: none;
       border-bottom-left-radius: unset;
       margin: 0 auto;
-      padding: 0 15px;
+      padding: 0 60px;
       width: 100%; } }
   @media (min-width: 1024px) {
     #nav {
