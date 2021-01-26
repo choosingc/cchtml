@@ -157,15 +157,12 @@
 		border-bottom-left-radius: unset;
 		margin: 0 auto;
 		padding: 0 60px;
-// 		 ↑ CMC had padding: 0 15px;
 		width: 100%;
 	}
 
-/*
 	@include media ('>=desktop') {
 		padding: 0 60px;
 	}
-*/
 
 	li {
 		@extend %listreset;
