@@ -17,6 +17,11 @@
 			width: 71%;
 			background-color: transparent;
 			border: 0;
+			color: $gray-200;
+
+			&::placeholder {
+				color: $gray-200;
+			}
 			
 			&:focus {
 				outline: 0;

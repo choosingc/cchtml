@@ -921,11 +921,11 @@ main {
   filter: brightness(0.8); }
 
 h2 {
-  letter-spacing: .4px; }
+  letter-spacing: 0.4px; }
 
 h3 {
   font-size: 21px;
-  letter-spacing: .9px;
+  letter-spacing: 0.9px;
   line-height: 30px; }
   @media (min-width: 768px) {
     h3 {
@@ -939,7 +939,7 @@ h3 {
   .top-line::before {
     width: 59px;
     height: 1px;
-    content: '';
+    content: "";
     position: absolute;
     background-color: #0a3b56;
     top: 0;
@@ -962,7 +962,7 @@ h3 {
     /* 1.5em = 24px */ } }
 
 .book-page h1 {
-  letter-spacing: .58px; }
+  letter-spacing: 0.58px; }
 
 .book-page .header_action-center .s_image {
   right: 218px;
@@ -1041,7 +1041,7 @@ h3 {
       position: static; }
 
 .articles-page h1 {
-  letter-spacing: .58px; }
+  letter-spacing: 0.58px; }
 
 .articles-page .opportunities-section h2 {
   text-align: center; }
@@ -1152,13 +1152,13 @@ h3 {
       position: static; }
 
 .breadcrumb ol li a {
-  letter-spacing: .28px; }
+  letter-spacing: 0.28px; }
 
 .breadcrumb ol li:last-of-type a {
   color: #0a3b56; }
 
 .standfirst {
-  letter-spacing: .44px; }
+  letter-spacing: 0.44px; }
 
 .competent_sec {
   margin-bottom: 40px;
@@ -1201,6 +1201,9 @@ h3 {
     bottom: 25px;
     width: 35%;
     max-width: 140px; } }
+
+.email_and_social_media .s_email .max_width_inline {
+  margin-left: 0; }
 
 .courage-gallery-section .container {
   max-width: 1130px;
@@ -2766,7 +2769,8 @@ a.btn {
   .main-courage__heading {
     margin: 0 0 47px; }
   .main-courage h2 {
-    letter-spacing: 2.7px; }
+    letter-spacing: .4px;
+    line-height: 1.25; }
   .main-courage h5 {
     margin-bottom: 12px; }
 
@@ -3605,7 +3609,14 @@ a.btn {
 .subscribe-form input[type="email"] {
   width: 71%;
   background-color: transparent;
-  border: 0; }
+  border: 0;
+  color: #aebbc7; }
+  .subscribe-form input[type="email"]::-webkit-input-placeholder {
+    color: #aebbc7; }
+  .subscribe-form input[type="email"]:-ms-input-placeholder {
+    color: #aebbc7; }
+  .subscribe-form input[type="email"]::placeholder {
+    color: #aebbc7; }
   .subscribe-form input[type="email"]:focus {
     outline: 0;
     border: 0; }
