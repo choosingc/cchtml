@@ -1,9 +1,13 @@
 // begin: Custom JS
 if ($(window).width() < 768) {
-	$('.item-expanded').on('click', function(e) {
+	$('.item-expanded__arrow').on('click', function(e) {
 		e.preventDefault();
-		$(this).toggleClass('open');
+		$(this).parent('.item-expanded').toggleClass('open');
 		$('.nav-wrap').toggleClass('sub-menu-open');
+	});
+
+	$('.sub-nav').on('click', function(e) {
+		e.stopPropagation();
 	});
 
 	$('.btn-back').on('click', function(e) {
