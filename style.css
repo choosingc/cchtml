@@ -402,7 +402,7 @@ header .top {
 	
 }
 
-.site_name {
+header .site_name {
 
 }
 
@@ -433,6 +433,10 @@ header .top {
 		}
 /* END of
 	Classes no longer there AFAIK */
+	
+header .site_name {
+	letter-spacing: 0.04em;
+}
 
 header.beige .menu_top a,
 header.beige .menu_top a:link,
@@ -495,6 +499,7 @@ header.grey .menu_top a:visited {
 	font-size: 58px;
 	font-weight: normal;
 	text-align: center;
+	letter-spacing: 0.04em;
 
 	margin: 0em;
 	padding-top: 80px;
@@ -635,6 +640,12 @@ footer {
 	padding-top: 104px;
 
 	color: white;
+	
+	letter-spacing: 0.02em;
+}
+
+footer .site_name {
+	letter-spacing: 0.04em;
 }
 
 footer a,

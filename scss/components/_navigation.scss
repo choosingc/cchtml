@@ -124,7 +124,6 @@
 		font-size: rem-calc(24px);
 		font-weight: bold;
 		text-transform: uppercase;
-		letter-spacing: 1.12px;
 
 		@include media(">=tablet") {
 			font-size: 3vw;
@@ -201,6 +200,7 @@
 
 	li {
 		@extend %listreset;
+		letter-spacing: 0.08em;
 	}
 
 	> li {
