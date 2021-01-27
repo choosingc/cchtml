@@ -56,11 +56,11 @@
 }
 
 body {
-	padding-top: 0px !important;
-	/* ↑ TO DO: at some point grep for where
+/* 	padding-top: 0px !important; */
+	/* ↑ To do: at some point grep for where
 		 <body style="padding-top" is hardcoded */
 
-	padding-bottom: 800px;
+/* 	padding-bottom: 800px; */
 /* 	↑  Deliberate, for Tom's monitor */
 
 }
@@ -879,7 +879,7 @@ footer .s_rule {
 /* -- Colored zones */
 
 section.grey_gradient {
-/* 	todo: Check these colours and gradients from San work well enough */
+/* 	Colours and gradients from San, passed approval */
 	background: var(--cc-dark-blue);
     background: -moz-linear-gradient(left, #3c5165 0%, #61788d 100%);
     background: -webkit-linear-gradient(left, #3c5165 0%,#61788d 100%);
