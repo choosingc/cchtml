@@ -391,17 +391,26 @@
 					<!-- Gutter for columns -->
 				</div>
 				<div class="s_right contact_page_form">
-					<form class="flex-form">
+					<form id="contact_form" action="contact-send-message.php" method="post" class="flex-form">
 						<p>Please fill out:</p>
-						<input placeholder="Full Name">
-						<input placeholder="Company/Organization">
-						<textarea placeholder="Message"></textarea>
+						<input name="name" placeholder="Full Name">
+						<input name="org" placeholder="Company/Organization">
+						<textarea name="message" placeholder="Message"></textarea>
 						<div class="faux_submit">
-							<a href="#" class="btn btn_primary">Submit</a>
+							<a href="#" id="button_for_submit" class="btn btn_primary">Submit</a>
+							<!-- href="contact-not-sent.html" -->
 						</div>
 						<div style="display: none;">
 							<input type="submit" value="SUBMIT">
 						</div>
+						<script>
+							$('#button_for_submit').click(function(e){
+								$('#contact_form').submit();
+								e.preventDefault();
+								e.stopImmediatePropagation();
+								return false;
+							});
+						</script>
 					</form>
 				</div>
 			</div>
