@@ -397,26 +397,42 @@ header.grey.home {
 	background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-desktop-grey-home-gradient.jpg');
 }
 
-.menu_top.desktop {
-	padding-top: 0px;
-	/* ↑ Area above menu was safest to set on header itself */
-	padding-bottom: 20px;
-	border-bottom: 1px solid #0A3B56;
-
-	color: #0A3B56;
-	font-weight: bold;
-	text-transform: uppercase;
+/* New menu classes */
+header .top {
+	
 }
 
-header.grey .menu_top.desktop {
-	border-bottom: 1px solid white;
+.site_name {
+
 }
 
-@media screen and ( min-width: 991px ) {
-	.menu_top.mobile {
-		display: none;
-	}
+#nav {
+
 }
+
+/* Classes no longer there AFAIK */
+		.menu_top.desktop {
+			padding-top: 0px;
+			/* ↑ Area above menu was safest to set on header itself */
+			padding-bottom: 20px;
+			border-bottom: 1px solid #0A3B56;
+		
+			color: #0A3B56;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		header.grey .menu_top.desktop {
+			border-bottom: 1px solid white;
+		}
+		
+		@media screen and ( min-width: 991px ) {
+			.menu_top.mobile {
+				display: none;
+			}
+		}
+/* END of
+	Classes no longer there AFAIK */
 
 header.beige .menu_top a,
 header.beige .menu_top a:link,
