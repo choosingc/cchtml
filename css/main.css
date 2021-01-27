@@ -2590,6 +2590,8 @@ a.btn {
         color: #0094d9; }
     .grey .top .site_name a {
       color: #fff; }
+    .grey .top .site_name a:hover {
+      color: #0094d9; }
     .grey .top .btn-open span {
       background-color: #fff; }
     .grey .top #nav > li.active.item-expanded:after,
@@ -2604,6 +2606,8 @@ a.btn {
         color: #0a3b56; } }
   .beige .top .site_name a {
     color: #0a3b56; }
+  .beige .top .site_name a:hover {
+    color: #66bfe8; }
 
 @media (min-width: 768px) {
   .site_name {
@@ -2613,15 +2617,18 @@ a.btn {
   transition: opacity 0.3s ease-in-out;
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  /*
+		&:hover {
+			opacity: 0.8;
+		}
+*/ }
   @media (min-width: 768px) {
     .site_name a {
       font-size: 3vw; } }
   @media (min-width: 1024px) {
     .site_name a {
       font-size: 1.75rem; } }
-  .site_name a:hover {
-    opacity: 0.8; }
 
 .item-expanded__arrow {
   transition: color 0.3s ease-in-out;

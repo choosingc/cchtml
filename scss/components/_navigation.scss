@@ -66,6 +66,10 @@
 			a {
 				color: $white;
 			}
+			
+			a:hover {
+				color: $cc-blue;
+			}
 		}
 
 		.btn-open {
@@ -109,6 +113,10 @@
 			a {
 				color: $blue-200;
 			}
+			
+			a:hover {
+				color: $cc-light-blue;
+			}
 		}
 	}
 }
@@ -133,9 +141,11 @@
 			font-size: rem-calc(28px);
 		}
 
+/*
 		&:hover {
 			opacity: 0.8;
 		}
+*/
 	}
 }
 .item-expanded {
