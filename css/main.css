@@ -1806,7 +1806,7 @@ a.btn {
     padding: 220px 0 50px; }
     @media (min-width: 1300px) {
       .guide-block_planning {
-        padding: 50px 0; } }
+        padding: 93px 0 200px; } }
     .guide-block_planning .guide-block__image {
       transform: translate(-50%, -100%);
       top: -20px; }
