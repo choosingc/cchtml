@@ -2594,6 +2594,8 @@ a.btn {
       color: #0094d9; }
     .grey .top .btn-open span {
       background-color: #fff; }
+    .grey .top #nav > li a.active_page {
+      color: #0094d9 !important; }
     .grey .top #nav > li.active.item-expanded:after,
     .grey .top #nav > li:hover.item-expanded:after {
       color: #0094d9; }
@@ -2604,6 +2606,8 @@ a.btn {
     @media (min-width: 768px) {
       .beige .top :not(.site_name) a {
         color: #0a3b56; } }
+  .beige .top :not(.site_name) a.active_page {
+    color: #61798e !important; }
   .beige .top .site_name a {
     color: #0a3b56; }
   .beige .top .site_name a:hover {

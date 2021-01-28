@@ -649,11 +649,18 @@ footer .site_name {
 }
 
 footer a,
-footer a:link,
-footer a:hover,
-footer a:active,
+footer a:link ,
 footer a:visited {
 	color: var(--cc-light-grey);
+}
+
+footer a:active,
+footer a:hover {
+	color: var(--cc-light-blue);
+}
+
+footer a.active_page {
+	color: var(--cc-light-blue) !important;
 }
 
 footer h1,

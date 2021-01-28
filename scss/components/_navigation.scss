@@ -80,6 +80,10 @@
 
 		#nav {
 			> li {
+				a.active_page {
+					color: $blue-100 !important;
+				}
+				
 				&.active,
 				&:hover {
 					&.item-expanded {
@@ -106,6 +110,10 @@
 				@include media(">=tablet") {
 					color: $blue-200;
 				}
+			}
+			
+			a.active_page {
+				color: $blue-700 !important;
 			}
 		}
 
