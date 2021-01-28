@@ -36,6 +36,7 @@
 /* ---- Sidebar width */
 /* ---- Sidebar content */
 /* --- Grey box */
+/* -- Books page */
 /* -- Contact */
 
 
@@ -1085,6 +1086,15 @@ h2.sidebar_title {
 .grey_box > *:last-child {
 	margin-bottom: 0;
 }
+
+/* -- Books page */
+
+@media (min-width: 768px) {
+	#books_page .header_action-center .s_image img {
+		width: 84%;
+	}
+}
+
 
 
 /* -- Contact */
