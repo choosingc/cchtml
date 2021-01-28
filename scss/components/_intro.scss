@@ -6,12 +6,15 @@
 	}
 
 	&__quote {
-		font-size: 25px;
-		line-height: 35px;
+		font-size: 58px;
+		line-height: 1.33em;
+		letter-spacing: 0.01em;
 		margin: 0 0 20px;
 		position: relative;
 		letter-spacing: 1.1px;
 
+/*
+		CMC, pre wed 27
 		@include media ('>=tablet') {
 			font-size: 32px;
 			line-height: 38px;
@@ -23,6 +26,21 @@
 			font-size: 35px;
 			line-height: 47px;
 		}
+*/
+		@include media ('<tablet') {
+			font-size: 42px;
+		}
+		
+/*
+		@media #{$tablet_only} {
+ 			color: white;
+		} 
+*/
+
+		@include media ('>=desktop') {
+			margin: 0 0 31px;
+		}
+		
 	}
 
 	&__top {
@@ -42,8 +60,11 @@
 	}
 
 	&__text-block {
-		max-width: 515px;
 		margin-bottom: 18px;
+		
+		@include media ('>=desktop') {
+			max-width: 515px;
+		}
 
 		h2 {
 			margin: 0;
@@ -51,14 +72,19 @@
 	}
 
 	&__quote-author {
-		font-size: 13px;
+		font-size: 22px;
 		color: $gray-200;
-		text-transform: uppercase;
-		letter-spacing: 1px;
+		letter-spacing: 0.04em;
+		
+		@include media ('<=phone') {
+			font-size: 19px;
+		}
 
+/*
 		@include media ('>=tablet') {
 			letter-spacing: .3px;
 		}
+*/
 	}
 
 	&__download-button {

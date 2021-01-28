@@ -469,11 +469,11 @@ header .site_name {
 	letter-spacing: 0.04em;
 }
 
-.beige .top a.active_page {
+.beige .top :not(.site_name) a.active_page {
 	color: var(--cc-blue) !important;
 }
 
-.grey .top a.active_page {
+.grey .top :not(.site_name) a.active_page {
 	color: var(--cc-light-blue) !important;
 }
 		
@@ -670,7 +670,7 @@ footer a:hover {
 	color: var(--cc-light-blue);
 }
 
-footer a.active_page {
+footer :not(.site_name) a.active_page {
 	color: var(--cc-light-blue) !important;
 }
 

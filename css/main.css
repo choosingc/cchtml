@@ -2103,21 +2103,37 @@ a.btn {
     .intro {
       padding: 175px 0 108px; } }
   .intro__quote {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 58px;
+    line-height: 1.33em;
+    letter-spacing: 0.01em;
     margin: 0 0 20px;
     position: relative;
-    letter-spacing: 1.1px; }
-    @media (min-width: 768px) {
+    letter-spacing: 1.1px;
+    /*
+		CMC, pre wed 27
+		@include media ('>=tablet') {
+			font-size: 32px;
+			line-height: 38px;
+			letter-spacing: 1.8px;
+		}
+
+		@include media ('>=desktop') {
+			margin: 0 0 31px;
+			font-size: 35px;
+			line-height: 47px;
+		}
+*/
+    /*
+		@media only screen and (min-width: 768px) and (max-width: 1023px) {
+ 			color: white;
+		} 
+*/ }
+    @media (max-width: 767px) {
       .intro__quote {
-        font-size: 32px;
-        line-height: 38px;
-        letter-spacing: 1.8px; } }
+        font-size: 42px; } }
     @media (min-width: 1024px) {
       .intro__quote {
-        margin: 0 0 31px;
-        font-size: 35px;
-        line-height: 47px; } }
+        margin: 0 0 31px; } }
   .intro__top {
     margin-bottom: 28px;
     display: flex;
@@ -2131,18 +2147,24 @@ a.btn {
       .intro__top {
         max-width: 678px; } }
   .intro__text-block {
-    max-width: 515px;
     margin-bottom: 18px; }
+    @media (min-width: 1024px) {
+      .intro__text-block {
+        max-width: 515px; } }
     .intro__text-block h2 {
       margin: 0; }
   .intro__quote-author {
-    font-size: 13px;
+    font-size: 22px;
     color: #aebbc7;
-    text-transform: uppercase;
-    letter-spacing: 1px; }
-    @media (min-width: 768px) {
+    letter-spacing: 0.04em;
+    /*
+		@include media ('>=tablet') {
+			letter-spacing: .3px;
+		}
+*/ }
+    @media (max-width: 480px) {
       .intro__quote-author {
-        letter-spacing: .3px; } }
+        font-size: 19px; } }
   .intro__download-button {
     width: 33px;
     height: 33px;
