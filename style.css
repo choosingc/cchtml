@@ -656,10 +656,6 @@ footer {
 	letter-spacing: 0.02em;
 }
 
-footer .site_name {
-	letter-spacing: 0.04em;
-}
-
 footer a,
 footer a:link ,
 footer a:visited {
@@ -674,6 +670,19 @@ footer a:hover {
 footer :not(.site_name) a.active_page {
 	color: var(--cc-light-blue) !important;
 }
+
+footer .site_name a,
+footer .site_name a:link ,
+footer .site_name a:visited {
+	letter-spacing: 0.04em;
+	color: white;
+}
+
+footer .site_name a:active,
+footer .site_name a:hover {
+	color: var(--cc-light-blue);
+}
+
 
 footer h1,
 footer h2,
