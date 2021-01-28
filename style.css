@@ -1169,10 +1169,19 @@ ul.dotted-list.in_middle_of_text {
 	margin-bottom: 30px;
 }
 
+/* -- Hiding 'More' subheads on start-journey */
+	
 .accordion-block__heading {
-	opacity: 0; 
+/* 	opacity: 0;  */
 /* 	↑ Because copy wasn't provided */
 }
+/*
+pending jim
+@media (min-width: 1024px)
+.accordion-block__heading {
+    margin-top: 24px;
+}
+*/
 
 .accordion-block__btn {
 	margin-top: 1.5em;
