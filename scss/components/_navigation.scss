@@ -63,6 +63,8 @@
 		}
 
 		.site_name {
+			line-height: 1;
+
 			a {
 				color: $white;
 			}
@@ -122,9 +124,6 @@
 }
 
 .site_name {
-	@include media(">=tablet") {
-		padding-top: 4px;
-	}
 
 	a {
 		@include animate(opacity);
@@ -200,12 +199,7 @@
 		border-top: none;
 		border-bottom-left-radius: unset;
 		margin: 0 auto;
-		padding: 0 60px;
 		width: 100%;
-	}
-
-	@include media(">=desktop") {
-		padding: 0 60px;
 	}
 
 	li {
@@ -215,8 +209,9 @@
 
 	> li {
 		border-bottom: 1px solid $gray-200;
-
+		
 		@include media(">=tablet") {
+			width: calc(100%/4);
 			height: 100%;
 			padding-bottom: 42px;
 			text-align: center;
@@ -227,10 +222,6 @@
 		&.item-expanded {
 			position: relative;
 			cursor: pointer;
-
-			a {
-				width: calc(100% - 50px);
-			}
 
 			&.open {
 				position: unset;
@@ -247,7 +238,7 @@
 		> a:visited,
 		> a {
 			@include animate(all);
-
+			width: calc(100% - 50px);
 			display: inline-block;
 			padding: 15px 10px 15px 24px;
 			font: 700 14px/1.143 "Lato";
