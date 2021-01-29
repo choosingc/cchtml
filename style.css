@@ -13,6 +13,7 @@
 /* - Core design */
 /* -- Widths for core design */
 /* -- Common HTML elements (links, etc.) */
+/* --- Misc */
 /* --- Links */
 /* ---- Default link colours, from components spec */
 /* --- Paragraphs */
@@ -35,6 +36,7 @@
 /* ---- Sidebar width */
 /* ---- Sidebar content */
 /* --- Grey box */
+/* -- Books page */
 /* -- Contact */
 
 
@@ -55,11 +57,11 @@
 }
 
 body {
-	padding-top: 0px !important;
-	/* ↑ TO DO: at some point grep for where
+/* 	padding-top: 0px !important; */
+	/* ↑ To do: at some point grep for where
 		 <body style="padding-top" is hardcoded */
 
-	padding-bottom: 800px;
+/* 	padding-bottom: 800px; */
 /* 	↑  Deliberate, for Tom's monitor */
 
 }
@@ -112,6 +114,12 @@ em {
 }
 
 /* -- Common HTML elements (links, etc.) */
+
+/* --- Misc */
+
+u {
+	text-decoration: underline;
+}
 
 /* --- Links */
 
@@ -365,7 +373,7 @@ h2.small_heading {
 
 /* --- Header */
 
-/* ---- Desktop */
+/* ---- Desktop header */
 
 header {
 	padding-top: 50px;
@@ -390,56 +398,87 @@ header.grey.home {
 	background-image: url('images/in-chrome-sections/header/backgrounds/jpegs/bg-desktop-grey-home-gradient.jpg');
 }
 
-.menu_top.desktop {
-	padding-top: 0px;
-	/* ↑ Area above menu was safest to set on header itself */
-	padding-bottom: 20px;
-	border-bottom: 1px solid #0A3B56;
-
-	color: #0A3B56;
-	font-weight: bold;
-	text-transform: uppercase;
+/* New menu classes */
+header .top {
+	
 }
 
-header.grey .menu_top.desktop {
-	border-bottom: 1px solid white;
+header .site_name {
+
 }
 
-@media screen and ( min-width: 991px ) {
-	.menu_top.mobile {
-		display: none;
-	}
+#nav {
+
 }
 
-header.beige .menu_top a,
-header.beige .menu_top a:link,
-header.beige .menu_top a:hover,
-header.beige .menu_top a:active,
-header.beige .menu_top a:visited {
-	color: #0A3B56;
-	color: var(--cc-dark-blue);
+/* Classes no longer there AFAIK */
+		.menu_top.desktop {
+			padding-top: 0px;
+			/* ↑ Area above menu was safest to set on header itself */
+			padding-bottom: 20px;
+			border-bottom: 1px solid #0A3B56;
+		
+			color: #0A3B56;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		header.grey .menu_top.desktop {
+			border-bottom: 1px solid white;
+		}
+		
+		@media screen and ( min-width: 991px ) {
+			.menu_top.mobile {
+				display: none;
+			}
+		}
+		
+		header.beige .menu_top a,
+		header.beige .menu_top a:link,
+		header.beige .menu_top a:hover,
+		header.beige .menu_top a:active,
+		header.beige .menu_top a:visited {
+			color: #0A3B56;
+			color: var(--cc-dark-blue);
+		}
+		
+		header.grey .menu_top a,
+		header.grey .menu_top a:link,
+		header.grey .menu_top a:hover,
+		header.grey .menu_top a:active,
+		header.grey .menu_top a:visited {
+			color: white;
+		}
+		
+		.menu_top .site_name,
+		.menu_top.desktop .site_name,
+		.menu_top.mobile .site_name {
+			font-size: 28px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		
+		.menu_top .regular_link {
+			text-align: center;
+			line-height: 1.3em;
+		}
+
+/* END of
+	Classes no longer there AFAIK */
+	
+header .site_name {
+	letter-spacing: 0.04em;
 }
 
-header.grey .menu_top a,
-header.grey .menu_top a:link,
-header.grey .menu_top a:hover,
-header.grey .menu_top a:active,
-header.grey .menu_top a:visited {
-	color: white;
+.beige .top :not(.site_name) a.active_page {
+	color: var(--cc-blue) !important;
 }
 
-.menu_top .site_name,
-.menu_top.desktop .site_name,
-.menu_top.mobile .site_name {
-	font-size: 28px;
-	font-weight: bold;
-	text-transform: uppercase;
+.grey .top :not(.site_name) a.active_page {
+	color: var(--cc-light-blue) !important;
 }
-
-.menu_top .regular_link {
-	text-align: center;
-	line-height: 1.3em;
-}
+		
+			
 
 .social_pages a {
 	margin-right: 17px;
@@ -462,16 +501,17 @@ header.grey .menu_top a:visited {
 	z-index: 1; /* This seems best */
 }
 
-@media screen and ( max-width: 991px ) {
+/* @media screen and ( max-width: 991px ) {
 	.page_title_and_image .s_image {
 		display: none;
 	}
-}
+} */ 
 
 .page_title_and_image h1 {
 	font-size: 58px;
 	font-weight: normal;
 	text-align: center;
+	letter-spacing: 0.04em;
 
 	margin: 0em;
 	padding-top: 80px;
@@ -612,15 +652,37 @@ footer {
 	padding-top: 104px;
 
 	color: white;
+	
+	letter-spacing: 0.02em;
 }
 
 footer a,
-footer a:link,
-footer a:hover,
-footer a:active,
+footer a:link ,
 footer a:visited {
 	color: var(--cc-light-grey);
 }
+
+footer a:active,
+footer a:hover {
+	color: var(--cc-light-blue);
+}
+
+footer :not(.site_name) a.active_page {
+	color: var(--cc-light-blue) !important;
+}
+
+footer .site_name a,
+footer .site_name a:link ,
+footer .site_name a:visited {
+	letter-spacing: 0.04em;
+	color: white;
+}
+
+footer .site_name a:active,
+footer .site_name a:hover {
+	color: var(--cc-light-blue);
+}
+
 
 footer h1,
 footer h2,
@@ -872,7 +934,7 @@ footer .s_rule {
 /* -- Colored zones */
 
 section.grey_gradient {
-/* 	todo: Check these colours and gradients from San work well enough */
+/* 	Colours and gradients from San, passed approval */
 	background: var(--cc-dark-blue);
     background: -moz-linear-gradient(left, #3c5165 0%, #61788d 100%);
     background: -webkit-linear-gradient(left, #3c5165 0%,#61788d 100%);
@@ -1034,6 +1096,15 @@ h2.sidebar_title {
 	margin-bottom: 0;
 }
 
+/* -- Books page */
+
+@media (min-width: 768px) {
+	#books_page .header_action-center .s_image img {
+		width: 84%;
+	}
+}
+
+
 
 /* -- Contact */
 
@@ -1117,8 +1188,23 @@ ul.dotted-list.in_middle_of_text {
 	margin-bottom: 30px;
 }
 
+/* -- Hiding 'More' subheads on start-journey */
+	
+.accordion-block__heading {
+/* 	opacity: 0;  */
+/* 	↑ Because copy wasn't provided */
+}
+/*
+pending jim
+@media (min-width: 1024px)
+.accordion-block__heading {
+    margin-top: 24px;
+}
+*/
 
-
+.accordion-block__btn {
+	margin-top: 1.5em;
+}
 
 
 

@@ -19,9 +19,18 @@ main {
 }
 
 .page_title_and_image {
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		padding-top: 0 !important;
+		transform: translate(-50%, -50%);
+		width: 100%;
+	}
+
 	&_cc-center {
 		h1 {
-			@include media ('>=tablet') {
+			@include media(">=tablet") {
 				padding-right: 90px;
 				padding-left: 90px;
 			}
@@ -34,20 +43,20 @@ main {
 
 	&:hover {
 		@extend %transition;
-		filter: brightness(.8);
+		filter: brightness(0.8);
 	}
 }
 
 h2 {
-	letter-spacing: .4px;
+	letter-spacing: 0.4px;
 }
 
 h3 {
 	font-size: 21px;
-	letter-spacing: .9px;
+	letter-spacing: 0.9px;
 	line-height: 30px;
 
-	@include media ('>=tablet') {
+	@include media(">=tablet") {
 		font-size: 24px;
 		line-height: 34px;
 		letter-spacing: 1px;
@@ -60,7 +69,7 @@ h3 {
 
 	&::before {
 		@include size(59px, 1px);
-		content: '';
+		content: "";
 		position: absolute;
 		background-color: $blue-200;
 		top: 0;
@@ -75,17 +84,14 @@ h3 {
 	padding-left: 40px;
 }
 
-@media screen and
-(max-width: 991px) and
-(min-width: 768px) {
+@media screen and (max-width: 991px) and (min-width: 768px) {
 	.medium_width_plus_padding {
 		padding-left: 3em;
 		padding-right: 3em;
 	}
 }
 
-@media screen and
-(max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.medium_width_plus_padding {
 		padding-left: 1.5em; /* 1.5em = 24px */
 		padding-right: 1.5em; /* 1.5em = 24px */
@@ -94,7 +100,7 @@ h3 {
 
 .book-page {
 	h1 {
-		letter-spacing: .58px;
+		letter-spacing: 0.58px;
 	}
 
 	.header_action-center .s_image {
@@ -102,22 +108,37 @@ h3 {
 		bottom: 70px;
 	}
 
-	.page_title_and_image h1 {
-		padding-top: 112px;
+	.page_title_and_image {
+		.s_image {
+			@include media("<=tablet") {
+				right: -78px;
+				width: 50%;
+			}
+
+			img {
+				@include media("<=tablet") {
+					width: 78%;
+				}
+			}
+		}
+
+		h1 {
+			padding-top: 112px;
+		}
 	}
 
 	.main-courage {
 		padding: 90px 0 100px;
 		position: relative;
 
-		@include media ('>=desktop') {
+		@include media(">=desktop") {
 			padding: 157px 0 200px;
 		}
 
 		.standfirst {
 			margin-bottom: 20px;
 
-			@include media ('>=desktop') {
+			@include media(">=desktop") {
 				margin-bottom: 40px;
 			}
 		}
@@ -125,7 +146,7 @@ h3 {
 		&__text {
 			margin-bottom: 24px;
 		}
-		
+
 		&__bold-italic {
 			font-weight: 700;
 			font-style: italic;
@@ -135,7 +156,7 @@ h3 {
 			&:nth-of-type(2) {
 				margin-top: 20px;
 
-				@include media ('>=desktop') {
+				@include media(">=desktop") {
 					margin-top: -29px;
 				}
 			}
@@ -145,11 +166,11 @@ h3 {
 	.start-courage {
 		padding: 50px 50px 50px;
 
-		@include media ('>=tablet') {
+		@include media(">=tablet") {
 			padding: 93px 100px 95px;
 		}
 
-		@include media ('>=desktop') {
+		@include media(">=desktop") {
 			position: static;
 		}
 
@@ -158,13 +179,10 @@ h3 {
 			z-index: 1;
 		}
 
-		
-
 		.start-courage__image-block {
-			
 			display: none;
 
-			@include media ('>=tablet') {
+			@include media(">=tablet") {
 				font-size: 24px;
 				line-height: 34px;
 				letter-spacing: 1px;
@@ -173,13 +191,13 @@ h3 {
 				right: -136px;
 			}
 
-			@include media ('>=desktop') {
+			@include media(">=desktop") {
 				top: 100%;
 				right: 0;
 				transform: translateY(-100%);
 			}
 
-			@include media ('>=widescreen') {
+			@include media(">=widescreen") {
 				top: calc(100% - 35px);
 				right: 0;
 				transform: translateY(-100%);
@@ -194,7 +212,7 @@ h3 {
 
 .articles-page {
 	h1 {
-		letter-spacing: .58px;
+		letter-spacing: 0.58px;
 	}
 
 	.opportunities-section {
@@ -225,7 +243,7 @@ h3 {
 			&_next {
 				display: flex;
 				justify-content: flex-end;
-				
+
 				span {
 					padding-right: 20px;
 				}
@@ -243,7 +261,7 @@ h3 {
 			&.active {
 				span {
 					color: $blue-100;
-				}	
+				}
 			}
 		}
 	}
@@ -261,14 +279,14 @@ h3 {
 		padding: 90px 0 100px;
 		position: relative;
 
-		@include media ('>=desktop') {
+		@include media(">=desktop") {
 			padding: 157px 0 200px;
 		}
 
 		.standfirst {
 			margin-bottom: 20px;
 
-			@include media ('>=desktop') {
+			@include media(">=desktop") {
 				margin-bottom: 40px;
 			}
 		}
@@ -276,7 +294,7 @@ h3 {
 		&__text {
 			margin-bottom: 24px;
 		}
-		
+
 		&__bold-italic {
 			font-weight: 700;
 			font-style: italic;
@@ -286,7 +304,7 @@ h3 {
 			&:nth-of-type(2) {
 				margin-top: 20px;
 
-				@include media ('>=desktop') {
+				@include media(">=desktop") {
 					margin-top: -29px;
 				}
 			}
@@ -296,11 +314,11 @@ h3 {
 	.start-courage {
 		padding: 50px 50px 50px;
 
-		@include media ('>=tablet') {
+		@include media(">=tablet") {
 			padding: 93px 100px 95px;
 		}
 
-		@include media ('>=desktop') {
+		@include media(">=desktop") {
 			position: static;
 		}
 
@@ -309,13 +327,10 @@ h3 {
 			z-index: 1;
 		}
 
-		
-
 		.start-courage__image-block {
-			
 			display: none;
 
-			@include media ('>=tablet') {
+			@include media(">=tablet") {
 				font-size: 24px;
 				line-height: 34px;
 				letter-spacing: 1px;
@@ -324,13 +339,13 @@ h3 {
 				right: -136px;
 			}
 
-			@include media ('>=desktop') {
+			@include media(">=desktop") {
 				top: 100%;
 				right: 0;
 				transform: translateY(-100%);
 			}
 
-			@include media ('>=widescreen') {
+			@include media(">=widescreen") {
 				top: calc(100% - 35px);
 				right: 0;
 				transform: translateY(-100%);
@@ -347,7 +362,7 @@ h3 {
 	ol {
 		li {
 			a {
-				letter-spacing: .28px;
+				letter-spacing: 0.28px;
 			}
 
 			&:last-of-type {
@@ -360,7 +375,7 @@ h3 {
 }
 
 .standfirst {
-	letter-spacing: .44px;
+	letter-spacing: 0.44px;
 }
 
 .competent_sec {
@@ -373,7 +388,68 @@ h3 {
 }
 
 footer {
-	@include media ('<=991px') {
+	@include media("<=991px") {
 		margin-top: 0;
+	}
+}
+
+.article-intro {
+	padding-bottom: 130px;
+
+	h2 {
+		font-size: 34px;
+		text-align: center;
+	}
+}
+
+.links_w_small_images {
+	a {
+		@extend %transition;
+		color: $blue-100;
+
+		&:hover {
+			@extend %transition;
+			color: $blue-600;
+		}
+	}
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+#contact_page {
+	@include media("<=tablet") {
+		.page_title_and_image {
+			.s_image {
+				bottom: 37px;
+				right: -23px;
+				width: 32%;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	@include media("<=phone") {
+		.page_title_and_image {
+			.s_image {
+				bottom: 25px;
+				width: 35%;
+				max-width: 140px;
+			}
+		}
+	}
+}
+
+.email_and_social_media .s_email {
+	.max_width_inline {
+		margin-left: 0;
 	}
 }

@@ -1,0 +1,52 @@
+.subscribe-form {
+
+	.mc-field-group {
+		min-height: 49px;
+		display: flex;
+		border: 1px solid $blue-700;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+
+	label {
+		display: none;
+	}
+
+	input {
+		&[type="email"] {
+			width: 71%;
+			background-color: transparent;
+			border: 0;
+			color: $gray-200;
+
+			&::placeholder {
+				color: $gray-200;
+			}
+			
+			&:focus {
+				outline: 0;
+				border: 0;
+			}
+		}
+
+		&[type="submit"] {
+			@extend %transition;
+			width: 29%;
+			min-width: 130px;
+			background-color: $blue-100;
+			border: 0;
+			padding: 5px 32px;
+			margin: 0;
+
+			&:hover {
+				@extend %transition;
+				background-color: $blue-600;
+			}
+
+			&:focus {
+				outline: 0;
+				border: 0;
+			}
+		}
+	}
+}

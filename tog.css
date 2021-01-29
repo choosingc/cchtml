@@ -2,7 +2,7 @@
 ***************************
 **                       **
 **   TABLE OF CONTENTS   **
-**        (v1.05)        **
+**        (v1.06)        **
 **                       **
 ***************************
 **************************/
@@ -384,6 +384,13 @@ ol.no_bullets {
 	/* ↑ = 1/7th of an em, which removes the space above the top of letters 
 		given the 1em line-height. For 28px text this is is equivalent to
 		a margin-top of -4px (28/7) */
+	line-height: 1em;
+}
+
+.flush_enough_top,
+.flush_enough_top.flush_with_top_of_letters,
+.flush_enough_top.flush_top {
+	margin-top: 0;
 	line-height: 1em;
 }
 
