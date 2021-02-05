@@ -1695,6 +1695,8 @@ header {
       margin-bottom: 25px; }
   .text-gallery__tabs-block {
     position: relative; }
+    .text-gallery__tabs-block .slick-arrow:not(.slick-hidden) + .text-gallery__tabs .text-gallery__tab:not(.slick-current) {
+      color: transparent; }
     .text-gallery__tabs-block .slick-arrow {
       position: absolute;
       display: -webkit-box;
