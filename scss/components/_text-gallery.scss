@@ -125,6 +125,14 @@
 	&__tabs-block {
 		position: relative;
 
+		.slick-arrow:not(.slick-hidden) {
+			&+.text-gallery__tabs {
+				.text-gallery__tab:not(.slick-current) {
+					color: transparent;
+				}
+			}
+		}
+
 		.slick-arrow {
 			position: absolute;
 			display: flex;
