@@ -1031,6 +1031,9 @@ h3 {
 .email_and_social_media .s_email .max_width_inline {
   margin-left: 0; }
 
+header {
+  overflow: hidden; }
+
 .courage-gallery-section .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -1406,7 +1409,6 @@ h3 {
     border: 1px solid #bfc4c8;
     letter-spacing: 1.28px;
     line-height: 18px;
-    color: #fff;
     cursor: pointer; }
     @media (min-width: 480px) {
       .text-gallery__tab {
@@ -1459,6 +1461,8 @@ h3 {
       margin-bottom: 25px; }
   .text-gallery__tabs-block {
     position: relative; }
+    .text-gallery__tabs-block .slick-arrow:not(.slick-hidden) + .text-gallery__tabs .text-gallery__tab:not(.slick-current) {
+      color: transparent; }
     .text-gallery__tabs-block .slick-arrow {
       position: absolute;
       display: flex;
@@ -2610,10 +2614,12 @@ a.btn {
       .grey .top a.active,
       .grey .top a:hover {
         color: #0094d9; }
-    .grey .top .site_name a {
-      color: #fff; }
-    .grey .top .site_name a:hover {
-      color: #0094d9; }
+    .grey .top .site_name {
+      line-height: 1; }
+      .grey .top .site_name a {
+        color: #fff; }
+      .grey .top .site_name a:hover {
+        color: #0094d9; }
     .grey .top .btn-open span {
       background-color: #fff; }
     .grey .top #nav > li.active.item-expanded:after,
@@ -2630,10 +2636,6 @@ a.btn {
     color: #0a3b56; }
   .beige .top .site_name a:hover {
     color: #66bfe8; }
-
-@media (min-width: 768px) {
-  .site_name {
-    padding-top: 4px; } }
 
 .site_name a {
   transition: opacity 0.3s ease-in-out;
@@ -2690,17 +2692,14 @@ a.btn {
       border-top: none;
       border-bottom-left-radius: unset;
       margin: 0 auto;
-      padding: 0 60px;
       width: 100%; } }
-  @media (min-width: 1024px) {
-    #nav {
-      padding: 0 60px; } }
   #nav li {
     letter-spacing: 0.08em; }
   #nav > li {
     border-bottom: 1px solid #aebbc7; }
     @media (min-width: 768px) {
       #nav > li {
+        width: calc(100%/4);
         height: 100%;
         padding-bottom: 42px;
         text-align: center;
@@ -2709,8 +2708,6 @@ a.btn {
     #nav > li.item-expanded {
       position: relative;
       cursor: pointer; }
-      #nav > li.item-expanded a {
-        width: calc(100% - 50px); }
       #nav > li.item-expanded.open {
         position: unset; }
     #nav > li.active a,
@@ -2719,6 +2716,7 @@ a.btn {
     #nav > li > a:visited,
     #nav > li > a {
       transition: all 0.3s ease-in-out;
+      width: calc(100% - 50px);
       display: inline-block;
       padding: 15px 10px 15px 24px;
       font: 700 14px/1.143 "Lato";
@@ -3017,15 +3015,26 @@ a.btn {
   overflow: hidden; }
 
 #about_page .page_title_and_image .s_image {
-  bottom: 20px;
-  right: -52px; }
+  bottom: -18px;
+  right: -80px;
+  /*
+				Old CMC ... despite label not showing even on their version
+			@include media ('<=tablet') {
+				right: -165px;
+			}
+			*/ }
   @media (max-width: 768px) {
     #about_page .page_title_and_image .s_image {
-      right: -165px; } }
-  @media (max-width: 768px) {
-    #about_page .page_title_and_image .s_image img {
-      height: auto !important;
-      width: 55%; } }
+      display: none; } }
+  #about_page .page_title_and_image .s_image img {
+    height: 387px;
+    /*
+				Old CMC ... despite label not showing even on their version
+				@include media ('<=tablet') {
+					height: auto !important;
+					width: 55%;
+				}
+*/ }
 
 #about_page .page_title_and_image h1 {
   padding-top: 113px; }
@@ -3147,14 +3156,16 @@ a.btn {
     padding-right: 15px;
     letter-spacing: .6px; }
   .intro-card .btn {
-    width: 100%; }
+    width: 100%;
+    /*
+		&:only-of-type {
+			margin-top: 80px;
+		}
+*/ }
     .intro-card .btn:not(:last-of-type) {
       margin-bottom: 33px; }
-    .intro-card .btn:only-of-type {
-      margin-top: 80px; }
   .intro-card p {
     margin-bottom: 36px;
-    font-weight: 700;
     padding-right: 20px;
     letter-spacing: .8px; }
 

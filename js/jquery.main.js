@@ -385,13 +385,13 @@ function initMobileNav() {
 }
 
 // handle dropdowns on mobile devices
-function initTouchNav() {
-	jQuery('#nav').each(function() {
-		new TouchNav({
-			navBlock: this
-		});
-	});
-}
+// function initTouchNav() {
+// 	jQuery('#nav').each(function() {
+// 		new TouchNav({
+// 			navBlock: this
+// 		});
+// 	});
+// }
 
 
 /*
@@ -401,7 +401,7 @@ function initTouchNav() {
 	function MobileNav(options) {
 		this.options = $.extend({
 			container: null,
-			hideOnClickOutside: false,
+			hideOnClickOutside: true,
 			menuActiveClass: 'nav-active',
 			menuOpener: '.nav-opener',
 			menuDrop: '.nav-drop',
@@ -669,12 +669,12 @@ TouchNav.prototype = {
             /**/
         }
     },
-    clickHandler: function (e) {
-        // prevent first click on link
-        if (this.preventCurrentClick) {
-            e.preventDefault();
-        }
-    },
+    // clickHandler: function (e) {
+    //     // prevent first click on link
+    //     if (this.preventCurrentClick) {
+    //         e.preventDefault();
+    //     }
+    // },
     clickOutsideHandler: function (event) {
         var e = event.changedTouches ? event.changedTouches[0] : event;
         if (this.activeParent && !this.isParent(this.menu, e.target)) {

@@ -52,18 +52,29 @@
 
 	.page_title_and_image {
 		.s_image {
-			bottom: 20px;
-			right: -52px;
-
+			bottom: -18px;
+			right: -80px;
+			
+			@include media ('<=tablet') {
+				display: none;
+			}
+/*
+				Old CMC ... despite label not showing even on their version
 			@include media ('<=tablet') {
 				right: -165px;
 			}
+			*/
 
 			img {
+				height: 387px;
+				
+/*
+				Old CMC ... despite label not showing even on their version
 				@include media ('<=tablet') {
 					height: auto !important;
 					width: 55%;
 				}
+*/
 			}
 		}
 
