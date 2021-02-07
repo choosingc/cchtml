@@ -233,7 +233,7 @@ h3 {
 
 			&_prev {
 				display: flex;
-				justify-content: flex-end;
+				justify-content: end;
 
 				span {
 					padding-left: 20px;
@@ -242,7 +242,7 @@ h3 {
 
 			&_next {
 				display: flex;
-				justify-content: flex-start;
+				justify-content: flex-end;
 
 				span {
 					padding-right: 20px;
@@ -452,4 +452,8 @@ footer {
 	.max_width_inline {
 		margin-left: 0;
 	}
+}
+
+header {
+	overflow: hidden;
 }
