@@ -37,6 +37,7 @@
 /* ---- Sidebar content */
 /* --- Grey box */
 /* -- Articles */
+/* --- Manual pagination (disabled) */
 /* -- Books page */
 /* -- Contact */
 
@@ -1101,6 +1102,9 @@ h2.sidebar_title {
 
 /* -- Articles */
 
+/* --- Manual pagination (disabled) */
+
+/*
 .paginate-pagination {
 	display: none !important;
 }
@@ -1108,6 +1112,7 @@ h2.sidebar_title {
 .paginate-pagination.non_hidden {
 	display: flex !important;
 }
+*/
 
 /* -- Books page */
 
