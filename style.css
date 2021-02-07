@@ -36,6 +36,7 @@
 /* ---- Sidebar width */
 /* ---- Sidebar content */
 /* --- Grey box */
+/* -- Articles */
 /* -- Books page */
 /* -- Contact */
 
@@ -1094,6 +1095,18 @@ h2.sidebar_title {
 
 .grey_box > *:last-child {
 	margin-bottom: 0;
+}
+
+
+
+/* -- Articles */
+
+.paginate-pagination {
+	display: none !important;
+}
+
+.paginate-pagination.non_hidden {
+	display: flex !important;
 }
 
 /* -- Books page */
