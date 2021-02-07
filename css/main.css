@@ -3147,14 +3147,16 @@ a.btn {
     padding-right: 15px;
     letter-spacing: .6px; }
   .intro-card .btn {
-    width: 100%; }
+    width: 100%;
+    /*
+		&:only-of-type {
+			margin-top: 80px;
+		}
+*/ }
     .intro-card .btn:not(:last-of-type) {
       margin-bottom: 33px; }
-    .intro-card .btn:only-of-type {
-      margin-top: 80px; }
   .intro-card p {
     margin-bottom: 36px;
-    font-weight: 700;
     padding-right: 20px;
     letter-spacing: .8px; }
 
