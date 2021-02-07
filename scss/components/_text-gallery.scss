@@ -41,6 +41,7 @@
 		border: 1px solid $gray-100;
 		letter-spacing: 1.28px;
 		line-height: 18px;
+		color: $white;
 		cursor: pointer;
 
 		@include media ('>=phone') {
@@ -124,14 +125,6 @@
 
 	&__tabs-block {
 		position: relative;
-
-		.slick-arrow:not(.slick-hidden) {
-			&+.text-gallery__tabs {
-				.text-gallery__tab:not(.slick-current) {
-					color: transparent;
-				}
-			}
-		}
 
 		.slick-arrow {
 			position: absolute;
