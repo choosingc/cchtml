@@ -898,12 +898,12 @@ h3 {
     padding: 0 !important; }
     .articles-page .navigation-item-block .navigation-item_prev {
       display: flex;
-      justify-content: end; }
+      justify-content: flex-end; }
       .articles-page .navigation-item-block .navigation-item_prev span {
         padding-left: 20px; }
     .articles-page .navigation-item-block .navigation-item_next {
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-start; }
       .articles-page .navigation-item-block .navigation-item_next span {
         padding-right: 20px; }
     .articles-page .navigation-item-block .navigation-item_middle {
