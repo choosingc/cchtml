@@ -36,7 +36,6 @@
 						.sub-nav {
 							> li {
 								> a {
-									color: $white;
 
 									&:hover {
 										color: $blue-100;
@@ -63,10 +62,9 @@
 		}
 
 		.site_name {
-			line-height: 1;
-
 			a {
 				color: $white;
+				line-height: 1;
 			}
 			
 			a:hover {
@@ -127,6 +125,7 @@
 
 	a {
 		@include animate(opacity);
+		line-height: 1;
 
 		font-size: rem-calc(24px);
 		font-weight: bold;
@@ -191,7 +190,7 @@
 
 	@include media(">=tablet") {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: flex-start;
 		top: unset;
 		right: unset;
@@ -211,7 +210,7 @@
 		border-bottom: 1px solid $gray-200;
 		
 		@include media(">=tablet") {
-			width: calc(100%/4);
+			width: auto;
 			height: 100%;
 			padding-bottom: 42px;
 			text-align: center;
@@ -268,26 +267,43 @@
 			.sub-nav {
 				@include media(">=tablet") {
 					@include animate(all);
-
+					width: 271px;
 					display: flex;
-					padding: 0;
+					flex-direction: column;
+					background-color: $white;
+					padding: 3px 13px;
+					border-radius: 4px;
 					position: absolute;
 					left: 50%;
-					top: calc(100% - 35px);
+					top: calc(100% - 18px);
 					transform: translateX(-50%);
 
-					> li {
-						white-space: nowrap;
+					&::before {
+						@include size(23px, 20px);
+						@include triangle(23px 20px, $white, up);
+						content: '';
+						position: absolute;
+						top: -15px;
+						left: 50%;
+						transform: translateX(-50%);
+					}
 
-						& + li {
-							margin-left: 15px;
+
+					> li {
+						white-space: initial;
+						text-align: left;
+
+						&:not(:last-of-type) {
+							border-bottom: 1px solid $gray-200;
 						}
 
 						> a {
 							@include animate(all);
-
+							display: block;
+							padding: 10px;
 							text-transform: uppercase;
-							color: $blue-200;
+							color: $blue-700;
+							font-weight: 700;
 
 							&:hover {
 								color: $blue-100;
