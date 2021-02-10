@@ -1206,6 +1206,15 @@ pending jim
 	margin-top: 1.5em;
 }
 
+/* - Stles for hiding chapter */
+
+.intro__button-block {
+	display: none !important;
+}
+
+.intro__image-block {
+	margin-bottom: 47px !important;
+}
 
 
 
