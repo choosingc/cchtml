@@ -14,7 +14,7 @@ $mail = new PHPMailer(true);
 	
 ob_start();
 	
-mail('DetertJ@darden.virginia.edu',$_POST['name'].' [via JD.com]',"(Company/org: ".$_POST['org'].")\n\n".$_POST['message']);
+mail('james.r.detert@gmail.com',$_POST['name'].' [via JD.com]',"(Company/org: ".$_POST['org'].")\n\n".$_POST['message']);
 
 // header("Location: http://example.com/myOtherPage.php");
 
