@@ -471,14 +471,16 @@ header .site_name {
 }
 
 .beige .top :not(.site_name) a.active_page {
-	color: var(--cc-blue) !important;
+	color: var(--cc-blue);
 }
 
 .grey .top :not(.site_name) a.active_page {
-	color: var(--cc-light-blue) !important;
+	color: var(--cc-light-blue);
 }
 		
-			
+.grey .top .sub-nav a.active_page {
+	color: #61798e;
+}				
 
 .social_pages a {
 	margin-right: 17px;
