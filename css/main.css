@@ -1581,26 +1581,14 @@ header {
     .message-section {
       padding: 90px 0; } }
   .message-section__text {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 32px;
     color: #fff;
     position: relative;
-    letter-spacing: .9px; }
-    .message-section__text::before {
-      width: 59px;
-      height: 1px;
-      content: '';
-      position: absolute;
-      background-color: #fff;
-      top: -24px;
-      left: 0; }
-      @media (min-width: 1024px) {
-        .message-section__text::before {
-          top: 10px;
-          left: -42px;
-          -webkit-transform: translateX(-100%);
-              -ms-transform: translateX(-100%);
-                  transform: translateX(-100%); } }
+    letter-spacing: .9px;
+    text-align: center; }
+    .message-section__text::before, .message-section__text::after {
+      content: '\0022'; }
 
 .text-gallery {
   padding-bottom: 65px; }
