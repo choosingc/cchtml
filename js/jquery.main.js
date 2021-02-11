@@ -40,12 +40,12 @@ jQuery(function () {
 	initReadMoreShow();
 	initTabNavigation();
 	initMobileNav();
-	initTouchNav();
+	// initTouchNav();
 	initPagination();
 });
 
 function initPagination() {
-	$('.article').paginate({
+	jQuery('.article').paginate({
 		perPage: 5, 
 	});
 }
@@ -56,7 +56,6 @@ function initTabNavigation() {
 	let navItem = jQuery('.navigation-item');
 
 	navItem.on('click', function(e){
-		e.preventDefault();
 		let link = jQuery(this).attr('href');
 		let nextTab = jQuery('.tabset').find(`a[href="${link}"]`)
 		nextTab.trigger('click');
