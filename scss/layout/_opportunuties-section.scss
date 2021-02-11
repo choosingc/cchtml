@@ -107,7 +107,6 @@
 	}
 
 	.standfirst {
-		font-size: 18px;
 		margin-bottom: 25px;
 		letter-spacing: .5px;
 
@@ -116,7 +115,6 @@
 		}
 
 		@include media ('>=desktop') {
-			font-size: 22px;
 			margin-bottom: 46px;
 		}
 	}
@@ -192,7 +190,6 @@
 			.standfirst {
 				margin: 0 0 15px;
 				letter-spacing: .4px;
-				font-size: 22px;
 
 				@include media ('>=tablet') {
 					margin: 0 0 15px;

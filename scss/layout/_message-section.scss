@@ -7,12 +7,22 @@
 	}
 
 	&__text {
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 22px;
+		line-height: 1.2;
 		color: $white;
 		position: relative;
 		letter-spacing: .9px;
 		text-align: center;
+
+		@include media ('>=phone') {
+			font-size: 26px;
+		}
+
+		@include media ('>=tablet') {
+			font-size: 32px;
+		}
+
+		
 		
 		&::before, &::after {
 			content: '\0022';

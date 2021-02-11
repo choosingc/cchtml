@@ -1208,6 +1208,9 @@ h3 {
 header {
   overflow: hidden; }
 
+.font-large {
+  font-size: 26px; }
+
 .courage-gallery-section .container {
   max-width: 1130px;
   margin: 0 auto;
@@ -1241,8 +1244,7 @@ header {
   .resources-section .standfirst {
     text-align: center;
     max-width: 968px;
-    margin: 0 auto 45px;
-    padding: 0 20px; }
+    margin: 0 auto 45px; }
     @media (min-width: 1024px) {
       .resources-section .standfirst {
         margin: 0 auto 62px; } }
@@ -1346,7 +1348,6 @@ header {
     margin-bottom: 22px; }
 
 .opportunities-section .standfirst {
-  font-size: 18px;
   margin-bottom: 25px;
   letter-spacing: .5px; }
   @media (min-width: 768px) {
@@ -1354,7 +1355,6 @@ header {
       margin-bottom: 35px; } }
   @media (min-width: 1024px) {
     .opportunities-section .standfirst {
-      font-size: 22px;
       margin-bottom: 46px; } }
 
 .opportunities-section h5 {
@@ -1408,8 +1408,7 @@ header {
 
 .opportunities-section_planning .main-text .standfirst {
   margin: 0 0 15px;
-  letter-spacing: .4px;
-  font-size: 22px; }
+  letter-spacing: .4px; }
   @media (min-width: 768px) {
     .opportunities-section_planning .main-text .standfirst {
       margin: 0 0 15px; } }
@@ -1581,12 +1580,18 @@ header {
     .message-section {
       padding: 90px 0; } }
   .message-section__text {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 1.2;
     color: #fff;
     position: relative;
     letter-spacing: .9px;
     text-align: center; }
+    @media (min-width: 480px) {
+      .message-section__text {
+        font-size: 26px; } }
+    @media (min-width: 768px) {
+      .message-section__text {
+        font-size: 32px; } }
     .message-section__text::before, .message-section__text::after {
       content: '\0022'; }
 
@@ -2061,7 +2066,10 @@ a.btn {
       .guide-block_assessments .guide-block__content .btn {
         margin-bottom: 40px; }
       .guide-block_assessments .guide-block__content p {
-        font-size: 14px; }
+        font-size: 18px; }
+        @media (min-width: 768px) {
+          .guide-block_assessments .guide-block__content p {
+            font-size: 22px; } }
       .guide-block_assessments .guide-block__content h3 {
         margin: 0px 0 27px; }
       .guide-block_assessments .guide-block__content .guide-block__image {
@@ -2774,8 +2782,17 @@ a.btn {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row; } }
+  @media (min-width: 1024px) {
+    .main-courage__bold-italic {
+      font-size: 26px; } }
   .main-courage__text {
     margin-bottom: 34px; }
+    @media (min-width: 1024px) {
+      .main-courage__text {
+        font-size: 26px; } }
+    @media (min-width: 1024px) {
+      .main-courage__text .standfirst {
+        font-size: 26px; } }
     .main-courage__text p {
       margin: 0; }
       .main-courage__text p:not(:last-of-type) {

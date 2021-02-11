@@ -59,6 +59,11 @@ function initTabNavigation() {
 		let link = jQuery(this).attr('href');
 		let nextTab = jQuery('.tabset').find(`a[href="${link}"]`)
 		nextTab.trigger('click');
+		if (jQuery('.tabset-block').length) {
+			jQuery('html, body').animate({
+				scrollTop: $('.tabset-block').offset().top
+			}, 1000);
+		}
 	});
 
 }
