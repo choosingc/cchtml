@@ -1363,16 +1363,16 @@ header {
     position: relative;
     letter-spacing: .9px;
     text-align: center; }
-    @media (min-width: 480px) {
+    @media (max-width: 480px) {
       .message-section__text {
         font-size: 26px; } }
     @media (min-width: 768px) {
       .message-section__text {
         font-size: 24px; } }
     .message-section__text::before {
-      content: open-quote; }
+      content: "\201C"; }
     .message-section__text::after {
-      content: close-quote; }
+      content: "\201D"; }
 
 .text-gallery {
   padding-bottom: 65px; }

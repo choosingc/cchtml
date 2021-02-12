@@ -16,7 +16,7 @@
 		
 		
 		// ideally replace both these includes with @include media ('<=phone')
-		@include media ('>=phone') {
+		@include media ('<=phone') {
 			font-size: 26px;
 		}
 
@@ -25,11 +25,11 @@
 		}
 		
 		&::before {
-			content: open-quote;
+			content:"\201C";
 		}
 		
 		&::after {
-			content: close-quote;
+			content: "\201D";
 		}
 	}
 }

@@ -549,7 +549,7 @@ header .site_name {
 	.home-page header.grey {
 		background-image: none;
 		/* background-color: #293c4a; 
-			 ↑ already set in _home_page.scss
+			 ↑ already set in _home_page.scss */
 	}
 
 	.menu_top.desktop {
