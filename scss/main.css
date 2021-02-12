@@ -2437,12 +2437,6 @@ a.btn {
       font-size: 26px; } }
   .courage-link-zone-home__text {
     margin-bottom: 34px; }
-    @media (min-width: 1024px) {
-      .courage-link-zone-home__text {
-        font-size: 26px; } }
-    @media (min-width: 1024px) {
-      .courage-link-zone-home__text .standfirst {
-        font-size: 26px; } }
     .courage-link-zone-home__text p {
       margin: 0; }
       .courage-link-zone-home__text p:not(:last-of-type) {

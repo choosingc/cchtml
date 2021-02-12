@@ -48,15 +48,6 @@
 
 	&__text {
 		margin-bottom: 34px;
-		@include media ('>=desktop') {
-			font-size: 26px;
-		}	
-
-		.standfirst {
-			@include media ('>=desktop') {
-				font-size: 26px;
-			}	
-		}
 
 		p {
 			margin: 0;
