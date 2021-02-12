@@ -1579,7 +1579,7 @@ header {
     .message-section {
       padding: 90px 0; } }
   .message-section__text {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.2;
     color: #fff;
     position: relative;
@@ -1590,9 +1590,11 @@ header {
         font-size: 26px; } }
     @media (min-width: 768px) {
       .message-section__text {
-        font-size: 32px; } }
-    .message-section__text::before, .message-section__text::after {
-      content: '\0022'; }
+        font-size: 24px; } }
+    .message-section__text::before {
+      content: open-quote; }
+    .message-section__text::after {
+      content: close-quote; }
 
 .text-gallery {
   padding-bottom: 65px; }
