@@ -545,6 +545,12 @@ header .site_name {
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+	
+	.home-page header.grey {
+		background-image: none;
+		/* background-color: #293c4a; 
+			 ↑ already set in _home_page.scss
+	}
 
 	.menu_top.desktop {
 		display: none;
