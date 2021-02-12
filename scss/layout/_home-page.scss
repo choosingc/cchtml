@@ -1,7 +1,9 @@
 .home-page {
 
 	header {
-		background-image: linear-gradient(200deg, #61798e 0%, #3b5064 100%);
+//		gradient, rose asked to replace thurs 11/2
+// 		background-image: linear-gradient(200deg, #61798e 0%, #3b5064 100%);
+		background-color: #293c4a;
 		
 		@include media ('>=desktop') {
 			background: $blue-200 no-repeat 50% 50%/cover;
