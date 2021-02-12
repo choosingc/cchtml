@@ -1,0 +1,82 @@
+// The normal version of this yellow zone linking to the CCAC is currently in _main_courage.scss
+
+.courage-link-zone-home {
+	background: $yellow-100;
+	background: linear-gradient(to right, $yellow-100 0%, $yellow-200 100%);
+	padding: 75px 0 75px;
+	overflow: hidden;
+
+	@include media ('>=desktop') {
+		padding: 150px 0 144px;
+	}
+
+	.col {
+		&:nth-of-type(1) {
+			width: 100%;
+			
+			@include media ('>=desktop') {
+				width: 48.2%;
+				padding-right: 105px;
+			}
+		}
+
+		&:nth-of-type(2) {
+			width: 100%;
+			margin-top: 7px;
+
+			@include media ('>=desktop') {
+				width: 51.8%;
+				margin-top: 71px;
+			}
+		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+
+		@include media ('>=desktop') {
+			flex-direction: row;
+		}
+	}
+
+	&__bold-italic {
+		@include media ('>=desktop') {
+			font-size: 26px;
+		}	
+	}
+
+	&__text {
+		margin-bottom: 34px;
+		@include media ('>=desktop') {
+			font-size: 26px;
+		}	
+
+		.standfirst {
+			@include media ('>=desktop') {
+				font-size: 26px;
+			}	
+		}
+
+		p {
+			margin: 0;
+
+			&:not(:last-of-type) {
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+	&__heading {
+		margin: 0 0 47px;
+	}
+
+	h2 {
+		letter-spacing: .4px;
+		line-height: 1.25;
+	}
+
+	h5 {
+		margin-bottom: 12px;
+	}
+}

@@ -2405,6 +2405,56 @@ a.btn {
   .main-courage h5 {
     margin-bottom: 12px; }
 
+.courage-link-zone-home {
+  background: #f7f7e1;
+  background: linear-gradient(to right, #f7f7e1 0%, #fdfdf3 100%);
+  padding: 75px 0 75px;
+  overflow: hidden; }
+  @media (min-width: 1024px) {
+    .courage-link-zone-home {
+      padding: 150px 0 144px; } }
+  .courage-link-zone-home .col:nth-of-type(1) {
+    width: 100%; }
+    @media (min-width: 1024px) {
+      .courage-link-zone-home .col:nth-of-type(1) {
+        width: 48.2%;
+        padding-right: 105px; } }
+  .courage-link-zone-home .col:nth-of-type(2) {
+    width: 100%;
+    margin-top: 7px; }
+    @media (min-width: 1024px) {
+      .courage-link-zone-home .col:nth-of-type(2) {
+        width: 51.8%;
+        margin-top: 71px; } }
+  .courage-link-zone-home__block {
+    display: flex;
+    flex-direction: column; }
+    @media (min-width: 1024px) {
+      .courage-link-zone-home__block {
+        flex-direction: row; } }
+  @media (min-width: 1024px) {
+    .courage-link-zone-home__bold-italic {
+      font-size: 26px; } }
+  .courage-link-zone-home__text {
+    margin-bottom: 34px; }
+    @media (min-width: 1024px) {
+      .courage-link-zone-home__text {
+        font-size: 26px; } }
+    @media (min-width: 1024px) {
+      .courage-link-zone-home__text .standfirst {
+        font-size: 26px; } }
+    .courage-link-zone-home__text p {
+      margin: 0; }
+      .courage-link-zone-home__text p:not(:last-of-type) {
+        margin-bottom: 24px; }
+  .courage-link-zone-home__heading {
+    margin: 0 0 47px; }
+  .courage-link-zone-home h2 {
+    letter-spacing: .4px;
+    line-height: 1.25; }
+  .courage-link-zone-home h5 {
+    margin-bottom: 12px; }
+
 @media (min-width: 1024px) {
   .book {
     margin-bottom: 115px; } }
