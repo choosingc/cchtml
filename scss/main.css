@@ -1321,8 +1321,7 @@ header {
   .advance-section__cards-block {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center; }
+    flex-direction: column; }
     @media (min-width: 1024px) {
       .advance-section__cards-block {
         flex-direction: row; } }
@@ -2276,9 +2275,12 @@ a.btn {
   border-radius: 5px;
   max-width: 326px;
   min-height: 231px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
+  /*
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+*/
   margin-bottom: 42px; }
   @media (min-width: 1024px) {
     .review-card {

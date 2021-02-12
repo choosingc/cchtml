@@ -22,7 +22,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
-		align-items: center;
+// 		align-items: center; ← CMC. Remove this rather than replacing with start, as removing it makes items stretch to fill cross axis
 
 		@include media ('>=desktop') {
 			flex-direction: row;

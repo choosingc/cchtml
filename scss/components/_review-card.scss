@@ -4,9 +4,12 @@
 	border-radius: 5px;
 	max-width: 326px;
 	min-height: 231px;
+	display: block;
+/*
 	display: flex;
     flex-direction: column;
 	justify-content: space-between;
+*/
 	margin-bottom: 42px;
 
 	@include media ('>=desktop') {
