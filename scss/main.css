@@ -1357,7 +1357,7 @@ header {
       padding: 90px 0; } }
   .message-section__text {
     font-size: 24px;
-    line-height: 1.2;
+    line-height: 1.416em;
     color: #fff;
     position: relative;
     letter-spacing: .9px;
