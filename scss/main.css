@@ -2384,15 +2384,15 @@ a.btn {
         flex-direction: row; } }
   @media (min-width: 1024px) {
     .main-courage__bold-italic {
-      font-size: 26px; } }
+      font-size: 24px; } }
   .main-courage__text {
     margin-bottom: 34px; }
     @media (min-width: 1024px) {
       .main-courage__text {
-        font-size: 26px; } }
+        font-size: 24px; } }
     @media (min-width: 1024px) {
       .main-courage__text .standfirst {
-        font-size: 26px; } }
+        font-size: 24px; } }
     .main-courage__text p {
       margin: 0; }
       .main-courage__text p:not(:last-of-type) {

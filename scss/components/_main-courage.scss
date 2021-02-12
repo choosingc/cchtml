@@ -40,19 +40,19 @@
 
 	&__bold-italic {
 		@include media ('>=desktop') {
-			font-size: 26px;
+			font-size: 24px;
 		}	
 	}
 
 	&__text {
 		margin-bottom: 34px;
 		@include media ('>=desktop') {
-			font-size: 26px;
+			font-size: 24px;
 		}	
 
 		.standfirst {
 			@include media ('>=desktop') {
-				font-size: 26px;
+				font-size: 24px;
 			}	
 		}
 
