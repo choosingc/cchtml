@@ -43,9 +43,15 @@
 	&__quote-author {
 		font-size: 13px;
 		line-height: 18px;
-		letter-spacing: 1.04px;
+		letter-spacing: 0.08em;
 		color: $blue-200;
 		text-transform: uppercase;
+		
+		&__details {
+			text-transform: none;
+			letter-spacing: 0em;
+			margin-top: 0.8em;
+		}
 	}
 
 	&__quote-block {
@@ -74,7 +80,7 @@
 		}
 
 		.standfirst {
-			margin-bottom: 35px;
+			margin-bottom: 24px; // same as p, at least on this page
 		}
 	}
 }

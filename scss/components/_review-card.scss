@@ -22,17 +22,27 @@
 	}
 
 	&__text {
-		font-size: 1rem;
+		font-size: 14px;
 		line-height: 22px;
 		color: $blue-100;
 		margin: 0;
-		letter-spacing: .3px;
+		letter-spacing: 0.02em;
 	}
 
 	&__author {
+		color: $blue-200;
 		font-size: 13px;
 		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		margin-top: 0.75em;
+	}
+		
+	&__author-details {
 		color: $blue-200;
-		letter-spacing: 1.2px;
+		font-size: 13px;
+		text-transform: none;
+		letter-spacing: 0em;
+		line-height: 1.385em;
+		margin-top: 0.45em;
 	}
 }
