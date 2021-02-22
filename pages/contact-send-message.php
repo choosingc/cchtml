@@ -15,11 +15,11 @@ $mail = new PHPMailer(true);
 ob_start();
 	
 $subject = $_POST['name'].' [via JD.com]';
-$message_with_rest_of_form = "Company/organization:\n".$_POST['org']."\n\nEmail address:\n".'<a href="mailto:'.$_POST['email'].'">'.$_POST['email']."</a>\n\nMessage:\n\n".$_POST['message'];
+$message_with_rest_of_form = "Company/organization:\n".$_POST['org']."\n\nEmail address:\n".$_POST['email']."\n\nMessage:\n\n".$_POST['message'];
 
 
 // should be jim.detert.choosingcourage@gmail.com
-mail('tomashoxford@gmail.com',$subject,$message_with_rest_of_form);
+mail('jim.detert.choosingcourage@gmail.com',$subject,$message_with_rest_of_form);
 
 // header("Location: http://example.com/myOtherPage.php");
 
