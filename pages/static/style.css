@@ -675,10 +675,12 @@ footer a:active,
 footer a:hover {
 	color: var(--cc-light-blue);
 }
+/*
 
 footer :not(.site_name) a.active_page {
 	color: var(--cc-light-blue) !important;
 }
+*/
 
 footer .site_name a,
 footer .site_name a:link ,
